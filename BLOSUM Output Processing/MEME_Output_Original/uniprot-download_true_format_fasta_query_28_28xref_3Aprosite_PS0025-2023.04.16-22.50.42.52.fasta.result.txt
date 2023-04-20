@@ -1,0 +1,1140 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.2 (Release date: Sun Jan 29 10:33:12 2023 -0800)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS0025-2023.04.16-22.50.42.52.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACDEFGHIKLMNPQRSTVWY
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+sp|P01350|GAST_HUMAN     1.0000    101  sp|P01355|CCKN_RAT       1.0000    115  
+sp|P06307|CCKN_HUMAN     1.0000    115  sp|P09040|DSK_DROME      1.0000    141  
+sp|P09240|CCKN_MOUSE     1.0000    115  sp|Q9TS44|CCKN_CANLF     1.0000     58  
+sp|O93464|CCKN_CARAU     1.0000    123  sp|P01351|GAST_PIG       1.0000    104  
+sp|P01352|GAST_BOVIN     1.0000    104  sp|P01353|GAST_CANLF     1.0000    104  
+sp|P01356|CCKN_PIG       1.0000    114  sp|P01357|CAER4_XENLA    1.0000    233  
+sp|P04563|GAST_RAT       1.0000    104  sp|P05226|CAER4_XENBO    1.0000    234  
+sp|P23362|CCKN_MACFA     1.0000    115  sp|P41520|CCKN_BOVIN     1.0000    115  
+sp|P48757|GAST_MOUSE     1.0000    101  sp|P55885|GAST_HORSE     1.0000    107  
+sp|Q9PU29|CCKN_STRCA     1.0000    130  sp|Q9PU41|CCKN_CHICK     1.0000    130  
+sp|B2ZB95|DSK_DROER      1.0000    141  sp|B2ZB96|DSK_DROMA      1.0000    141  
+sp|B2ZB98|DSK_DROSE      1.0000    141  sp|B2ZB99|DSK_DROSI      1.0000    141  
+sp|B2ZBA0|DSK_DROTE      1.0000    138  sp|B2ZBA1|DSK_DROYA      1.0000    137  
+sp|B3EWM3|SK1_DELRA      1.0000     14  sp|E2E4E4|CCT1_VARVA     1.0000    113  
+sp|O02686|GAST_SHEEP     1.0000    104  sp|P01354|GAST_FELCA     1.0000    104  
+sp|P04428|SK1_RHYMA      1.0000     11  sp|P04564|GAST_CAPHI     1.0000     34  
+sp|P05222|CAER1_XENLA    1.0000    188  sp|P05224|CAER3_XENLA    1.0000    169  
+sp|P05225|CAER5_XENLA    1.0000    187  sp|P06885|GAST_CAVPO     1.0000     33  
+sp|P09859|ANTR_CHICK     1.0000    105  sp|P10034|GAST_CHICH     1.0000     33  
+sp|P16240|CION_CIOIN     1.0000    128  sp|P33713|GAST_DIDVI     1.0000     33  
+sp|P36885|SK1_PERAM      1.0000     11  sp|P56264|CAER_RANXA     1.0000     10  
+sp|P67803|LSK2_PERAM     1.0000     10  sp|P80111|ANTR_LITCT     1.0000    102  
+sp|P80344|CCKN_LITCT     1.0000    130  sp|P80345|CCKN_TRASC     1.0000    130  
+sp|P85810|SK1_RHOPR      1.0000     10  sp|P86486|CAER_LITPE     1.0000     10  
+sp|P86506|CAE11_LITRO    1.0000     10  sp|P86625|CAER_PHAJA     1.0000      9  
+sp|Q7M3V5|CSK_CALVO      1.0000    140  sp|O57312|CCKN_PAROL     1.0000    135  
+sp|P0C228|GAST_MACGI     1.0000     33  sp|P0C229|CCKN_MACGI     1.0000      8  
+sp|P33714|GAST_MACMU     1.0000     17  sp|P41492|NSK1_SARBU     1.0000      9  
+sp|P41493|NSK2_SARBU     1.0000     14  sp|P47733|LOSK_LOCMI     1.0000     12  
+sp|P50144|CCKNA_XENLA    1.0000    123  sp|P50145|CCKNB_XENLA    1.0000    128  
+sp|P67802|LSK2_RHYMA     1.0000     10  sp|P68125|CCKN_DASVI     1.0000      8  
+sp|P68126|CCKN_NOTEU     1.0000      8  sp|P80110|ANTR_TRASC     1.0000     52  
+sp|P85534|SK1_APTFU      1.0000     11  sp|P85539|SK1_ARCTE      1.0000     11  
+sp|P85544|SK1_BANRO      1.0000     11  sp|P85547|SK1_BLACR      1.0000     11  
+sp|P85550|SK1_BLADU      1.0000     11  sp|P85555|SK1_BLAGE      1.0000     11  
+sp|P85560|SK1_BLAOR      1.0000     11  sp|P85566|SK1_BLEDI      1.0000     11  
+sp|P85571|SK1_CRYDW      1.0000     11  sp|P85576|SK1_CRYKY      1.0000     11  
+sp|P85586|SK1_DERER      1.0000     11  sp|P85592|SK1_DERIN      1.0000     11  
+sp|P85598|SK1_DERAT      1.0000     11  sp|P85603|SK1_DIPPU      1.0000     11  
+sp|P85613|SK1_ERGCA      1.0000     11  sp|P85619|SK1_EUBDI      1.0000     11  
+sp|P85625|SK1_EUBPO      1.0000     11  sp|P85631|SK1_EUBSB      1.0000     11  
+sp|P85640|SK1_GROGR      1.0000     11  sp|P85642|SK1_GROPO      1.0000     11  
+sp|P85652|SK1_GYNLU      1.0000     11  sp|P85665|SK1_LUCGR      1.0000     11  
+sp|P85671|SK1_LUCSU      1.0000     11  sp|P85677|SK1_LUCVE      1.0000     11  
+sp|P85683|SK1_MASDA      1.0000     11  sp|P85686|SK1_NEORO      1.0000     11  
+sp|P85692|SK1_PANSB      1.0000     11  sp|P85698|SK1_PANSS      1.0000     11  
+sp|P85704|SK1_PERAU      1.0000     11  sp|P85712|SK1_PERBR      1.0000     11  
+sp|P85716|SK1_PERFU      1.0000     11  sp|P85722|SK1_PERRU      1.0000     11  
+sp|P85743|SK1_POLAY      1.0000     11  sp|P85749|SK1_PRIVA      1.0000     11  
+sp|P85753|SK1_PSEBJ      1.0000     11  sp|P85757|SK1_PSEFV      1.0000     11  
+sp|P85761|SK1_PSEFO      1.0000     11  sp|P85765|SK1_PYCSU      1.0000     11  
+sp|P85786|SK1_SYMPA      1.0000     11  sp|P85792|SK1_THEPT      1.0000     11  
+sp|P85847|SK1_EURFL      1.0000     10  sp|P85850|SK1_GYNCS      1.0000     11  
+sp|P85852|SK1_ELLSS      1.0000     11  sp|P85854|SK1_PANVI      1.0000     11  
+sp|P85856|SK1_SHELA      1.0000     11  sp|Q295C6|DSK_DROPS      1.0000    139  
+sp|Q7LZC4|CAER_PHYSA     1.0000      9  sp|Q8JHB9|CCK_PYTMO      1.0000    125  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS0025-2023.04.16-22.50.42.52.fasta -protein -oc . -nostatus -time 14400 -mod zoops -nmotifs 3 -minw 6 -maxw 50 -objfun classic -markov_order 0 
+
+model:  mod=         zoops    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+width:  minw=            6    maxw=           50
+nsites: minsites=        2    maxsites=      112    wnsites=       0.8
+theta:  spmap=         pam    spfuzz=        120
+em:     prior=       megap    b=           32260    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            6454    N=             112
+sample: seed=            0    hsfrac=          0
+        searchsize=   6454    norand=         no    csites=       1000
+Dirichlet mixture priors file: prior30.plib
+Letter frequencies in dataset:
+A 0.0809 C 0.0115 D 0.0837 E 0.0653 F 0.0527 G 0.09 H 0.0302 I 0.0271 K 0.0343 
+L 0.0857 M 0.0425 N 0.027 P 0.0468 Q 0.062 R 0.0882 S 0.0643 T 0.0242 V 0.0352 
+W 0.015 Y 0.0335 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.0809 C 0.0115 D 0.0837 E 0.0653 F 0.0527 G 0.0901 H 0.0302 I 0.0271 K 0.0343 
+L 0.0857 M 0.0425 N 0.027 P 0.0468 Q 0.062 R 0.0882 S 0.0643 T 0.0242 V 0.0352 
+W 0.015 Y 0.0335 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF DDYGHMRF MEME-1	width =   8  sites = 112  llr = 2133  E-value = 3.9e-699
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  11::::::
+pos.-specific     C  ::::::::
+probability       D  66::::4:
+matrix            E  3:::::::
+                  F  :::::::a
+                  G  :::a::::
+                  H  ::::6:::
+                  I  ::::::::
+                  K  ::::::::
+                  L  ::::::::
+                  M  ::2::a::
+                  N  ::::::::
+                  P  ::::::::
+                  Q  ::::::::
+                  R  ::::::6:
+                  S  ::::::::
+                  T  ::1:::::
+                  V  ::::::::
+                  W  ::::4:::
+                  Y  :37:::::
+
+         bits    6.4         
+                 5.8         
+                 5.2         
+                 4.5     ** *
+Relative         3.9     ** *
+Entropy          3.2   **** *
+(27.5 bits)      2.6 ********
+                 1.9 ********
+                 1.3 ********
+                 0.6 ********
+                 0.0 --------
+
+Multilevel           DDYGHMRF
+consensus            EY  W D 
+sequence                     
+                             
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+sp|Q295C6|DSK_DROPS         130  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|P85856|SK1_SHELA           4  4.83e-10        EQF DDYGHMRF           
+sp|P85847|SK1_EURFL           3  4.83e-10         QS DDYGHMRF           
+sp|P85792|SK1_THEPT           4  4.83e-10        EQF DDYGHMRF           
+sp|P85786|SK1_SYMPA           4  4.83e-10        EQF DDYGHMRF           
+sp|P85761|SK1_PSEFO           4  4.83e-10        EQF DDYGHMRF           
+sp|P85757|SK1_PSEFV           4  4.83e-10        EQF DDYGHMRF           
+sp|P85753|SK1_PSEBJ           4  4.83e-10        EQF DDYGHMRF           
+sp|P85743|SK1_POLAY           4  4.83e-10        EQF DDYGHMRF           
+sp|P85716|SK1_PERFU           4  4.83e-10        EQF DDYGHMRF           
+sp|P85712|SK1_PERBR           4  4.83e-10        EQF DDYGHMRF           
+sp|P85704|SK1_PERAU           4  4.83e-10        EQF DDYGHMRF           
+sp|P85686|SK1_NEORO           4  4.83e-10        EQF DDYGHMRF           
+sp|P85683|SK1_MASDA           4  4.83e-10        EQF DDYGHMRF           
+sp|P85613|SK1_ERGCA           4  4.83e-10        EQF DDYGHMRF           
+sp|P85598|SK1_DERAT           4  4.83e-10        EQF DDYGHMRF           
+sp|P85592|SK1_DERIN           4  4.83e-10        EQF DDYGHMRF           
+sp|P85586|SK1_DERER           4  4.83e-10        EQF DDYGHMRF           
+sp|P85576|SK1_CRYKY           4  4.83e-10        EQF DDYGHMRF           
+sp|P85571|SK1_CRYDW           4  4.83e-10        EQF DDYGHMRF           
+sp|P85560|SK1_BLAOR           4  4.83e-10        EQF DDYGHMRF           
+sp|P85555|SK1_BLAGE           4  4.83e-10        EQF DDYGHMRF           
+sp|P67802|LSK2_RHYMA          3  4.83e-10         QS DDYGHMRF           
+sp|P47733|LOSK_LOCMI          5  4.83e-10       QLAS DDYGHMRF           
+sp|P41493|NSK2_SARBU          7  4.83e-10     XXEEQF DDYGHMRF           
+sp|P41492|NSK1_SARBU          2  4.83e-10          F DDYGHMRF           
+sp|Q7M3V5|CSK_CALVO         129  4.83e-10 FGKRGGEEQF DDYGHMRF GRSI      
+sp|P67803|LSK2_PERAM          3  4.83e-10         QS DDYGHMRF           
+sp|P36885|SK1_PERAM           4  4.83e-10        EQF DDYGHMRF           
+sp|B3EWM3|SK1_DELRA           7  4.83e-10     GGEEQF DDYGHMRF           
+sp|B2ZBA1|DSK_DROYA         128  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|B2ZBA0|DSK_DROTE         129  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|B2ZB99|DSK_DROSI         132  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|B2ZB98|DSK_DROSE         115  4.83e-10 DDERTKAKRF DDYGHMRF GKRGGDDQFD
+sp|B2ZB96|DSK_DROMA         132  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|B2ZB95|DSK_DROER         132  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|P09040|DSK_DROME         132  4.83e-10 FGKRGGDDQF DDYGHMRF GR        
+sp|P85854|SK1_PANVI           4  8.24e-10        EQF EDYGHMRF           
+sp|P85852|SK1_ELLSS           4  8.24e-10        EQF EDYGHMRF           
+sp|P85850|SK1_GYNCS           4  8.24e-10        EQF EDYGHMRF           
+sp|P85765|SK1_PYCSU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85749|SK1_PRIVA           4  8.24e-10        EQF EDYGHMRF           
+sp|P85722|SK1_PERRU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85698|SK1_PANSS           4  8.24e-10        EQF EDYGHMRF           
+sp|P85692|SK1_PANSB           4  8.24e-10        EQF EDYGHMRF           
+sp|P85677|SK1_LUCVE           4  8.24e-10        EQF EDYGHMRF           
+sp|P85671|SK1_LUCSU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85665|SK1_LUCGR           4  8.24e-10        EQF EDYGHMRF           
+sp|P85652|SK1_GYNLU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85642|SK1_GROPO           4  8.24e-10        EQF EDYGHMRF           
+sp|P85640|SK1_GROGR           4  8.24e-10        EQF EDYGHMRF           
+sp|P85631|SK1_EUBSB           4  8.24e-10        EQF EDYGHMRF           
+sp|P85625|SK1_EUBPO           4  8.24e-10        EQF EDYGHMRF           
+sp|P85619|SK1_EUBDI           4  8.24e-10        EQF EDYGHMRF           
+sp|P85603|SK1_DIPPU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85566|SK1_BLEDI           4  8.24e-10        EQF EDYGHMRF           
+sp|P85550|SK1_BLADU           4  8.24e-10        EQF EDYGHMRF           
+sp|P85547|SK1_BLACR           4  8.24e-10        EQF EDYGHMRF           
+sp|P85544|SK1_BANRO           4  8.24e-10        EQF EDYGHMRF           
+sp|P85539|SK1_ARCTE           4  8.24e-10        EQF EDYGHMRF           
+sp|P85534|SK1_APTFU           4  8.24e-10        EQF EDYGHMRF           
+sp|P04428|SK1_RHYMA           4  8.24e-10        EQF EDYGHMRF           
+sp|Q8JHB9|CCK_PYTMO         106  1.14e-09 FDPTHRIKDR DYMGWMDF GRRSAEEYEY
+sp|P68126|CCKN_NOTEU          1  1.14e-09          . DYMGWMDF           
+sp|P68125|CCKN_DASVI          1  1.14e-09          . DYMGWMDF           
+sp|P50145|CCKNB_XENLA       109  1.14e-09 FDQSHRINDR DYMGWMDF GRRSAEEYEY
+sp|P50144|CCKNA_XENLA       104  1.14e-09 FDQPHRINDR DYMGWMDF GRRSAEEYEY
+sp|P0C229|CCKN_MACGI          1  1.14e-09          . DYMGWMDF           
+sp|P80345|CCKN_TRASC        111  1.14e-09 IDPTHRINDR DYMGWMDF GRRSAEEYEY
+sp|P80344|CCKN_LITCT        111  1.14e-09 IDPTHRINDR DYMGWMDF GRRSAEEYEY
+sp|Q9PU41|CCKN_CHICK        111  1.14e-09 IDPTHRINDR DYMGWMDF GRRSAEEYEY
+sp|Q9PU29|CCKN_STRCA        111  1.14e-09 IDPTHRINDR DYMGWMDF GRRSAEEYEY
+sp|P41520|CCKN_BOVIN         96  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEEFEY
+sp|P23362|CCKN_MACFA         96  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEEYEY
+sp|P01356|CCKN_PIG           95  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEEYEY
+sp|Q9TS44|CCKN_CANLF         51  1.14e-09 LDPSHRISDR DYMGWMDF           
+sp|P09240|CCKN_MOUSE         96  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEDYEY
+sp|P06307|CCKN_HUMAN         96  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEEYEY
+sp|P01355|CCKN_RAT           96  1.14e-09 LDPSHRISDR DYMGWMDF GRRSAEDYEY
+sp|P86506|CAE11_LITRO         3  1.26e-09         QQ DYTGWMDF           
+sp|P86486|CAER_LITPE          3  1.26e-09         QQ DYTGWMDF           
+sp|P56264|CAER_RANXA          3  1.26e-09         QQ DYTGWMDF           
+sp|P05225|CAER5_XENLA        76  1.26e-09 DERRFADGQQ DYTGWMDF GRRDDEDDVN
+sp|P05224|CAER3_XENLA        90  1.26e-09 MDFGRRDGQQ DYTGWMDF GRRDDEDDVN
+sp|P05222|CAER1_XENLA       173  1.26e-09 DERRFADGQQ DYTGWMDF GRRNGEDD  
+sp|P05226|CAER4_XENBO       219  1.26e-09 DERRFADGQQ DYTGWMDF GRRNGEDD  
+sp|P01357|CAER4_XENLA       218  1.26e-09 DERRFADGQQ DYTGWMDF GRRNGEDD  
+sp|P33713|GAST_DIDVI         26  2.15e-09 KKQGPWLEEE EAYGWMDF           
+sp|P48757|GAST_MOUSE         85  2.15e-09 KQRPRMEEEE EAYGWMDF GRRSAEEDQ 
+sp|P04563|GAST_RAT           85  2.15e-09 KQRPPMEEEE EAYGWMDF GRRSAEEEDQ
+sp|P01351|GAST_PIG           85  2.15e-09 KQGPWMEEEE EAYGWMDF GRRSAEEGDQ
+sp|P01350|GAST_HUMAN         85  2.15e-09 KQGPWLEEEE EAYGWMDF GRRSAEDEN 
+sp|Q7LZC4|CAER_PHYSA          2  2.48e-09          Q EYTGWMDF           
+sp|P16240|CION_CIOIN        109  2.48e-09 NQGHMQRMDR NYYGWMDF GKRAIEDVDY
+sp|P33714|GAST_MACMU         10  4.48e-09  QGPWMEEEE AAYGWMDF           
+sp|P0C228|GAST_MACGI         26  4.48e-09 KKKGPWQEED AAYGWMDF           
+sp|P10034|GAST_CHICH         26  4.48e-09 KKQGPWAEEE AAYGWMDF           
+sp|P06885|GAST_CAVPO         26  4.48e-09 KKQGPWAEEE AAYGWMDF           
+sp|P04564|GAST_CAPHI         27  4.48e-09 KQGPWVEEEE AAYGWMDF           
+sp|P01354|GAST_FELCA         85  4.48e-09 KQGPWLEEEE AAYGWMDF GRRSAEDGDQ
+sp|O02686|GAST_SHEEP         85  4.48e-09 KQGPWVEEEE AAYGWMDF GRRSAEEGDQ
+sp|P55885|GAST_HORSE         88  4.48e-09 KQGPWLEKEE AAYGWMDF GRRSAEEGDQ
+sp|P01353|GAST_CANLF         85  4.48e-09 KQGPWMEEEE AAYGWMDF GRRSAEEGDQ
+sp|P01352|GAST_BOVIN         85  4.48e-09 KQGPWVEEEE AAYGWMDF GRRSAEEGDQ
+sp|P80110|ANTR_TRASC         45  5.75e-09 DAALRPLHDH DYPGWMDF           
+sp|O57312|CCKN_PAROL        116  6.34e-09 LSPNHRIADR DYLGWMDF GRRSAEEYEY
+sp|E2E4E4|CCT1_VARVA         94  6.34e-09 KPPDPKKESQ DYLGWMDF GRRSAEEYEY
+sp|O93464|CCKN_CARAU        104  6.34e-09 MGNNHRIKDR DYLGWMDF GRRSAEEYEY
+sp|P80111|ANTR_LITCT         85  1.15e-08 EDHLHPMRDR DYAGWMDF GRRSSEVTES
+sp|P86625|CAER_PHAJA          2  1.66e-08          Q EYRGWMDF           
+sp|P85810|SK1_RHOPR           3  3.02e-08         QF NEYGHMRF           
+sp|P09859|ANTR_CHICK         86  5.63e-07 NGAVEALHDH FYPDWMDF GRRSTEDAAD
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|Q295C6|DSK_DROPS               4.8e-10  129_[1]_2
+sp|P85856|SK1_SHELA               4.8e-10  3_[1]
+sp|P85847|SK1_EURFL               4.8e-10  2_[1]
+sp|P85792|SK1_THEPT               4.8e-10  3_[1]
+sp|P85786|SK1_SYMPA               4.8e-10  3_[1]
+sp|P85761|SK1_PSEFO               4.8e-10  3_[1]
+sp|P85757|SK1_PSEFV               4.8e-10  3_[1]
+sp|P85753|SK1_PSEBJ               4.8e-10  3_[1]
+sp|P85743|SK1_POLAY               4.8e-10  3_[1]
+sp|P85716|SK1_PERFU               4.8e-10  3_[1]
+sp|P85712|SK1_PERBR               4.8e-10  3_[1]
+sp|P85704|SK1_PERAU               4.8e-10  3_[1]
+sp|P85686|SK1_NEORO               4.8e-10  3_[1]
+sp|P85683|SK1_MASDA               4.8e-10  3_[1]
+sp|P85613|SK1_ERGCA               4.8e-10  3_[1]
+sp|P85598|SK1_DERAT               4.8e-10  3_[1]
+sp|P85592|SK1_DERIN               4.8e-10  3_[1]
+sp|P85586|SK1_DERER               4.8e-10  3_[1]
+sp|P85576|SK1_CRYKY               4.8e-10  3_[1]
+sp|P85571|SK1_CRYDW               4.8e-10  3_[1]
+sp|P85560|SK1_BLAOR               4.8e-10  3_[1]
+sp|P85555|SK1_BLAGE               4.8e-10  3_[1]
+sp|P67802|LSK2_RHYMA              4.8e-10  2_[1]
+sp|P47733|LOSK_LOCMI              4.8e-10  4_[1]
+sp|P41493|NSK2_SARBU              4.8e-10  6_[1]
+sp|P41492|NSK1_SARBU              4.8e-10  1_[1]
+sp|Q7M3V5|CSK_CALVO               4.8e-10  128_[1]_4
+sp|P67803|LSK2_PERAM              4.8e-10  2_[1]
+sp|P36885|SK1_PERAM               4.8e-10  3_[1]
+sp|B3EWM3|SK1_DELRA               4.8e-10  6_[1]
+sp|B2ZBA1|DSK_DROYA               4.8e-10  127_[1]_2
+sp|B2ZBA0|DSK_DROTE               4.8e-10  128_[1]_2
+sp|B2ZB99|DSK_DROSI               4.8e-10  131_[1]_2
+sp|B2ZB98|DSK_DROSE               4.8e-10  114_[1]_19
+sp|B2ZB96|DSK_DROMA               4.8e-10  131_[1]_2
+sp|B2ZB95|DSK_DROER               4.8e-10  131_[1]_2
+sp|P09040|DSK_DROME               4.8e-10  131_[1]_2
+sp|P85854|SK1_PANVI               8.2e-10  3_[1]
+sp|P85852|SK1_ELLSS               8.2e-10  3_[1]
+sp|P85850|SK1_GYNCS               8.2e-10  3_[1]
+sp|P85765|SK1_PYCSU               8.2e-10  3_[1]
+sp|P85749|SK1_PRIVA               8.2e-10  3_[1]
+sp|P85722|SK1_PERRU               8.2e-10  3_[1]
+sp|P85698|SK1_PANSS               8.2e-10  3_[1]
+sp|P85692|SK1_PANSB               8.2e-10  3_[1]
+sp|P85677|SK1_LUCVE               8.2e-10  3_[1]
+sp|P85671|SK1_LUCSU               8.2e-10  3_[1]
+sp|P85665|SK1_LUCGR               8.2e-10  3_[1]
+sp|P85652|SK1_GYNLU               8.2e-10  3_[1]
+sp|P85642|SK1_GROPO               8.2e-10  3_[1]
+sp|P85640|SK1_GROGR               8.2e-10  3_[1]
+sp|P85631|SK1_EUBSB               8.2e-10  3_[1]
+sp|P85625|SK1_EUBPO               8.2e-10  3_[1]
+sp|P85619|SK1_EUBDI               8.2e-10  3_[1]
+sp|P85603|SK1_DIPPU               8.2e-10  3_[1]
+sp|P85566|SK1_BLEDI               8.2e-10  3_[1]
+sp|P85550|SK1_BLADU               8.2e-10  3_[1]
+sp|P85547|SK1_BLACR               8.2e-10  3_[1]
+sp|P85544|SK1_BANRO               8.2e-10  3_[1]
+sp|P85539|SK1_ARCTE               8.2e-10  3_[1]
+sp|P85534|SK1_APTFU               8.2e-10  3_[1]
+sp|P04428|SK1_RHYMA               8.2e-10  3_[1]
+sp|Q8JHB9|CCK_PYTMO               1.1e-09  105_[1]_12
+sp|P68126|CCKN_NOTEU              1.1e-09  [1]
+sp|P68125|CCKN_DASVI              1.1e-09  [1]
+sp|P50145|CCKNB_XENLA             1.1e-09  108_[1]_12
+sp|P50144|CCKNA_XENLA             1.1e-09  103_[1]_12
+sp|P0C229|CCKN_MACGI              1.1e-09  [1]
+sp|P80345|CCKN_TRASC              1.1e-09  110_[1]_12
+sp|P80344|CCKN_LITCT              1.1e-09  110_[1]_12
+sp|Q9PU41|CCKN_CHICK              1.1e-09  110_[1]_12
+sp|Q9PU29|CCKN_STRCA              1.1e-09  110_[1]_12
+sp|P41520|CCKN_BOVIN              1.1e-09  95_[1]_12
+sp|P23362|CCKN_MACFA              1.1e-09  95_[1]_12
+sp|P01356|CCKN_PIG                1.1e-09  94_[1]_12
+sp|Q9TS44|CCKN_CANLF              1.1e-09  50_[1]
+sp|P09240|CCKN_MOUSE              1.1e-09  95_[1]_12
+sp|P06307|CCKN_HUMAN              1.1e-09  95_[1]_12
+sp|P01355|CCKN_RAT                1.1e-09  95_[1]_12
+sp|P86506|CAE11_LITRO             1.3e-09  2_[1]
+sp|P86486|CAER_LITPE              1.3e-09  2_[1]
+sp|P56264|CAER_RANXA              1.3e-09  2_[1]
+sp|P05225|CAER5_XENLA             1.3e-09  75_[1]_104
+sp|P05224|CAER3_XENLA             1.3e-09  89_[1]_72
+sp|P05222|CAER1_XENLA             1.3e-09  172_[1]_8
+sp|P05226|CAER4_XENBO             1.3e-09  218_[1]_8
+sp|P01357|CAER4_XENLA             1.3e-09  217_[1]_8
+sp|P33713|GAST_DIDVI              2.2e-09  25_[1]
+sp|P48757|GAST_MOUSE              2.2e-09  84_[1]_9
+sp|P04563|GAST_RAT                2.2e-09  84_[1]_12
+sp|P01351|GAST_PIG                2.2e-09  84_[1]_12
+sp|P01350|GAST_HUMAN              2.2e-09  84_[1]_9
+sp|Q7LZC4|CAER_PHYSA              2.5e-09  1_[1]
+sp|P16240|CION_CIOIN              2.5e-09  108_[1]_12
+sp|P33714|GAST_MACMU              4.5e-09  9_[1]
+sp|P0C228|GAST_MACGI              4.5e-09  25_[1]
+sp|P10034|GAST_CHICH              4.5e-09  25_[1]
+sp|P06885|GAST_CAVPO              4.5e-09  25_[1]
+sp|P04564|GAST_CAPHI              4.5e-09  26_[1]
+sp|P01354|GAST_FELCA              4.5e-09  84_[1]_12
+sp|O02686|GAST_SHEEP              4.5e-09  84_[1]_12
+sp|P55885|GAST_HORSE              4.5e-09  87_[1]_12
+sp|P01353|GAST_CANLF              4.5e-09  84_[1]_12
+sp|P01352|GAST_BOVIN              4.5e-09  84_[1]_12
+sp|P80110|ANTR_TRASC              5.8e-09  44_[1]
+sp|O57312|CCKN_PAROL              6.3e-09  115_[1]_12
+sp|E2E4E4|CCT1_VARVA              6.3e-09  93_[1]_12
+sp|O93464|CCKN_CARAU              6.3e-09  103_[1]_12
+sp|P80111|ANTR_LITCT              1.1e-08  84_[1]_10
+sp|P86625|CAER_PHAJA              1.7e-08  1_[1]
+sp|P85810|SK1_RHOPR                 3e-08  2_[1]
+sp|P09859|ANTR_CHICK              5.6e-07  85_[1]_12
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF DDYGHMRF width=8 seqs=112
+sp|Q295C6|DSK_DROPS      (  130) DDYGHMRF  1 
+sp|P85856|SK1_SHELA      (    4) DDYGHMRF  1 
+sp|P85847|SK1_EURFL      (    3) DDYGHMRF  1 
+sp|P85792|SK1_THEPT      (    4) DDYGHMRF  1 
+sp|P85786|SK1_SYMPA      (    4) DDYGHMRF  1 
+sp|P85761|SK1_PSEFO      (    4) DDYGHMRF  1 
+sp|P85757|SK1_PSEFV      (    4) DDYGHMRF  1 
+sp|P85753|SK1_PSEBJ      (    4) DDYGHMRF  1 
+sp|P85743|SK1_POLAY      (    4) DDYGHMRF  1 
+sp|P85716|SK1_PERFU      (    4) DDYGHMRF  1 
+sp|P85712|SK1_PERBR      (    4) DDYGHMRF  1 
+sp|P85704|SK1_PERAU      (    4) DDYGHMRF  1 
+sp|P85686|SK1_NEORO      (    4) DDYGHMRF  1 
+sp|P85683|SK1_MASDA      (    4) DDYGHMRF  1 
+sp|P85613|SK1_ERGCA      (    4) DDYGHMRF  1 
+sp|P85598|SK1_DERAT      (    4) DDYGHMRF  1 
+sp|P85592|SK1_DERIN      (    4) DDYGHMRF  1 
+sp|P85586|SK1_DERER      (    4) DDYGHMRF  1 
+sp|P85576|SK1_CRYKY      (    4) DDYGHMRF  1 
+sp|P85571|SK1_CRYDW      (    4) DDYGHMRF  1 
+sp|P85560|SK1_BLAOR      (    4) DDYGHMRF  1 
+sp|P85555|SK1_BLAGE      (    4) DDYGHMRF  1 
+sp|P67802|LSK2_RHYMA     (    3) DDYGHMRF  1 
+sp|P47733|LOSK_LOCMI     (    5) DDYGHMRF  1 
+sp|P41493|NSK2_SARBU     (    7) DDYGHMRF  1 
+sp|P41492|NSK1_SARBU     (    2) DDYGHMRF  1 
+sp|Q7M3V5|CSK_CALVO      (  129) DDYGHMRF  1 
+sp|P67803|LSK2_PERAM     (    3) DDYGHMRF  1 
+sp|P36885|SK1_PERAM      (    4) DDYGHMRF  1 
+sp|B3EWM3|SK1_DELRA      (    7) DDYGHMRF  1 
+sp|B2ZBA1|DSK_DROYA      (  128) DDYGHMRF  1 
+sp|B2ZBA0|DSK_DROTE      (  129) DDYGHMRF  1 
+sp|B2ZB99|DSK_DROSI      (  132) DDYGHMRF  1 
+sp|B2ZB98|DSK_DROSE      (  115) DDYGHMRF  1 
+sp|B2ZB96|DSK_DROMA      (  132) DDYGHMRF  1 
+sp|B2ZB95|DSK_DROER      (  132) DDYGHMRF  1 
+sp|P09040|DSK_DROME      (  132) DDYGHMRF  1 
+sp|P85854|SK1_PANVI      (    4) EDYGHMRF  1 
+sp|P85852|SK1_ELLSS      (    4) EDYGHMRF  1 
+sp|P85850|SK1_GYNCS      (    4) EDYGHMRF  1 
+sp|P85765|SK1_PYCSU      (    4) EDYGHMRF  1 
+sp|P85749|SK1_PRIVA      (    4) EDYGHMRF  1 
+sp|P85722|SK1_PERRU      (    4) EDYGHMRF  1 
+sp|P85698|SK1_PANSS      (    4) EDYGHMRF  1 
+sp|P85692|SK1_PANSB      (    4) EDYGHMRF  1 
+sp|P85677|SK1_LUCVE      (    4) EDYGHMRF  1 
+sp|P85671|SK1_LUCSU      (    4) EDYGHMRF  1 
+sp|P85665|SK1_LUCGR      (    4) EDYGHMRF  1 
+sp|P85652|SK1_GYNLU      (    4) EDYGHMRF  1 
+sp|P85642|SK1_GROPO      (    4) EDYGHMRF  1 
+sp|P85640|SK1_GROGR      (    4) EDYGHMRF  1 
+sp|P85631|SK1_EUBSB      (    4) EDYGHMRF  1 
+sp|P85625|SK1_EUBPO      (    4) EDYGHMRF  1 
+sp|P85619|SK1_EUBDI      (    4) EDYGHMRF  1 
+sp|P85603|SK1_DIPPU      (    4) EDYGHMRF  1 
+sp|P85566|SK1_BLEDI      (    4) EDYGHMRF  1 
+sp|P85550|SK1_BLADU      (    4) EDYGHMRF  1 
+sp|P85547|SK1_BLACR      (    4) EDYGHMRF  1 
+sp|P85544|SK1_BANRO      (    4) EDYGHMRF  1 
+sp|P85539|SK1_ARCTE      (    4) EDYGHMRF  1 
+sp|P85534|SK1_APTFU      (    4) EDYGHMRF  1 
+sp|P04428|SK1_RHYMA      (    4) EDYGHMRF  1 
+sp|Q8JHB9|CCK_PYTMO      (  106) DYMGWMDF  1 
+sp|P68126|CCKN_NOTEU     (    1) DYMGWMDF  1 
+sp|P68125|CCKN_DASVI     (    1) DYMGWMDF  1 
+sp|P50145|CCKNB_XENLA    (  109) DYMGWMDF  1 
+sp|P50144|CCKNA_XENLA    (  104) DYMGWMDF  1 
+sp|P0C229|CCKN_MACGI     (    1) DYMGWMDF  1 
+sp|P80345|CCKN_TRASC     (  111) DYMGWMDF  1 
+sp|P80344|CCKN_LITCT     (  111) DYMGWMDF  1 
+sp|Q9PU41|CCKN_CHICK     (  111) DYMGWMDF  1 
+sp|Q9PU29|CCKN_STRCA     (  111) DYMGWMDF  1 
+sp|P41520|CCKN_BOVIN     (   96) DYMGWMDF  1 
+sp|P23362|CCKN_MACFA     (   96) DYMGWMDF  1 
+sp|P01356|CCKN_PIG       (   95) DYMGWMDF  1 
+sp|Q9TS44|CCKN_CANLF     (   51) DYMGWMDF  1 
+sp|P09240|CCKN_MOUSE     (   96) DYMGWMDF  1 
+sp|P06307|CCKN_HUMAN     (   96) DYMGWMDF  1 
+sp|P01355|CCKN_RAT       (   96) DYMGWMDF  1 
+sp|P86506|CAE11_LITRO    (    3) DYTGWMDF  1 
+sp|P86486|CAER_LITPE     (    3) DYTGWMDF  1 
+sp|P56264|CAER_RANXA     (    3) DYTGWMDF  1 
+sp|P05225|CAER5_XENLA    (   76) DYTGWMDF  1 
+sp|P05224|CAER3_XENLA    (   90) DYTGWMDF  1 
+sp|P05222|CAER1_XENLA    (  173) DYTGWMDF  1 
+sp|P05226|CAER4_XENBO    (  219) DYTGWMDF  1 
+sp|P01357|CAER4_XENLA    (  218) DYTGWMDF  1 
+sp|P33713|GAST_DIDVI     (   26) EAYGWMDF  1 
+sp|P48757|GAST_MOUSE     (   85) EAYGWMDF  1 
+sp|P04563|GAST_RAT       (   85) EAYGWMDF  1 
+sp|P01351|GAST_PIG       (   85) EAYGWMDF  1 
+sp|P01350|GAST_HUMAN     (   85) EAYGWMDF  1 
+sp|Q7LZC4|CAER_PHYSA     (    2) EYTGWMDF  1 
+sp|P16240|CION_CIOIN     (  109) NYYGWMDF  1 
+sp|P33714|GAST_MACMU     (   10) AAYGWMDF  1 
+sp|P0C228|GAST_MACGI     (   26) AAYGWMDF  1 
+sp|P10034|GAST_CHICH     (   26) AAYGWMDF  1 
+sp|P06885|GAST_CAVPO     (   26) AAYGWMDF  1 
+sp|P04564|GAST_CAPHI     (   27) AAYGWMDF  1 
+sp|P01354|GAST_FELCA     (   85) AAYGWMDF  1 
+sp|O02686|GAST_SHEEP     (   85) AAYGWMDF  1 
+sp|P55885|GAST_HORSE     (   88) AAYGWMDF  1 
+sp|P01353|GAST_CANLF     (   85) AAYGWMDF  1 
+sp|P01352|GAST_BOVIN     (   85) AAYGWMDF  1 
+sp|P80110|ANTR_TRASC     (   45) DYPGWMDF  1 
+sp|O57312|CCKN_PAROL     (  116) DYLGWMDF  1 
+sp|E2E4E4|CCT1_VARVA     (   94) DYLGWMDF  1 
+sp|O93464|CCKN_CARAU     (  104) DYLGWMDF  1 
+sp|P80111|ANTR_LITCT     (   85) DYAGWMDF  1 
+sp|P86625|CAER_PHAJA     (    2) EYRGWMDF  1 
+sp|P85810|SK1_RHOPR      (    3) NEYGHMRF  1 
+sp|P09859|ANTR_CHICK     (   86) FYPDWMDF  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 8 n= 5668 bayes= 7.32213 E= 3.9e-699 
+    12   -764    280    215   -259   -650   -596   -667   -433   -753   -775    -49   -639   -491   -707   -541   -466   -610   -875   -746 
+    72   -606    271   -262   -651   -621   -584   -734   -550   -808   -857   -350   -705   -653   -772   -518   -480   -680   -689    316 
+  -292   -482   -862   -755   -459   -706   -592   -385   -583   -155    181   -597   -140   -708   -324   -572    172   -407   -517    437 
+  -697   -705   -321   -812   -914    345   -797   -803   -710   -911   -926   -628   -809   -877   -848   -710   -686   -774   -813   -842 
+ -1056   -855  -1042  -1085   -894   -948    422  -1002   -970  -1019  -1152   -927   -932  -1065  -1060  -1015   -896   -999    486   -795 
+ -1017   -828  -1029  -1064   -999   -939   -949   -857   -948   -893    456   -918   -920  -1053  -1054   -990   -864   -905   -906   -939 
+ -1052   -861    238  -1072  -1053   -944   -957  -1037   -949  -1050  -1194   -906   -931  -1065    267  -1008   -895  -1024   -949   -996 
+ -1060   -858  -1043  -1088    424   -949   -938  -1009   -974  -1025  -1161   -934   -932  -1071  -1064  -1020   -900  -1007   -902   -848 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 8 nsites= 112 E= 3.9e-699 
+ 0.089286  0.000000  0.598214  0.285714  0.008929  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.017857  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.133929  0.000000  0.553571  0.008929  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.303571 
+ 0.008929  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.026786  0.151786  0.000000  0.017857  0.000000  0.008929  0.000000  0.080357  0.000000  0.000000  0.705357 
+ 0.000000  0.000000  0.008929  0.000000  0.000000  0.991071  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.562500  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.437500  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.437500  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.562500  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif DDYGHMRF MEME-1 regular expression
+--------------------------------------------------------------------------------
+[DE][DY]YG[HW]M[RD]F
+--------------------------------------------------------------------------------
+
+
+
+
+Time  4.50 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GJCLCVLLAVLAASA MEME-2	width =  15  sites =  38  llr = 1008  E-value = 1.5e-197
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  1::1::::72:5423
+pos.-specific     C  ::7:7::::::::::
+probability       D  :::::::::::::::
+matrix            E  :::::::::::::::
+                  F  :1:1::121::1:::
+                  G  7::::::::::::2:
+                  H  ::::1:1::::::::
+                  I  :3:2:::2::::1::
+                  K  :::::::::::::::
+                  L  :41311742:9:2:1
+                  M  :::::1:2:1::1::
+                  N  :::::::::::::1:
+                  P  ::::::::1:1::11
+                  Q  ::::::::::::1::
+                  R  2:1::::::::::::
+                  S  :::1:::::::3:32
+                  T  :::::1:::1::122
+                  V  :2:3:611:6:11::
+                  W  :::::::::::::::
+                  Y  ::::2::::::::::
+
+         bits    6.4                
+                 5.8                
+                 5.2                
+                 4.5   * *          
+Relative         3.9   * *          
+Entropy          3.2   * **    *    
+(38.3 bits)      2.6  ** ***  **    
+                 1.9 ************ **
+                 1.3 ***************
+                 0.6 ***************
+                 0.0 ---------------
+
+Multilevel           GLCLCVLLAVLAASA
+consensus            RI V       SLAS
+sequence                            
+                                    
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+sp|E2E4E4|CCT1_VARVA          4  1.28e-17        MYG GICLCVLLAVLAISS SGQHISRSLN
+sp|P01356|CCKN_PIG            4  1.42e-16        MNG GLCLCVLMAVLAAGT LAQPVPPADS
+sp|Q9PU29|CCKN_STRCA          4  2.07e-16        MYS GICICVFLAVLSASS FGQQTAGSHN
+sp|O57312|CCKN_PAROL          4  2.49e-16        MTA GLCVCVLLAVLCTSC LGHPISSQHL
+sp|P80344|CCKN_LITCT          4  2.49e-16        MYI GICICVLLAALSASS TGQQTVGSMN
+sp|O93464|CCKN_CARAU          4  2.49e-16        MNA GICVCVLLAALSTSS CLSLPAVSED
+sp|P06307|CCKN_HUMAN          4  2.98e-16        MNS GVCLCVLMAVLAAGA LTQPVPPADP
+sp|Q9PU41|CCKN_CHICK          4  8.30e-16        MYG GICICVLLAALSVSS LGQQPAGSHD
+sp|P09240|CCKN_MOUSE          4  2.49e-15        MKS GVCLCVVMAVLAAGA LAQPVVPAEA
+sp|P01355|CCKN_RAT            4  2.49e-15        MKC GVCLCVVMAVLAAGA LAQPVVPVEA
+sp|P50144|CCKNA_XENLA         4  1.20e-14        MYS GICICLLLAMLSASS KAHQSEDAVV
+sp|P01354|GAST_FELCA          3  1.37e-14         MQ RLCVCVLILALALTA FSEASWKPRS
+sp|P41520|CCKN_BOVIN          4  1.57e-14        MNR GVCLCLLMAVLAAGA LAQPMPHADP
+sp|P50145|CCKNB_XENLA         4  3.44e-14        MCS GVCICLLLAMLSASS KAHQATGSLG
+sp|P05224|CAER3_XENLA         4  3.91e-14        MFK GILLCVLFAVLSANP LSQPEGFADE
+sp|P05222|CAER1_XENLA         4  3.91e-14        MFK GILLCVLFAVLSANP LSQPEGFADE
+sp|P05226|CAER4_XENBO         4  3.91e-14        MFK GILLCVLFAVLSANP LSQPEGFADE
+sp|P01357|CAER4_XENLA         4  3.91e-14        MFK GILLCVLFAVLSANP LSQPEGFADE
+sp|P04563|GAST_RAT            3  1.35e-13         MP RLCVCMLVLVLALAT FSEASWKPRS
+sp|P23362|CCKN_MACFA          4  1.93e-13        MNS GVSLCVLMAVLAAGA LTQPVPPAEP
+sp|P01353|GAST_CANLF          3  3.88e-13         MQ RLCVYVLILALALAT FSEASWKPRS
+sp|Q8JHB9|CCK_PYTMO           4  5.45e-13        MYS GICSCLFLAVLSSSS LGQQISGSQH
+sp|P55885|GAST_HORSE          3  1.18e-12         MR RLCVYVLIFALALAA FSEASWKPCS
+sp|P01350|GAST_HUMAN          3  1.18e-12         MQ RLCVYVLIFALALAA FSEASWKPRS
+sp|P80345|CCKN_TRASC          4  1.32e-12        MYS GICIYMFLAMLSTSS SGQQATGSHN
+sp|P01351|GAST_PIG            3  1.47e-12         MQ RLCAYVLIHVLALAA CSEASWKPGF
+sp|P01352|GAST_BOVIN          3  1.82e-12         MQ RLCAHVLILVLALAA FCEASWKPHS
+sp|P48757|GAST_MOUSE          3  2.03e-12         MP RLCVYMLVLVLALAT FSEASWKPRS
+sp|B2ZB99|DSK_DROSI           2  1.27e-11          M GLRSCTHLATLFMTL WAVAFCFLVV
+sp|B2ZB98|DSK_DROSE           2  1.27e-11          M GLRSCTHLATLFMTL WALAFCFLVV
+sp|B2ZB96|DSK_DROMA           2  1.27e-11          M GLRSCTHLATLFMTL WALAFCFLVV
+sp|P80111|ANTR_LITCT          4  4.40e-11        MDK KVCVSILLAMLAIAA LCRPMTELES
+sp|B2ZBA1|DSK_DROYA           2  5.29e-11          M GLRSCTHFATLVIPL WALAFCFLVV
+sp|O02686|GAST_SHEEP          3  6.96e-11         MQ RLCAHALILVLALAA FCEASWKPHS
+sp|B2ZB95|DSK_DROER           2  3.12e-10          M GLRRCTHFATLVMPL WALALFFLVV
+sp|B2ZBA0|DSK_DROTE          20  2.05e-09 ATLVMPLWAL AFCFLVLVPVPAQTT SLQISKGDRR
+sp|P09040|DSK_DROME          20  1.56e-08 ATLFMPLWAL AFCFLVVLPIPAQTT SLQNAKDDRR
+sp|P16240|CION_CIOIN         10  5.10e-08  MGSNIVIYF SIIVIVTLNVNGVPA SDLFKSVSQY
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|E2E4E4|CCT1_VARVA              1.3e-17  3_[2]_95
+sp|P01356|CCKN_PIG                1.4e-16  3_[2]_96
+sp|Q9PU29|CCKN_STRCA              2.1e-16  3_[2]_112
+sp|O57312|CCKN_PAROL              2.5e-16  3_[2]_117
+sp|P80344|CCKN_LITCT              2.5e-16  3_[2]_112
+sp|O93464|CCKN_CARAU              2.5e-16  3_[2]_105
+sp|P06307|CCKN_HUMAN                3e-16  3_[2]_97
+sp|Q9PU41|CCKN_CHICK              8.3e-16  3_[2]_112
+sp|P09240|CCKN_MOUSE              2.5e-15  3_[2]_97
+sp|P01355|CCKN_RAT                2.5e-15  3_[2]_97
+sp|P50144|CCKNA_XENLA             1.2e-14  3_[2]_105
+sp|P01354|GAST_FELCA              1.4e-14  2_[2]_87
+sp|P41520|CCKN_BOVIN              1.6e-14  3_[2]_97
+sp|P50145|CCKNB_XENLA             3.4e-14  3_[2]_110
+sp|P05224|CAER3_XENLA             3.9e-14  3_[2]_151
+sp|P05222|CAER1_XENLA             3.9e-14  3_[2]_170
+sp|P05226|CAER4_XENBO             3.9e-14  3_[2]_216
+sp|P01357|CAER4_XENLA             3.9e-14  3_[2]_215
+sp|P04563|GAST_RAT                1.3e-13  2_[2]_87
+sp|P23362|CCKN_MACFA              1.9e-13  3_[2]_97
+sp|P01353|GAST_CANLF              3.9e-13  2_[2]_87
+sp|Q8JHB9|CCK_PYTMO               5.5e-13  3_[2]_107
+sp|P55885|GAST_HORSE              1.2e-12  2_[2]_90
+sp|P01350|GAST_HUMAN              1.2e-12  2_[2]_84
+sp|P80345|CCKN_TRASC              1.3e-12  3_[2]_112
+sp|P01351|GAST_PIG                1.5e-12  2_[2]_87
+sp|P01352|GAST_BOVIN              1.8e-12  2_[2]_87
+sp|P48757|GAST_MOUSE                2e-12  2_[2]_84
+sp|B2ZB99|DSK_DROSI               1.3e-11  1_[2]_125
+sp|B2ZB98|DSK_DROSE               1.3e-11  1_[2]_125
+sp|B2ZB96|DSK_DROMA               1.3e-11  1_[2]_125
+sp|P80111|ANTR_LITCT              4.4e-11  3_[2]_84
+sp|B2ZBA1|DSK_DROYA               5.3e-11  1_[2]_121
+sp|O02686|GAST_SHEEP                7e-11  2_[2]_87
+sp|B2ZB95|DSK_DROER               3.1e-10  1_[2]_125
+sp|B2ZBA0|DSK_DROTE               2.1e-09  19_[2]_104
+sp|P09040|DSK_DROME               1.6e-08  19_[2]_107
+sp|P16240|CION_CIOIN              5.1e-08  9_[2]_104
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GJCLCVLLAVLAASA width=15 seqs=38
+sp|E2E4E4|CCT1_VARVA     (    4) GICLCVLLAVLAISS  1 
+sp|P01356|CCKN_PIG       (    4) GLCLCVLMAVLAAGT  1 
+sp|Q9PU29|CCKN_STRCA     (    4) GICICVFLAVLSASS  1 
+sp|O57312|CCKN_PAROL     (    4) GLCVCVLLAVLCTSC  1 
+sp|P80344|CCKN_LITCT     (    4) GICICVLLAALSASS  1 
+sp|O93464|CCKN_CARAU     (    4) GICVCVLLAALSTSS  1 
+sp|P06307|CCKN_HUMAN     (    4) GVCLCVLMAVLAAGA  1 
+sp|Q9PU41|CCKN_CHICK     (    4) GICICVLLAALSVSS  1 
+sp|P09240|CCKN_MOUSE     (    4) GVCLCVVMAVLAAGA  1 
+sp|P01355|CCKN_RAT       (    4) GVCLCVVMAVLAAGA  1 
+sp|P50144|CCKNA_XENLA    (    4) GICICLLLAMLSASS  1 
+sp|P01354|GAST_FELCA     (    3) RLCVCVLILALALTA  1 
+sp|P41520|CCKN_BOVIN     (    4) GVCLCLLMAVLAAGA  1 
+sp|P50145|CCKNB_XENLA    (    4) GVCICLLLAMLSASS  1 
+sp|P05224|CAER3_XENLA    (    4) GILLCVLFAVLSANP  1 
+sp|P05222|CAER1_XENLA    (    4) GILLCVLFAVLSANP  1 
+sp|P05226|CAER4_XENBO    (    4) GILLCVLFAVLSANP  1 
+sp|P01357|CAER4_XENLA    (    4) GILLCVLFAVLSANP  1 
+sp|P04563|GAST_RAT       (    3) RLCVCMLVLVLALAT  1 
+sp|P23362|CCKN_MACFA     (    4) GVSLCVLMAVLAAGA  1 
+sp|P01353|GAST_CANLF     (    3) RLCVYVLILALALAT  1 
+sp|Q8JHB9|CCK_PYTMO      (    4) GICSCLFLAVLSSSS  1 
+sp|P55885|GAST_HORSE     (    3) RLCVYVLIFALALAA  1 
+sp|P01350|GAST_HUMAN     (    3) RLCVYVLIFALALAA  1 
+sp|P80345|CCKN_TRASC     (    4) GICIYMFLAMLSTSS  1 
+sp|P01351|GAST_PIG       (    3) RLCAYVLIHVLALAA  1 
+sp|P01352|GAST_BOVIN     (    3) RLCAHVLILVLALAA  1 
+sp|P48757|GAST_MOUSE     (    3) RLCVYMLVLVLALAT  1 
+sp|B2ZB99|DSK_DROSI      (    2) GLRSCTHLATLFMTL  1 
+sp|B2ZB98|DSK_DROSE      (    2) GLRSCTHLATLFMTL  1 
+sp|B2ZB96|DSK_DROMA      (    2) GLRSCTHLATLFMTL  1 
+sp|P80111|ANTR_LITCT     (    4) KVCVSILLAMLAIAA  1 
+sp|B2ZBA1|DSK_DROYA      (    2) GLRSCTHFATLVIPL  1 
+sp|O02686|GAST_SHEEP     (    3) RLCAHALILVLALAA  1 
+sp|B2ZB95|DSK_DROER      (    2) GLRRCTHFATLVMPL  1 
+sp|B2ZBA0|DSK_DROTE      (   20) AFCFLVLVPVPAQTT  1 
+sp|P09040|DSK_DROME      (   20) AFCFLVVLPIPAQTT  1 
+sp|P16240|CION_CIOIN     (   10) SIIVIVTLNVNGVPA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 15 n= 4884 bayes= 7.1909 E= 1.5e-197 
+   -84   -346   -437   -435   -585    298   -435   -434    -54   -560   -547   -251   -481   -469     90   -139   -297   -393   -490   -500 
+  -567   -430   -905   -797      1   -830   -744    363   -698    228   -343   -688   -734   -737   -824   -729   -420    240   -574   -569 
+  -350    586   -709   -584   -436   -525   -525     22   -339     34   -384   -448   -553   -530     51   -116   -273   -219   -509   -467 
+    -2   -203   -589   -462     -1   -480   -394    251   -345    167   -253   -335   -447   -447   -176     91   -144    283   -354   -309 
+  -509    582   -738   -651   -246   -657     78      7   -519    -64   -460   -465   -621   -593   -637   -127   -364   -311   -301    227 
+  -143   -270   -651   -547   -410   -593   -511     63   -449     26     75   -445   -531   -566   -585   -459    229    413   -493   -452 
+  -442   -327   -671   -537     33   -625    173   -102   -430    302   -215   -456   -510   -492   -543   -484     -7     99   -413   -379 
+  -607   -467   -941   -811    154   -840   -706    275   -705    230    187   -708   -725   -699   -798   -745   -459    119   -523   -536 
+   303   -163   -526   -442    -23   -365    -47   -192   -346     61   -350    -22    -15   -469   -497   -219   -176   -143   -390   -319 
+   112   -336   -769   -665   -489   -682   -646     59   -563   -343    124   -545   -643   -683   -717   -551    238    394   -603   -540 
+  -465   -355   -659   -543   -341   -621   -508   -141   -436    337   -242    -36    -18   -503   -550   -493   -319   -216   -454   -440 
+   271    112   -611   -523     34   -164   -539   -355   -443   -467   -478   -408   -511   -552   -578    210   -212     53   -523   -536 
+   204   -201   -586   -459   -302   -478   -392    166   -342    140    122   -332   -445    -35   -481   -113    169     91   -352   -307 
+   156   -312   -561   -589   -691     79   -577   -554   -528   -659   -662    194     72   -605   -680    201    268   -420   -678   -653 
+   207    122   -746   -683   -659   -447   -653   -487   -609     57   -618   -488    113   -649   -707    187    268   -385   -658   -657 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 15 nsites= 38 E= 1.5e-197 
+ 0.052632  0.000000  0.000000  0.000000  0.000000  0.657895  0.000000  0.000000  0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.236842  0.026316  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.052632  0.000000  0.000000  0.342105  0.000000  0.421053  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.184211  0.000000  0.000000 
+ 0.000000  0.710526  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.000000  0.105263  0.000000  0.000000  0.000000  0.000000  0.131579  0.026316  0.000000  0.000000  0.000000  0.000000 
+ 0.078947  0.000000  0.000000  0.000000  0.052632  0.000000  0.000000  0.157895  0.000000  0.289474  0.000000  0.000000  0.000000  0.000000  0.026316  0.131579  0.000000  0.263158  0.000000  0.000000 
+ 0.000000  0.684211  0.000000  0.000000  0.000000  0.000000  0.052632  0.026316  0.000000  0.052632  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.000000  0.000000  0.000000  0.157895 
+ 0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.000000  0.105263  0.078947  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.631579  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.078947  0.000000  0.131579  0.000000  0.000000  0.684211  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.078947  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.157895  0.000000  0.000000  0.184211  0.000000  0.421053  0.157895  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.078947  0.000000  0.000000 
+ 0.684211  0.000000  0.000000  0.000000  0.052632  0.000000  0.026316  0.000000  0.000000  0.157895  0.000000  0.026316  0.052632  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.184211  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.000000  0.000000  0.105263  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.552632  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.921053  0.000000  0.026316  0.052632  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.500000  0.026316  0.000000  0.000000  0.078947  0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.315789  0.000000  0.052632  0.000000  0.000000 
+ 0.368421  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.078947  0.000000  0.236842  0.105263  0.000000  0.000000  0.052632  0.000000  0.026316  0.078947  0.052632  0.000000  0.000000 
+ 0.236842  0.000000  0.000000  0.000000  0.000000  0.157895  0.000000  0.000000  0.000000  0.000000  0.000000  0.105263  0.078947  0.000000  0.000000  0.263158  0.157895  0.000000  0.000000  0.000000 
+ 0.342105  0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.000000  0.000000  0.105263  0.000000  0.000000  0.236842  0.157895  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GJCLCVLLAVLAASA MEME-2 regular expression
+--------------------------------------------------------------------------------
+[GR][LI]C[LV]CVLLAVL[AS][AL][SA][AS]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  7.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF QGPPHLVADLSKKQGPWLEEE MEME-3	width =  21  sites =  14  llr = 723  E-value = 4.1e-160
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::1:::8::1::::::1:::
+pos.-specific     C  :::::::::::::::::::::
+probability       D  :4::::::a:::::::::::1
+matrix            E  ::::::::::::::::::a99
+                  F  :::::1:::::::::::::::
+                  G  :6::::1:::::::9::::::
+                  H  ::::8::::::::::::::::
+                  I  ::::::1::::::::::::::
+                  K  :::::::::::aa1:::::1:
+                  L  ::1::6:::9:::::::3:::
+                  M  :::::21::::::::::3:::
+                  N  :::::::::::::::::::::
+                  P  ::88:::::1:::::a1::::
+                  Q  a::111:::::::9:::1:::
+                  R  ::::::1:::::::1:1::::
+                  S  ::1:::::::9::::::::::
+                  T  ::::::12:::::::::::::
+                  V  :1::::6::::::::::2:::
+                  W  ::::::::::::::::9::::
+                  Y  ::::1::::::::::::::::
+
+         bits    6.4                      
+                 5.8                      
+                 5.2            **   *    
+                 4.5            **  **    
+Relative         3.9 *   *   * **** ** ** 
+Entropy          3.2 * ***  ******* ** ***
+(74.5 bits)      2.6 ***************** ***
+                 1.9 *********************
+                 1.3 *********************
+                 0.6 *********************
+                 0.0 ---------------------
+
+Multilevel           QGPPHLVADLSKKQGPWLEEE
+consensus             D   M T         M   
+sequence                              V   
+                                          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+sp|P04564|GAST_CAPHI          5  4.01e-26       QLGL QDPPHMVADLSKKQGPWVEEE EAAYGWMDF 
+sp|O02686|GAST_SHEEP         63  4.01e-26 ASHPRRQLGL QDPPHMVADLSKKQGPWVEEE EAAYGWMDFG
+sp|P01352|GAST_BOVIN         63  4.01e-26 ASNPRRQLGL QDPPHMVADLSKKQGPWVEEE EAAYGWMDFG
+sp|P01351|GAST_PIG           63  1.19e-25 ASHHRRQLGL QGPPHLVADLAKKQGPWMEEE EEAYGWMDFG
+sp|P01350|GAST_HUMAN         63  1.85e-25 ASHHRRQLGP QGPPHLVADPSKKQGPWLEEE EEAYGWMDFG
+sp|P01353|GAST_CANLF         63  2.19e-25 ASHHRRQLGL QGPPQLVADLSKKQGPWMEEE EAAYGWMDFG
+sp|P01354|GAST_FELCA         63  7.32e-24 ASHHRWQLGL QGPPQQVADLSKKQGPWLEEE EAAYGWMDFG
+sp|P10034|GAST_CHICH          5  8.01e-24       ELEP QGPPHLGTDLSKKQGPWAEEE AAYGWMDF  
+sp|P55885|GAST_HORSE         66  5.09e-23 ASHHRRQLGL QGSPHLVADLSKKQGPWLEKE EAAYGWMDFG
+sp|P33713|GAST_DIDVI          5  4.63e-22       QLGP QDLPYLTADLSKKQGPWLEEE EAYGWMDF  
+sp|P06885|GAST_CAVPO          5  8.47e-22       QLGP QVPAHLRTDLSKKQGPWAEEE AAYGWMDF  
+sp|P04563|GAST_RAT           63  2.39e-20 ASHHRRQLGP QGPQHFIADLSKKQRPPMEEE EEAYGWMDFG
+sp|P48757|GAST_MOUSE         63  3.53e-20 ASHHRRQLGP QGPQHFIADLSKKQRPRMEEE EEAYGWMDFG
+sp|P0C228|GAST_MACGI          5  2.22e-19       QLHP QDLPHLMTDLSKKKGPWQEED AAYGWMDF  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|P04564|GAST_CAPHI                4e-26  4_[3]_9
+sp|O02686|GAST_SHEEP                4e-26  62_[3]_21
+sp|P01352|GAST_BOVIN                4e-26  62_[3]_21
+sp|P01351|GAST_PIG                1.2e-25  62_[3]_21
+sp|P01350|GAST_HUMAN              1.9e-25  62_[3]_18
+sp|P01353|GAST_CANLF              2.2e-25  62_[3]_21
+sp|P01354|GAST_FELCA              7.3e-24  62_[3]_21
+sp|P10034|GAST_CHICH                8e-24  4_[3]_8
+sp|P55885|GAST_HORSE              5.1e-23  65_[3]_21
+sp|P33713|GAST_DIDVI              4.6e-22  4_[3]_8
+sp|P06885|GAST_CAVPO              8.5e-22  4_[3]_8
+sp|P04563|GAST_RAT                2.4e-20  62_[3]_21
+sp|P48757|GAST_MOUSE              3.5e-20  62_[3]_18
+sp|P0C228|GAST_MACGI              2.2e-19  4_[3]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF QGPPHLVADLSKKQGPWLEEE width=21 seqs=14
+sp|P04564|GAST_CAPHI     (    5) QDPPHMVADLSKKQGPWVEEE  1 
+sp|O02686|GAST_SHEEP     (   63) QDPPHMVADLSKKQGPWVEEE  1 
+sp|P01352|GAST_BOVIN     (   63) QDPPHMVADLSKKQGPWVEEE  1 
+sp|P01351|GAST_PIG       (   63) QGPPHLVADLAKKQGPWMEEE  1 
+sp|P01350|GAST_HUMAN     (   63) QGPPHLVADPSKKQGPWLEEE  1 
+sp|P01353|GAST_CANLF     (   63) QGPPQLVADLSKKQGPWMEEE  1 
+sp|P01354|GAST_FELCA     (   63) QGPPQQVADLSKKQGPWLEEE  1 
+sp|P10034|GAST_CHICH     (    5) QGPPHLGTDLSKKQGPWAEEE  1 
+sp|P55885|GAST_HORSE     (   66) QGSPHLVADLSKKQGPWLEKE  1 
+sp|P33713|GAST_DIDVI     (    5) QDLPYLTADLSKKQGPWLEEE  1 
+sp|P06885|GAST_CAVPO     (    5) QVPAHLRTDLSKKQGPWAEEE  1 
+sp|P04563|GAST_RAT       (   63) QGPQHFIADLSKKQRPPMEEE  1 
+sp|P48757|GAST_MOUSE     (   63) QGPQHFIADLSKKQRPRMEEE  1 
+sp|P0C228|GAST_MACGI     (    5) QDLPHLMTDLSKKKGPWQEED  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 21 n= 4212 bayes= 8.07146 E= 4.1e-160 
+  -431   -374   -558   -296   -575   -560   -217   -411   -349   -427   -410   -320   -453    393   -441   -431   -323   -418   -454   -516 
+  -250   -278    165   -301   -534    274   -350   -377   -273   -514   -524   -111   -412   -405   -458   -231   -198     62   -481   -444 
+  -190   -260   -385   -308   -418   -380   -329   -253   -203    -12   -407   -252    404   -321   -378    -37   -131   -228   -451   -420 
+   -51   -260   -384   -305   -419   -379   -328   -254   -202   -333   -408   -251    404     31   -377   -213   -130   -229   -451   -421 
+  -351   -207   -317   -308   -254   -411    461   -287   -280   -301   -316     -6   -341     22   -242   -228   -141   -257   -241     43 
+  -400   -276   -638   -502    100   -591   -450    -24   -395    285    188   -425   -466    -33   -504   -457   -247   -115   -349   -341 
+  -115    -89   -415   -328   -295   -216   -307    167   -248   -186    -91   -262   -315   -383   -201   -284     54    430   -360   -357 
+   320   -148   -578   -512   -517   -307   -506   -351   -438   -468   -476   -345   -409   -507   -552   -176    298   -225   -508   -517 
+  -410   -360    347   -184   -516   -467   -359   -371   -373   -495   -530    -83   -499   -467   -522   -377   -313   -368   -466   -437 
+  -384   -267   -585   -459   -246   -544   -423    -46   -352    332   -149   -386    -15   -416   -464   -416   -233   -123   -363   -352 
+    -3   -157   -507   -488   -491   -331   -454   -356   -357   -469   -466   -228   -377   -471   -488    370     44   -284   -480   -457 
+  -395   -314   -556   -459   -583   -519   -418   -317    476   -487   -491   -297   -457   -455   -150   -439   -277   -395   -443   -487 
+  -395   -314   -556   -459   -583   -519   -418   -317    476   -487   -491   -297   -457   -455   -150   -439   -277   -395   -443   -487 
+  -286   -248   -427   -140   -456   -467    -63   -263    -26   -279   -255   -169   -325    374   -273   -286   -178   -272   -324   -395 
+  -255   -299   -366   -378   -515    326   -387   -375   -271   -512   -492   -190   -419   -454    -41   -272   -262   -343   -417   -435 
+  -410   -433   -576   -521   -602   -542   -514   -467   -416   -536   -622   -450    437   -532   -577   -429   -342   -443   -582   -584 
+  -410   -257   -472   -420   -166   -456   -381   -289   -315   -246   -363   -303   -238   -414   -296   -392   -267   -264    588   -155 
+    64   -116   -497   -370   -199   -394   -307     34   -253    161    243   -247   -359     -8   -393   -250    -58    249   -262   -221 
+  -511   -487   -285    389   -638   -564   -489   -428   -481   -611   -633   -349   -623   -435   -631   -528   -410   -467   -582   -584 
+  -472   -490   -266    387   -637   -548   -472   -419   -183   -589   -610   -331   -576   -392   -589   -493   -378   -445   -583   -574 
+  -500   -486   -239    388   -636   -559   -483   -422   -460   -604   -625   -342   -612   -422   -622   -518   -400   -459   -581   -580 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 21 nsites= 14 E= 4.1e-160 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.357143  0.000000  0.000000  0.571429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.071429  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.142857  0.000000  0.000000  0.785714  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.000000 
+ 0.071429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.785714  0.142857  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.785714  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.142857  0.000000  0.000000  0.000000  0.000000  0.000000  0.071429 
+ 0.000000  0.000000  0.000000  0.000000  0.142857  0.000000  0.000000  0.000000  0.000000  0.571429  0.214286  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.071429  0.000000  0.142857  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.071429  0.000000  0.071429  0.571429  0.000000  0.000000 
+ 0.785714  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.214286  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.928571  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.071429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.928571  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.000000  0.928571  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.857143  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.142857  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.071429  0.000000  0.071429  0.000000  0.000000  0.000000  0.857143  0.000000 
+ 0.142857  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.285714  0.285714  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.214286  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.928571  0.000000  0.000000  0.000000  0.000000  0.071429  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.071429  0.928571  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif QGPPHLVADLSKKQGPWLEEE MEME-3 regular expression
+--------------------------------------------------------------------------------
+Q[GD]PPH[LM]V[AT]DLSKKQGPW[LMV]EEE
+--------------------------------------------------------------------------------
+
+
+
+
+Time  9.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|P01350|GAST_HUMAN             1.32e-36  2_[2(1.18e-12)]_45_[3(1.85e-25)]_1_\
+    [1(2.15e-09)]_9
+sp|P01355|CCKN_RAT               2.41e-17  3_[2(2.49e-15)]_77_[1(1.14e-09)]_12
+sp|P06307|CCKN_HUMAN             6.46e-19  3_[2(2.98e-16)]_77_[1(1.14e-09)]_12
+sp|P09040|DSK_DROME              2.48e-11  1_[2(1.17e-08)]_3_[2(1.56e-08)]_80_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|P09240|CCKN_MOUSE             2.56e-17  3_[2(2.49e-15)]_77_[1(1.14e-09)]_12
+sp|Q9TS44|CCKN_CANLF             3.48e-06  50_[1(1.14e-09)]
+sp|O93464|CCKN_CARAU             6.75e-18  3_[2(2.49e-16)]_85_[1(6.34e-09)]_12
+sp|P01351|GAST_PIG               1.17e-36  2_[2(1.47e-12)]_45_[3(1.19e-25)]_1_\
+    [1(2.15e-09)]_12
+sp|P01352|GAST_BOVIN             1.02e-36  2_[2(1.82e-12)]_45_[3(4.01e-26)]_1_\
+    [1(4.48e-09)]_12
+sp|P01353|GAST_CANLF             1.19e-36  2_[2(3.88e-13)]_45_[3(2.19e-25)]_1_\
+    [1(4.48e-09)]_12
+sp|P01356|CCKN_PIG               2.71e-19  3_[2(1.42e-16)]_76_[1(1.14e-09)]_12
+sp|P01357|CAER4_XENLA            1.05e-15  3_[2(3.91e-14)]_56_[1(1.26e-09)]_7_\
+    [1(1.26e-09)]_56_[1(1.26e-09)]_56_[1(1.26e-09)]_8
+sp|P04563|GAST_RAT               1.72e-32  2_[2(1.35e-13)]_45_[3(2.39e-20)]_1_\
+    [1(2.15e-09)]_12
+sp|P05226|CAER4_XENBO            7.55e-16  3_[2(3.91e-14)]_57_[1(1.26e-09)]_56_\
+    [1(1.26e-09)]_7_[1(1.26e-09)]_56_[1(1.26e-09)]_8
+sp|P23362|CCKN_MACFA             8.37e-16  3_[2(1.93e-13)]_77_[1(1.14e-09)]_12
+sp|P41520|CCKN_BOVIN             1.61e-17  3_[2(1.57e-14)]_77_[1(1.14e-09)]_12
+sp|P48757|GAST_MOUSE             3.21e-31  2_[2(2.03e-12)]_45_[3(3.53e-20)]_1_\
+    [1(2.15e-09)]_9
+sp|P55885|GAST_HORSE             7.98e-34  2_[2(1.18e-12)]_48_[3(5.09e-23)]_1_\
+    [1(4.48e-09)]_12
+sp|Q9PU29|CCKN_STRCA             2.22e-18  3_[2(2.07e-16)]_92_[1(1.14e-09)]_12
+sp|Q9PU41|CCKN_CHICK             1.43e-17  3_[2(8.30e-16)]_92_[1(1.14e-09)]_12
+sp|B2ZB95|DSK_DROER              5.69e-14  1_[2(3.12e-10)]_3_[2(9.36e-07)]_80_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B2ZB96|DSK_DROMA              3.59e-14  1_[2(1.27e-11)]_3_[2(2.74e-08)]_80_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B2ZB98|DSK_DROSE              3.59e-14  1_[2(1.27e-11)]_3_[2(2.74e-08)]_80_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B2ZB99|DSK_DROSI              3.86e-14  1_[2(1.27e-11)]_3_[2(2.74e-08)]_80_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B2ZBA0|DSK_DROTE              1.31e-13  1_[2(6.35e-11)]_3_[2(2.05e-09)]_77_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B2ZBA1|DSK_DROYA              3.17e-14  1_[2(5.29e-11)]_3_[2(1.67e-07)]_76_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|B3EWM3|SK1_DELRA              3.38e-09  6_[1(4.83e-10)]
+sp|E2E4E4|CCT1_VARVA             8.52e-19  3_[2(1.28e-17)]_75_[1(6.34e-09)]_12
+sp|O02686|GAST_SHEEP             3.61e-35  2_[2(6.96e-11)]_45_[3(4.01e-26)]_1_\
+    [1(4.48e-09)]_12
+sp|P01354|GAST_FELCA             1.39e-36  2_[2(1.37e-14)]_45_[3(7.32e-24)]_1_\
+    [1(4.48e-09)]_12
+sp|P04428|SK1_RHYMA              3.30e-09  3_[1(8.24e-10)]
+sp|P04564|GAST_CAPHI             1.65e-28  4_[3(4.01e-26)]_1_[1(4.48e-09)]
+sp|P05222|CAER1_XENLA            5.78e-16  3_[2(3.91e-14)]_154_[1(1.26e-09)]_8
+sp|P05224|CAER3_XENLA            4.26e-16  3_[2(3.91e-14)]_56_[1(1.26e-09)]_7_\
+    [1(1.26e-09)]_56_[1(1.26e-09)]_8
+sp|P05225|CAER5_XENLA            2.79e-06  11_[1(1.26e-09)]_56_[1(1.26e-09)]_\
+    56_[1(1.26e-09)]_7_[1(1.26e-09)]_25
+sp|P06885|GAST_CAVPO             2.20e-24  4_[3(8.47e-22)]_[1(4.48e-09)]
+sp|P09859|ANTR_CHICK             2.52e-06  85_[1(5.63e-07)]_12
+sp|P10034|GAST_CHICH             2.71e-26  4_[3(8.01e-24)]_[1(4.48e-09)]
+sp|P16240|CION_CIOIN             3.63e-10  9_[2(5.10e-08)]_84_[1(2.48e-09)]_12
+sp|P33713|GAST_DIDVI             5.43e-25  4_[3(4.63e-22)]_[1(2.15e-09)]
+sp|P36885|SK1_PERAM              1.93e-09  3_[1(4.83e-10)]
+sp|P56264|CAER_RANXA             3.78e-09  2_[1(1.26e-09)]
+sp|P67803|LSK2_PERAM             1.45e-09  2_[1(4.83e-10)]
+sp|P80111|ANTR_LITCT             6.82e-13  3_[2(4.40e-11)]_66_[1(1.15e-08)]_10
+sp|P80344|CCKN_LITCT             5.55e-20  3_[2(2.49e-16)]_24_[3(9.05e-05)]_47_\
+    [1(1.14e-09)]_12
+sp|P80345|CCKN_TRASC             2.03e-15  3_[2(1.32e-12)]_92_[1(1.14e-09)]_12
+sp|P85810|SK1_RHOPR              9.07e-08  2_[1(3.02e-08)]
+sp|P86486|CAER_LITPE             3.78e-09  2_[1(1.26e-09)]
+sp|P86506|CAE11_LITRO            3.78e-09  2_[1(1.26e-09)]
+sp|P86625|CAER_PHAJA             3.33e-08  1_[1(1.66e-08)]
+sp|Q7M3V5|CSK_CALVO              3.97e-07  111_[1(4.83e-10)]_9_[1(4.83e-10)]_4
+sp|O57312|CCKN_PAROL             1.73e-18  3_[2(2.49e-16)]_97_[1(6.34e-09)]_12
+sp|P0C228|GAST_MACGI             4.60e-22  4_[3(2.22e-19)]_[1(4.48e-09)]
+sp|P0C229|CCKN_MACGI             1.14e-09  [1(1.14e-09)]
+sp|P33714|GAST_MACMU             7.59e-07  9_[1(4.48e-09)]
+sp|P41492|NSK1_SARBU             9.65e-10  1_[1(4.83e-10)]
+sp|P41493|NSK2_SARBU             3.38e-09  6_[1(4.83e-10)]
+sp|P47733|LOSK_LOCMI             2.41e-09  4_[1(4.83e-10)]
+sp|P50144|CCKNA_XENLA            3.51e-17  3_[2(1.20e-14)]_85_[1(1.14e-09)]_12
+sp|P50145|CCKNB_XENLA            3.54e-16  3_[2(3.44e-14)]_90_[1(1.14e-09)]_12
+sp|P67802|LSK2_RHYMA             1.45e-09  2_[1(4.83e-10)]
+sp|P68125|CCKN_DASVI             1.14e-09  [1(1.14e-09)]
+sp|P68126|CCKN_NOTEU             1.14e-09  [1(1.14e-09)]
+sp|P80110|ANTR_TRASC             1.29e-09  15_[3(1.08e-06)]_8_[1(5.75e-09)]
+sp|P85534|SK1_APTFU              3.30e-09  3_[1(8.24e-10)]
+sp|P85539|SK1_ARCTE              3.30e-09  3_[1(8.24e-10)]
+sp|P85544|SK1_BANRO              3.30e-09  3_[1(8.24e-10)]
+sp|P85547|SK1_BLACR              3.30e-09  3_[1(8.24e-10)]
+sp|P85550|SK1_BLADU              3.30e-09  3_[1(8.24e-10)]
+sp|P85555|SK1_BLAGE              1.93e-09  3_[1(4.83e-10)]
+sp|P85560|SK1_BLAOR              1.93e-09  3_[1(4.83e-10)]
+sp|P85566|SK1_BLEDI              3.30e-09  3_[1(8.24e-10)]
+sp|P85571|SK1_CRYDW              1.93e-09  3_[1(4.83e-10)]
+sp|P85576|SK1_CRYKY              1.93e-09  3_[1(4.83e-10)]
+sp|P85586|SK1_DERER              1.93e-09  3_[1(4.83e-10)]
+sp|P85592|SK1_DERIN              1.93e-09  3_[1(4.83e-10)]
+sp|P85598|SK1_DERAT              1.93e-09  3_[1(4.83e-10)]
+sp|P85603|SK1_DIPPU              3.30e-09  3_[1(8.24e-10)]
+sp|P85613|SK1_ERGCA              1.93e-09  3_[1(4.83e-10)]
+sp|P85619|SK1_EUBDI              3.30e-09  3_[1(8.24e-10)]
+sp|P85625|SK1_EUBPO              3.30e-09  3_[1(8.24e-10)]
+sp|P85631|SK1_EUBSB              3.30e-09  3_[1(8.24e-10)]
+sp|P85640|SK1_GROGR              3.30e-09  3_[1(8.24e-10)]
+sp|P85642|SK1_GROPO              3.30e-09  3_[1(8.24e-10)]
+sp|P85652|SK1_GYNLU              3.30e-09  3_[1(8.24e-10)]
+sp|P85665|SK1_LUCGR              3.30e-09  3_[1(8.24e-10)]
+sp|P85671|SK1_LUCSU              3.30e-09  3_[1(8.24e-10)]
+sp|P85677|SK1_LUCVE              3.30e-09  3_[1(8.24e-10)]
+sp|P85683|SK1_MASDA              1.93e-09  3_[1(4.83e-10)]
+sp|P85686|SK1_NEORO              1.93e-09  3_[1(4.83e-10)]
+sp|P85692|SK1_PANSB              3.30e-09  3_[1(8.24e-10)]
+sp|P85698|SK1_PANSS              3.30e-09  3_[1(8.24e-10)]
+sp|P85704|SK1_PERAU              1.93e-09  3_[1(4.83e-10)]
+sp|P85712|SK1_PERBR              1.93e-09  3_[1(4.83e-10)]
+sp|P85716|SK1_PERFU              1.93e-09  3_[1(4.83e-10)]
+sp|P85722|SK1_PERRU              3.30e-09  3_[1(8.24e-10)]
+sp|P85743|SK1_POLAY              1.93e-09  3_[1(4.83e-10)]
+sp|P85749|SK1_PRIVA              3.30e-09  3_[1(8.24e-10)]
+sp|P85753|SK1_PSEBJ              1.93e-09  3_[1(4.83e-10)]
+sp|P85757|SK1_PSEFV              1.93e-09  3_[1(4.83e-10)]
+sp|P85761|SK1_PSEFO              1.93e-09  3_[1(4.83e-10)]
+sp|P85765|SK1_PYCSU              3.30e-09  3_[1(8.24e-10)]
+sp|P85786|SK1_SYMPA              1.93e-09  3_[1(4.83e-10)]
+sp|P85792|SK1_THEPT              1.93e-09  3_[1(4.83e-10)]
+sp|P85847|SK1_EURFL              1.45e-09  2_[1(4.83e-10)]
+sp|P85850|SK1_GYNCS              3.30e-09  3_[1(8.24e-10)]
+sp|P85852|SK1_ELLSS              3.30e-09  3_[1(8.24e-10)]
+sp|P85854|SK1_PANVI              3.30e-09  3_[1(8.24e-10)]
+sp|P85856|SK1_SHELA              1.93e-09  3_[1(4.83e-10)]
+sp|Q295C6|DSK_DROPS              7.16e-10  3_[2(3.50e-05)]_3_[2(6.96e-07)]_76_\
+    [1(4.83e-10)]_9_[1(4.83e-10)]_2
+sp|Q7LZC4|CAER_PHYSA             4.95e-09  1_[1(2.48e-09)]
+sp|Q8JHB9|CCK_PYTMO              1.91e-15  3_[2(5.45e-13)]_87_[1(1.14e-09)]_12
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: noble-meme.grid.gs.washington.edu
+
+********************************************************************************

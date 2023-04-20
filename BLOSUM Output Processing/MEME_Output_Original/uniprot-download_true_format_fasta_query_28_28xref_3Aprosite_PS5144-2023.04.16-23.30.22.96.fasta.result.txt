@@ -1,0 +1,888 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.2 (Release date: Sun Jan 29 10:33:12 2023 -0800)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS5144-2023.04.16-23.30.22.96.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACDEFGHIKLMNPQRSTVWY
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+sp|O43451|MGA_HUMAN      1.0000   2753  sp|O54766|ZP1_RAT        1.0000    617  
+sp|O62653|SUIS_SUNMU     1.0000   1813  sp|P04155|TFF1_HUMAN     1.0000     84  
+sp|P07768|SUIS_RABIT     1.0000   1827  sp|P10253|LYAG_HUMAN     1.0000    952  
+sp|P14410|SUIS_HUMAN     1.0000   1827  sp|P23739|SUIS_RAT       1.0000   1841  
+sp|P60852|ZP1_HUMAN      1.0000    638  sp|P70699|LYAG_MOUSE     1.0000    953  
+sp|Q00193|ZP4_RABIT      1.0000    540  sp|Q03403|TFF2_HUMAN     1.0000    129  
+sp|Q03404|TFF2_MOUSE     1.0000    129  sp|Q07287|ZP4_PIG        1.0000    536  
+sp|Q07654|TFF3_HUMAN     1.0000     80  sp|Q12836|ZP4_HUMAN      1.0000    540  
+sp|Q62005|ZP1_MOUSE      1.0000    623  sp|Q6P7A9|LYAG_RAT       1.0000    953  
+sp|Q8CH34|ZP4_RAT        1.0000    545  sp|Q9BH11|ZP4_BOVIN      1.0000    534  
+sp|Q9MYM4|LYAG_BOVIN     1.0000    937  sp|I6M4H4|ZP1_RABIT      1.0000    627  
+sp|P01359|TFF2_PIG       1.0000    127  sp|P17437|XP2_XENLA      1.0000    439  
+sp|P48834|ZP4_FELCA      1.0000    570  sp|Q03191|TFF3_RAT       1.0000     81  
+sp|Q05049|MUC1_XENLA     1.0000    662  sp|Q08423|TFF1_MOUSE     1.0000     87  
+sp|Q09030|TFF2_RAT       1.0000    129  sp|Q2M2H8|MGAL_HUMAN     1.0000   2515  
+sp|Q62395|TFF3_MOUSE     1.0000     81  sp|Q63467|TFF1_RAT       1.0000     81  
+sp|A8YXX7|TFF3_BOVIN     1.0000     81  sp|B4X8D9|TFF3_FELCA     1.0000     80  
+sp|P10667|MUA1_XENLA     1.0000    400  sp|Q00222|XP1_XENLA      1.0000     78  
+sp|Q00223|XP4_XENLA      1.0000    224  sp|Q5R7A9|LYAG_PONAB     1.0000    952  
+sp|Q863B4|TFF3_CANLF     1.0000     80  sp|B3EWZ5|MLRP1_ACRMI    1.0000   5145  
+sp|B3EWZ6|MLRP2_ACRMI    1.0000   7311  sp|Q29183|TFF3_PIG       1.0000     80  
+sp|Q863J2|TFF2_CANLF     1.0000    129  sp|Q863T4|TFF1_CANLF     1.0000     81  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS5144-2023.04.16-23.30.22.96.fasta -protein -oc . -nostatus -time 14400 -mod zoops -nmotifs 3 -minw 6 -maxw 50 -objfun classic -markov_order 0 
+
+model:  mod=         zoops    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+width:  minw=            6    maxw=           50
+nsites: minsites=        2    maxsites=       44    wnsites=       0.8
+theta:  spmap=         pam    spfuzz=        120
+em:     prior=       megap    b=          194450    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           38891    N=              44
+sample: seed=            0    hsfrac=          0
+        searchsize=  38891    norand=         no    csites=       1000
+Dirichlet mixture priors file: prior30.plib
+Letter frequencies in dataset:
+A 0.0591 C 0.0299 D 0.0551 E 0.0428 F 0.0461 G 0.0777 H 0.0231 I 0.047 K 0.0336 
+L 0.0738 M 0.0188 N 0.0476 P 0.0677 Q 0.0408 R 0.0491 S 0.0801 T 0.0826 V 0.0615 
+W 0.0234 Y 0.0404 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.0591 C 0.0299 D 0.0551 E 0.0428 F 0.0461 G 0.0777 H 0.0231 I 0.0469 K 0.0336 
+L 0.0738 M 0.0188 N 0.0476 P 0.0677 Q 0.0408 R 0.0491 S 0.0801 T 0.0826 V 0.0615 
+W 0.0234 Y 0.0404 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CGYPGITSEQCENRGCCFDSS MEME-1	width =  21  sites =  38  llr = 1504  E-value = 4.6e-379
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  12::1::1:1::21::::::2
+pos.-specific     C  9:::::::::a::::aa::::
+probability       D  ::1:::::11::1:::::71:
+matrix            E  ::::1::141:21:::::::2
+                  F  ::3::::::::1:::::6:::
+                  G  :6::5:::2:::::a::::::
+                  H  :::::::::::::::::::::
+                  I  :1:::7:::::1::::::1::
+                  K  :::2:::11::111:::::::
+                  L  :::::::::::::2:::::::
+                  M  :1:::::::::::::::::::
+                  N  :::::::::::231::::11:
+                  P  :1161::2:::::::::::1:
+                  Q  :::::::216:12::::::::
+                  R  ::::1::1:::1:4::::::1
+                  S  ::1211322:::::::::174
+                  T  ::::1:7::::11:::::::2
+                  V  ::1::2:::::1::::::1::
+                  W  :::::::::::::::::1:::
+                  Y  ::3::::::::::::::3:::
+
+         bits    5.7                      
+                 5.2           *    **    
+                 4.6 *         *    **    
+                 4.0 *         *    **    
+Relative         3.4 *         *   ****   
+Entropy          2.9 *    **  **   ****   
+(57.1 bits)      2.3 ** * **  **   ****** 
+                 1.7 ***********  ********
+                 1.1 *********************
+                 0.6 *********************
+                 0.0 ---------------------
+
+Multilevel           CGFPGITPEQCENRGCCFDSS
+consensus              Y  VSS     L   Y   
+sequence                                  
+                                          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+sp|Q863B4|TFF3_CANLF         42  2.51e-23 CEVPPKDRVD CGYPEITSEQCVNRGCCFDSS IHGVPWCFKP
+sp|A8YXX7|TFF3_BOVIN         43  2.51e-23 CAVPAKDRVD CGYPEVTPEQCNNRGCCFDSS IHGVPWCFKP
+sp|P17437|XP2_XENLA         361  4.41e-23 CKGDPFKRTD CGYPGITEGQCKAKGCCFDSS IVGVKWCFFP
+sp|Q03404|TFF2_MOUSE         42  5.30e-23 SRLTPHNRKN CGFPGITSEQCFDLGCCFDSS VAGVPWCFHP
+sp|B4X8D9|TFF3_FELCA         42  9.06e-23 CAVPAKNRVD CGYPEISPEQCVNRGCCFDSS IPEVPWCFKP
+sp|Q29183|TFF3_PIG           42  1.28e-22 CAVPAKDRVD CGYPQVTPEQCNNRGCCFDSS IXGVPWCFKP
+sp|Q09030|TFF2_RAT           42  1.28e-22 SRMTPSNRKN CGFPGITSDQCFNLGCCFDSS VAGVPWCFHP
+sp|Q62395|TFF3_MOUSE         43  2.13e-22 CMVPANVRVD CGYPSVTSEQCNNRGCCFDSS IPNVPWCFKP
+sp|Q03191|TFF3_RAT           43  2.52e-22 CMVPANVRVD CGYPTVTSEQCNNRGCCFDSS IPNVPWCFKP
+sp|Q05049|MUC1_XENLA        536  3.82e-21 CKMEPSKRAD CGYPGITESQCRSKGCCFDSS IPQTKWCFYS
+sp|Q03403|TFF2_HUMAN         42  3.82e-21 SRLSPHNRTN CGFPGITSDQCFDNGCCFDSS VTGVPWCFHP
+sp|Q63467|TFF1_RAT           38  1.65e-20 CAVIPRERIN CGFPGVTAQQCKEKGCCFDDS VRGFPWCFRP
+sp|Q863T4|TFF1_CANLF         38  5.67e-20 CTVAPHHRDN CGSPGITPSQCKDKGCCFDNT VRGVPWCYYP
+sp|Q08423|TFF1_MOUSE         44  7.18e-20 CIMAPRERIN CGFPGVTAQQCTERGCCFDDS VRGFPWCFHP
+sp|P10667|MUA1_XENLA         84  8.07e-20 CSGDPTKRID CGFPRITEKQCILRGCCFDSS ISGVKWCYAR
+sp|Q07654|TFF3_HUMAN         42  1.02e-19 CAVPAKDRVD CGYPHVTPKECNNRGCCFDSR IPGVPWCFKP
+sp|P04155|TFF1_HUMAN         41  1.43e-19 CTVAPRERQN CGFPGVTPSQCANKGCCFDDT VRGVPWCFYP
+sp|P01359|TFF2_PIG           40  3.10e-19 SRQDPKNRVN CGFPGITSDQCFTSGCCFDSQ VPGVPWCFKP
+sp|B3EWZ6|MLRP2_ACRMI      2831  3.46e-19 ASVIPANRRT CGFSGISSSQCRTRGCCWDNS LSNVPWCFHG
+sp|B3EWZ5|MLRP1_ACRMI      3082  3.46e-19 ASVIPANRRT CGFSGISSSQCRTRGCCWDNS LSNVPWCFHG
+sp|Q863J2|TFF2_CANLF         42  8.90e-19 SRIEASHRKN CGFPGISASECFNTGCCFDSR VPNVPWCFHP
+sp|Q00222|XP1_XENLA          42  9.85e-19 CSVERLARVN CGYSGITPQECTKQGCCFDST IQDAPWCFYP
+sp|Q07287|ZP4_PIG           155  5.73e-18 DAVPVWDRLP CAPPPITQGECKQLGCCYNSE EVPSCYYGNT
+sp|P70699|LYAG_MOUSE         93  3.20e-17 DVPPSSRFDC APDKGISQEQCEARGCCYVPA GQVLKEPQIG
+sp|Q9BH11|ZP4_BOVIN         154  3.80e-17 DSVPVWDRLP CAPSPITQGDCKQLGCCYNSE EVISCYYGNT
+sp|Q6P7A9|LYAG_RAT           93  3.80e-17 DVTPNSRFDC APDKGITQEQCEARGCCWVPA GQVLNGPVMG
+sp|Q9MYM4|LYAG_BOVIN         81  5.37e-17 DLPPNSRFDC APDKGITPQQCEARGCCYMPA EWPPDAQMGQ
+sp|P10253|LYAG_HUMAN         93  7.54e-17 DVPPNSRFDC APDKAITQEQCEARGCCYIPA KQGLQGAQMG
+sp|O54766|ZP1_RAT           235  1.06e-16 RCQVASGHIP CMVKGSSEEACQQAGCCYDNT KEMPCYYGNT
+sp|P48834|ZP4_FELCA         190  2.40e-16 DSVPKWDRLP CASSPITQGDCNKLGCCYKSE ANSCYYGNTV
+sp|Q00223|XP4_XENLA         136  2.60e-16 SAVEPKKRVN CGPPGVSPDECIKNGCCFNSD VGGVPWCFKP
+sp|Q62005|ZP1_MOUSE         237  9.22e-16 RCQVASGHIP CMVNGSSKETCQQAGCCYDST KEEPCYYGNT
+sp|Q5R7A9|LYAG_PONAB         93  1.08e-15 DVPPNSRFDC APDKAITREQCDARGCCYIPA KQGLRGAQMG
+sp|I6M4H4|ZP1_RABIT         228  1.16e-15 WCQVASGHIP CIVQSSSKEACEQAGCCYDSA REVPCYYGNT
+sp|Q8CH34|ZP4_RAT           161  1.58e-15 SPVPVKERLP CASSTISRGDCEELGCCYSSE EEGADSCYYG
+sp|Q00193|ZP4_RABIT         158  2.48e-15 DSVPVQDRLP CATAPISQEDCEELGCCHSSE EVNACYYGNT
+sp|Q12836|ZP4_HUMAN         154  2.67e-15 DSIPARDRLP CAPSPISRGDCEGLGCCYSSE EVNSCYYGNT
+sp|P60852|ZP1_HUMAN         245  1.07e-14 QCQVASGHLP CIVRRTSKEACQQAGCCYDNT REVPCYYGNT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|Q863B4|TFF3_CANLF              2.5e-23  41_[1]_18
+sp|A8YXX7|TFF3_BOVIN              2.5e-23  42_[1]_18
+sp|P17437|XP2_XENLA               4.4e-23  360_[1]_58
+sp|Q03404|TFF2_MOUSE              5.3e-23  41_[1]_67
+sp|B4X8D9|TFF3_FELCA              9.1e-23  41_[1]_18
+sp|Q29183|TFF3_PIG                1.3e-22  41_[1]_18
+sp|Q09030|TFF2_RAT                1.3e-22  41_[1]_67
+sp|Q62395|TFF3_MOUSE              2.1e-22  42_[1]_18
+sp|Q03191|TFF3_RAT                2.5e-22  42_[1]_18
+sp|Q05049|MUC1_XENLA              3.8e-21  535_[1]_106
+sp|Q03403|TFF2_HUMAN              3.8e-21  41_[1]_67
+sp|Q63467|TFF1_RAT                1.7e-20  37_[1]_23
+sp|Q863T4|TFF1_CANLF              5.7e-20  37_[1]_23
+sp|Q08423|TFF1_MOUSE              7.2e-20  43_[1]_23
+sp|P10667|MUA1_XENLA              8.1e-20  83_[1]_296
+sp|Q07654|TFF3_HUMAN                1e-19  41_[1]_18
+sp|P04155|TFF1_HUMAN              1.4e-19  40_[1]_23
+sp|P01359|TFF2_PIG                3.1e-19  39_[1]_67
+sp|B3EWZ6|MLRP2_ACRMI             3.5e-19  2830_[1]_4460
+sp|B3EWZ5|MLRP1_ACRMI             3.5e-19  3081_[1]_2043
+sp|Q863J2|TFF2_CANLF              8.9e-19  41_[1]_67
+sp|Q00222|XP1_XENLA               9.9e-19  41_[1]_16
+sp|Q07287|ZP4_PIG                 5.7e-18  154_[1]_361
+sp|P70699|LYAG_MOUSE              3.2e-17  92_[1]_840
+sp|Q9BH11|ZP4_BOVIN               3.8e-17  153_[1]_360
+sp|Q6P7A9|LYAG_RAT                3.8e-17  92_[1]_840
+sp|Q9MYM4|LYAG_BOVIN              5.4e-17  80_[1]_836
+sp|P10253|LYAG_HUMAN              7.5e-17  92_[1]_839
+sp|O54766|ZP1_RAT                 1.1e-16  234_[1]_362
+sp|P48834|ZP4_FELCA               2.4e-16  189_[1]_360
+sp|Q00223|XP4_XENLA               2.6e-16  135_[1]_68
+sp|Q62005|ZP1_MOUSE               9.2e-16  236_[1]_366
+sp|Q5R7A9|LYAG_PONAB              1.1e-15  92_[1]_839
+sp|I6M4H4|ZP1_RABIT               1.2e-15  227_[1]_379
+sp|Q8CH34|ZP4_RAT                 1.6e-15  160_[1]_364
+sp|Q00193|ZP4_RABIT               2.5e-15  157_[1]_362
+sp|Q12836|ZP4_HUMAN               2.7e-15  153_[1]_366
+sp|P60852|ZP1_HUMAN               1.1e-14  244_[1]_373
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CGYPGITSEQCENRGCCFDSS width=21 seqs=38
+sp|Q863B4|TFF3_CANLF     (   42) CGYPEITSEQCVNRGCCFDSS  1 
+sp|A8YXX7|TFF3_BOVIN     (   43) CGYPEVTPEQCNNRGCCFDSS  1 
+sp|P17437|XP2_XENLA      (  361) CGYPGITEGQCKAKGCCFDSS  1 
+sp|Q03404|TFF2_MOUSE     (   42) CGFPGITSEQCFDLGCCFDSS  1 
+sp|B4X8D9|TFF3_FELCA     (   42) CGYPEISPEQCVNRGCCFDSS  1 
+sp|Q29183|TFF3_PIG       (   42) CGYPQVTPEQCNNRGCCFDSS  1 
+sp|Q09030|TFF2_RAT       (   42) CGFPGITSDQCFNLGCCFDSS  1 
+sp|Q62395|TFF3_MOUSE     (   43) CGYPSVTSEQCNNRGCCFDSS  1 
+sp|Q03191|TFF3_RAT       (   43) CGYPTVTSEQCNNRGCCFDSS  1 
+sp|Q05049|MUC1_XENLA     (  536) CGYPGITESQCRSKGCCFDSS  1 
+sp|Q03403|TFF2_HUMAN     (   42) CGFPGITSDQCFDNGCCFDSS  1 
+sp|Q63467|TFF1_RAT       (   38) CGFPGVTAQQCKEKGCCFDDS  1 
+sp|Q863T4|TFF1_CANLF     (   38) CGSPGITPSQCKDKGCCFDNT  1 
+sp|Q08423|TFF1_MOUSE     (   44) CGFPGVTAQQCTERGCCFDDS  1 
+sp|P10667|MUA1_XENLA     (   84) CGFPRITEKQCILRGCCFDSS  1 
+sp|Q07654|TFF3_HUMAN     (   42) CGYPHVTPKECNNRGCCFDSR  1 
+sp|P04155|TFF1_HUMAN     (   41) CGFPGVTPSQCANKGCCFDDT  1 
+sp|P01359|TFF2_PIG       (   40) CGFPGITSDQCFTSGCCFDSQ  1 
+sp|B3EWZ6|MLRP2_ACRMI    ( 2831) CGFSGISSSQCRTRGCCWDNS  1 
+sp|B3EWZ5|MLRP1_ACRMI    ( 3082) CGFSGISSSQCRTRGCCWDNS  1 
+sp|Q863J2|TFF2_CANLF     (   42) CGFPGISASECFNTGCCFDSR  1 
+sp|Q00222|XP1_XENLA      (   42) CGYSGITPQECTKQGCCFDST  1 
+sp|Q07287|ZP4_PIG        (  155) CAPPPITQGECKQLGCCYNSE  1 
+sp|P70699|LYAG_MOUSE     (   93) APDKGISQEQCEARGCCYVPA  1 
+sp|Q9BH11|ZP4_BOVIN      (  154) CAPSPITQGDCKQLGCCYNSE  1 
+sp|Q6P7A9|LYAG_RAT       (   93) APDKGITQEQCEARGCCWVPA  1 
+sp|Q9MYM4|LYAG_BOVIN     (   81) APDKGITPQQCEARGCCYMPA  1 
+sp|P10253|LYAG_HUMAN     (   93) APDKAITQEQCEARGCCYIPA  1 
+sp|O54766|ZP1_RAT        (  235) CMVKGSSEEACQQAGCCYDNT  1 
+sp|P48834|ZP4_FELCA      (  190) CASSPITQGDCNKLGCCYKSE  1 
+sp|Q00223|XP4_XENLA      (  136) CGPPGVSPDECIKNGCCFNSD  1 
+sp|Q62005|ZP1_MOUSE      (  237) CMVNGSSKETCQQAGCCYDST  1 
+sp|Q5R7A9|LYAG_PONAB     (   93) APDKAITREQCDARGCCYIPA  1 
+sp|I6M4H4|ZP1_RABIT      (  228) CIVQSSSKEACEQAGCCYDSA  1 
+sp|Q8CH34|ZP4_RAT        (  161) CASSTISRGDCEELGCCYSSE  1 
+sp|Q00193|ZP4_RABIT      (  158) CATAPISQEDCEELGCCHSSE  1 
+sp|Q12836|ZP4_HUMAN      (  154) CAPSPISRGDCEGLGCCYSSE  1 
+sp|P60852|ZP1_HUMAN      (  245) CIVRRTSKEACQQAGCCYDNT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 21 n= 38010 bayes= 10.8628 E= 4.6e-379 
+   115    484   -723   -676   -709   -498   -660   -654   -666   -673   -588   -636   -647   -655   -674   -431   -524   -555   -772   -746 
+   139   -440   -568   -546   -611    296   -556      6   -515   -556    136   -497     83   -557   -556   -352   -452   -451   -671   -638 
+  -249   -359     89   -312    245   -436   -120   -248   -281   -256   -204   -345     27   -350   -345    -25   -167     53   -274    291 
+   -96   -501   -405   -320   -499   -452   -358   -429    191   -406   -377   -106    312    -75    -95     87   -400   -407   -599   -525 
+    -8   -474   -247     90   -429    260     17   -372    -97   -356   -266   -219     69    -31     11    -51    -66   -348   -491   -375 
+  -402   -480   -624   -558   -451   -644   -610    378   -499   -229   -234   -574   -678   -590   -602    -26   -173    190   -651   -538 
+  -308   -451   -556   -535   -581   -503   -511   -450   -441   -544   -393   -405   -585   -482   -508    197    298   -417   -644   -620 
+    42   -502   -270    132   -454   -392   -233   -387    138   -367   -280   -248    161    205     71    142   -321   -364   -512   -393 
+  -355   -783     98    330   -719     91   -420   -572     66   -557   -479   -366   -534    133   -454     88   -493   -518   -780   -627 
+    38   -824    127    190   -747   -530   -437   -575   -269   -559   -479   -409   -536    383   -467   -462   -165   -517   -800   -653 
+  -395    503   -577   -488   -541   -598   -506   -442   -504   -498   -405   -544   -628   -551   -519   -530   -493   -509   -664   -609 
+   -67   -464    -77    217    127   -353   -200      2    194   -332   -242    157   -386     95     66   -235    -58    -31   -476   -353 
+   130   -467     46    131   -411   -145   -202   -353    134   -135   -245    226   -388    182   -199   -110    -11   -329   -479   -356 
+    77   -560   -385   -243   -539   -466   -281   -447    206    138   -341     14   -506    -34    300   -141   -152   -430   -560   -459 
+  -578   -743   -655   -675   -793    368   -664   -799   -630   -788   -730   -638   -756   -729   -679   -665   -775   -772   -775   -772 
+  -395    503   -577   -488   -541   -598   -506   -442   -504   -498   -405   -544   -628   -551   -519   -530   -493   -509   -664   -609 
+  -395    503   -577   -488   -541   -598   -506   -442   -504   -498   -405   -544   -628   -551   -519   -530   -493   -509   -664   -609 
+  -661   -641   -739   -689    355   -739     24   -559   -606   -498   -490   -590   -757   -587   -616   -661   -704   -587    173    309 
+  -321   -465    386    -80   -459   -417   -281   -123   -147   -430    -90     -5   -529   -362   -396   -133   -447   -156   -501   -426 
+  -425   -622     62   -318   -659   -386   -332   -689   -329   -670   -623    152     88   -396   -480    296   -459   -659   -740   -555 
+   130   -521    -71    190   -475   -396   -259   -410   -130   -393   -305   -250   -434    -31     11    223     80   -383   -543   -418 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 21 nsites= 38 E= 4.6e-379 
+ 0.131579  0.868421  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.157895  0.000000  0.000000  0.000000  0.000000  0.605263  0.000000  0.052632  0.000000  0.000000  0.052632  0.000000  0.131579  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.131579  0.000000  0.289474  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.105263  0.000000  0.000000  0.078947  0.026316  0.105263  0.000000  0.263158 
+ 0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.157895  0.000000  0.000000  0.026316  0.552632  0.026316  0.026316  0.184211  0.000000  0.000000  0.000000  0.000000 
+ 0.052632  0.000000  0.000000  0.078947  0.000000  0.526316  0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.026316  0.052632  0.052632  0.052632  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.657895  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.078947  0.026316  0.236842  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.342105  0.657895  0.000000  0.000000  0.000000 
+ 0.078947  0.000000  0.000000  0.105263  0.000000  0.000000  0.000000  0.000000  0.078947  0.000000  0.000000  0.000000  0.236842  0.184211  0.078947  0.236842  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.105263  0.421053  0.000000  0.157895  0.000000  0.000000  0.052632  0.000000  0.000000  0.000000  0.000000  0.105263  0.000000  0.157895  0.000000  0.000000  0.000000  0.000000 
+ 0.078947  0.000000  0.131579  0.131579  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.631579  0.000000  0.000000  0.026316  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.026316  0.000000  0.026316  0.210526  0.131579  0.000000  0.000000  0.052632  0.131579  0.000000  0.000000  0.157895  0.000000  0.078947  0.078947  0.000000  0.052632  0.052632  0.000000  0.000000 
+ 0.157895  0.000000  0.078947  0.105263  0.000000  0.026316  0.000000  0.000000  0.078947  0.026316  0.000000  0.263158  0.000000  0.157895  0.000000  0.026316  0.078947  0.000000  0.000000  0.000000 
+ 0.105263  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.210526  0.000000  0.052632  0.000000  0.026316  0.421053  0.026316  0.026316  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.552632  0.000000  0.026316  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.078947  0.342105 
+ 0.000000  0.000000  0.684211  0.000000  0.000000  0.000000  0.000000  0.052632  0.026316  0.000000  0.026316  0.078947  0.000000  0.000000  0.000000  0.078947  0.000000  0.052632  0.000000  0.000000 
+ 0.000000  0.000000  0.078947  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.131579  0.131579  0.000000  0.000000  0.657895  0.000000  0.000000  0.000000  0.000000 
+ 0.157895  0.000000  0.026316  0.157895  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.026316  0.052632  0.421053  0.157895  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CGYPGITSEQCENRGCCFDSS MEME-1 regular expression
+--------------------------------------------------------------------------------
+CG[FY]PG[IV][TS][PS]EQCEN[RL]GCC[FY]DSS
+--------------------------------------------------------------------------------
+
+
+
+
+Time 50.58 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2	width =  50  sites =  11  llr = 1406  E-value = 1.1e-349
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::8::::::a:::::::::9:::::::::a::::::::::::::::
+pos.-specific     C  ::::::::::::::::::::::::::::::::::::::::::::::::::
+probability       D  :::::::::62::::::::::::::a::::::::::::::::::a:::::
+matrix            E  ::::::::933:::::::::::::::::::::::::::::::::::::::
+                  F  3::5:::::::::::::6::::::::::5::::::::::::::::5::9:
+                  G  ::::::1:1:5a:::a:::::::1::::::::::::::::aa::::::::
+                  H  :9::::::::::::a:::::::::::::::::::::::::::::::::::
+                  I  :::1:::::::::::::::::::::::1:::::::::::3::9::::4::
+                  K  ::::::::::::::::::::::::::::::::::::::::::::::::::
+                  L  :::::5:a::::3::::4aa::::::::5::1::a::::::::a:::::a
+                  M  :::::5::::::::::::::::::a::::1:::::::::::::::::4::
+                  N  :::::::::1::4:::::::a:a::::::::1::::::::::::::::::
+                  P  :19:::::::::::::::::::::::::::a:a:::::::::::::::::
+                  Q  1::::::::::::::::::::::::::::9::::::::::::::::::::
+                  R  :::::::::::::::::::::::::::::::::::::a::::::::::::
+                  S  5:::::::::::4::::::::a:::::::::5:::3::5:::::::::::
+                  T  :::::::::::::::::::::::::::5:::4:::7::56::::::::::
+                  V  2:::::1:::::::::a:::::::::a4::::::::::11::1::5:31:
+                  W  ::::::::::::::::::::::::::::::::::::5:::::::::::::
+                  Y  ::15a:::::::::::::::::::::::::::::::5:::::::::a:::
+
+         bits    5.7                         *                         
+                 5.2               *         *                         
+                 4.6  *  *         *     * * *            *        *   
+                 4.0  *  ** **    ** * *** * ***  ** *** **    *** * **
+Relative         3.4  ********  * **************  ** *** **  **********
+Entropy          2.9  ********* * ************** *** ****** ***********
+(184.5 bits)     2.3 **************************************************
+                 1.7 **************************************************
+                 1.1 **************************************************
+                 0.6 **************************************************
+                 0.0 --------------------------------------------------
+
+Multilevel           SHPFYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRSTGGILDFYIFL
+consensus            F  Y L   EE S    L         VF  T   SW TI     V M  
+sequence                         L                                  V  
+                                                                       
+                                                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                                   Site                     
+-------------             ----- ---------            --------------------------------------------------
+sp|P14410|SUIS_HUMAN       1149  1.07e-58 PPGYKLNSYG FHPYYMALEEEGNAHGVFLLNSNAMDVTFQPTPALTYRTVGGILDFYMFL GPTPEVATKQ
+sp|Q6P7A9|LYAG_RAT          294  2.06e-58 APSQGVNLYG SHPFYLALEDGGLAHGVFLLNSNAMDVVLQPSPALTWRSTGGILDVYVFL GPEPKSVVQQ
+sp|Q5R7A9|LYAG_PONAB        294  3.91e-58 APTPGANLYG SHPFYLALEDGGSAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL GPEPKSVVRQ
+sp|P10253|LYAG_HUMAN        294  3.91e-58 APTPGANLYG SHPFYLALEDGGSAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL GPEPKSVVQQ
+sp|P70699|LYAG_MOUSE        294  6.51e-58 PPSQGTNLYG SHPFYLALEDGGLAHGVFLLNSNAMDVILQPSPALTWRSTGGILDVYVFL GPEPKSVVQQ
+sp|P07768|SUIS_RABIT       1149  9.10e-57 PPGYKLNSYG FHPYYMALEDEGNAHGVLLLNSNAMDVTFMPTPALTYRVIGGILDFYMFL GPTPEVATQQ
+sp|Q9MYM4|LYAG_BOVIN        281  2.39e-56 APEPNVNLYG SHPFYLVLEDGGLAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL GPEPKSVVQQ
+sp|P23739|SUIS_RAT         1154  2.39e-56 PPGYKLNSYG FHPYYMALENEGNAHGVLLLNSNGMDVTFQPTPALTYRTIGGILDFYMFL GPTPEIATRQ
+sp|Q2M2H8|MGAL_HUMAN       1125  5.75e-55 PPAYKKNSYG VHPYYMALEEDGSAHGVLLLNSNAMDVTLQPTPALTYRTTGGILDFYIVL GPTPELVTQQ
+sp|O43451|MGA_HUMAN        2065  4.00e-53 PPGYKKNSYG VHPYYMGLEEDGSAHGVLLLNSNAMDVTFQPLPALTYRTTGGVLDFYVFL GPTPELVTQQ
+sp|O62653|SUIS_SUNMU       1135  1.07e-51 SGYKISSYGF QPYIYMALGDGGNAHGVFLLNSNAMDVTFQPNPALTYRTIGGILDFYMFL GPNPEVATKQ
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|P14410|SUIS_HUMAN              1.1e-58  1148_[2]_629
+sp|Q6P7A9|LYAG_RAT                2.1e-58  293_[2]_610
+sp|Q5R7A9|LYAG_PONAB              3.9e-58  293_[2]_609
+sp|P10253|LYAG_HUMAN              3.9e-58  293_[2]_609
+sp|P70699|LYAG_MOUSE              6.5e-58  293_[2]_610
+sp|P07768|SUIS_RABIT              9.1e-57  1148_[2]_629
+sp|Q9MYM4|LYAG_BOVIN              2.4e-56  280_[2]_607
+sp|P23739|SUIS_RAT                2.4e-56  1153_[2]_638
+sp|Q2M2H8|MGAL_HUMAN              5.8e-55  1124_[2]_1341
+sp|O43451|MGA_HUMAN                 4e-53  2064_[2]_639
+sp|O62653|SUIS_SUNMU              1.1e-51  1134_[2]_629
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL width=50 seqs=11
+sp|P14410|SUIS_HUMAN     ( 1149) FHPYYMALEEEGNAHGVFLLNSNAMDVTFQPTPALTYRTVGGILDFYMFL  1 
+sp|Q6P7A9|LYAG_RAT       (  294) SHPFYLALEDGGLAHGVFLLNSNAMDVVLQPSPALTWRSTGGILDVYVFL  1 
+sp|Q5R7A9|LYAG_PONAB     (  294) SHPFYLALEDGGSAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL  1 
+sp|P10253|LYAG_HUMAN     (  294) SHPFYLALEDGGSAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL  1 
+sp|P70699|LYAG_MOUSE     (  294) SHPFYLALEDGGLAHGVFLLNSNAMDVILQPSPALTWRSTGGILDVYVFL  1 
+sp|P07768|SUIS_RABIT     ( 1149) FHPYYMALEDEGNAHGVLLLNSNAMDVTFMPTPALTYRVIGGILDFYMFL  1 
+sp|Q9MYM4|LYAG_BOVIN     (  281) SHPFYLVLEDGGLAHGVFLLNSNAMDVVLQPSPALSWRSTGGILDVYIFL  1 
+sp|P23739|SUIS_RAT       ( 1154) FHPYYMALENEGNAHGVLLLNSNGMDVTFQPTPALTYRTIGGILDFYMFL  1 
+sp|Q2M2H8|MGAL_HUMAN     ( 1125) VHPYYMALEEDGSAHGVLLLNSNAMDVTLQPTPALTYRTTGGILDFYIVL  1 
+sp|O43451|MGA_HUMAN      ( 2065) VHPYYMGLEEDGSAHGVLLLNSNAMDVTFQPLPALTYRTTGGVLDFYVFL  1 
+sp|O62653|SUIS_SUNMU     ( 1135) QPYIYMALGDGGNAHGVFLLNSNAMDVTFQPNPALTYRTIGGILDFYMFL  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 50 n= 36734 bayes= 11.2573 E= 1.1e-349 
+  -115   -254   -323   -215    220   -307   -214    -91   -158   -131    -74   -252   -376     88   -246    215   -214    141   -310   -181 
+  -364   -412   -325   -319   -311   -435    516   -440   -338   -355   -278   -167    -24   -125   -235   -331   -390   -411   -378   -157 
+  -174   -419   -348   -273   -364   -380   -301   -356   -226   -332   -313   -355    363   -286   -318   -273   -335   -335   -481     48 
+  -320   -386   -441   -368    309   -478   -105     66   -324   -254   -230   -364   -485   -359   -364   -372   -432   -318   -175    347 
+  -567   -571   -612   -605   -216   -579   -332   -529   -536   -470   -469   -546   -626   -545   -551   -594   -636   -552   -350    458 
+  -413   -455   -727   -598   -182   -664   -507    -96   -544    262    466   -640   -621   -479   -554   -629   -489   -208   -424   -398 
+   367   -154   -366   -271   -322    -63   -323   -244   -247   -255   -171   -329   -451   -320   -312    -94   -243    -12   -403   -381 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -444   -619   -215    448   -615   -325   -440   -501   -443   -579   -504   -417   -653   -356   -530   -537   -569   -536   -643   -603 
+  -275   -449    381    133   -444   -360   -242   -386   -246   -409   -342      1   -470   -272   -354   -310   -394   -379   -486   -402 
+  -221   -532    155    262   -538    259   -243   -452   -144   -442   -365   -136   -401   -161   -315   -253   -340   -404   -588   -449 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -171   -361   -152   -189   -383   -254   -212   -320   -161    163   -277    275   -405   -242   -283    198   -281   -306   -488   -352 
+   398   -311   -506   -440   -483   -323   -458   -418   -416   -427   -352   -458   -513   -463   -463   -246   -371   -300   -547   -525 
+  -521   -551   -486   -491   -462   -535    538   -598   -489   -514   -460   -357   -574   -318   -413   -504   -558   -576   -521   -334 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -222   -355   -499   -428   -397   -500   -430    -67   -404   -259   -247   -490   -509   -482   -447   -457   -350    388   -565   -506 
+  -404   -429   -623   -539    368   -607   -389   -131   -495    217    -60   -551   -581   -471   -523   -532   -494   -236   -341   -192 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -374   -430   -263   -387   -433   -403   -139   -348   -277   -428   -345    426   -468   -311   -377   -248   -355   -410   -448   -416 
+  -283   -430   -503   -511   -548   -437   -475   -543   -435   -538   -466   -402   -527   -506   -486    357   -243   -508   -595   -543 
+  -374   -430   -263   -387   -433   -403   -139   -348   -277   -428   -345    426   -468   -311   -377   -248   -355   -410   -448   -416 
+   378   -197   -411   -324   -376    -20   -367   -304   -302   -313   -229   -359   -448   -361   -360   -132   -268   -176   -454   -431 
+  -419   -433   -535   -489   -414   -542   -464   -243   -415   -191    564   -502   -556   -486   -527   -491   -488   -323   -407   -373 
+  -332   -468    404    -89   -466   -417   -289   -418   -338   -442   -380   -132   -526   -374   -407   -377   -459   -416   -502   -433 
+  -222   -355   -499   -428   -397   -500   -430    -67   -404   -259   -247   -490   -509   -482   -447   -457   -350    388   -565   -506 
+  -273   -337   -563   -482   -348   -548   -506    135   -425   -185   -172   -459   -574   -494   -512   -369    250    251   -569   -461 
+  -422   -460   -695   -587    311   -646   -417   -115   -531    284    -40   -595   -615   -474   -540   -605   -496   -226   -375   -253 
+  -225   -369   -357    -63   -417   -438     -6   -323   -184   -238     17   -240   -362    433   -192   -304   -342   -336   -371   -409 
+  -293   -513   -453   -391   -522   -465   -414   -477   -344   -448   -435   -467    381   -403   -428   -390   -451   -454   -598   -555 
+  -146   -251   -312   -302   -352   -340   -287   -292   -197   -123   -216    -27   -366   -290   -267    283    163   -308   -427   -354 
+  -293   -513   -453   -391   -522   -465   -414   -477   -344   -448   -435   -467    381   -403   -428   -390   -451   -454   -598   -555 
+   398   -311   -506   -440   -483   -323   -458   -418   -416   -427   -352   -458   -513   -463   -463   -246   -371   -300   -547   -525 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -185   -291   -362   -342   -391   -390   -319   -246   -237   -353   -192   -203   -422   -287   -312    128    308   -228   -457   -432 
+  -500   -483   -577   -530    -58   -574   -191   -402   -448   -341   -334   -435   -595   -431   -459   -503   -546   -430    411    369 
+  -345   -374   -464   -415   -500   -445   -218   -403    -78   -396   -360   -353   -430   -259    423   -410   -450   -485   -400   -457 
+  -154   -273   -359   -338   -380   -356   -318   -259   -234   -344   -205   -202   -402   -297   -305    226    248    -19   -452   -407 
+  -263   -331   -519   -455   -347   -525   -463    242   -382   -192   -170   -391   -545   -444   -465   -273    275     98   -545   -454 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -278   -361   -445   -385   -291   -497   -435    399   -320    -53    -61   -401   -521   -413   -424   -402   -332    114   -472   -365 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -332   -468    404    -89   -466   -417   -289   -418   -338   -442   -380   -132   -526   -374   -407   -377   -459   -416   -502   -433 
+  -332   -394   -610   -532    338   -562   -367    -71   -478   -155   -158   -516   -597   -499   -528   -501   -421    277   -370   -187 
+  -567   -571   -612   -605   -216   -579   -332   -529   -536   -470   -469   -546   -626   -545   -551   -594   -636   -552   -350    458 
+  -297   -353   -610   -514   -316   -587   -543    290   -472   -143    402   -538   -603   -534   -558   -520   -373    219   -558   -459 
+  -303   -304   -445   -382    421   -478   -367   -198   -363   -127   -155   -427   -448   -442   -443   -351   -449   -123   -259    -86 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 50 nsites= 11 E= 1.1e-349 
+ 0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.454545  0.000000  0.181818  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909 
+ 0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.818182  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.909091  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.636364  0.272727  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.181818  0.272727  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.363636  0.000000  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.636364  0.000000  0.000000  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.909091  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.545455  0.363636  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.090909  0.000000  0.000000  0.000000  0.454545  0.363636  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.727273  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.545455 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.454545  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.636364  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.363636  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif SHPYYMALEDGGNAHGVFLLNSNAMDVTLQPSPALTYRTTGGILDFYIFL MEME-2 regular expression
+--------------------------------------------------------------------------------
+[SF]HP[FY]Y[ML]ALE[DE][GE]G[NSL]AHGV[FL]LLNSNAMDV[TV][LF]QP[ST]PAL[TS][YW]R[ST][TI]GGILD[FV]Y[IMV]FL
+--------------------------------------------------------------------------------
+
+
+
+
+Time 99.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3	width =  50  sites =  11  llr = 1399  E-value = 3.2e-346
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::::::::::::::9:::::13::::::::::::::a:::::::::
+pos.-specific     C  :::::::::::::::::::::a::::::::::a:::::::::::::::::
+probability       D  ::::1::::::::::::::8::::::4::::::::::::::::::::1::
+matrix            E  ::::4::5::::::::::::::::::2::aa:::::::::::::::::::
+                  F  ::::::::a::5:::1:::::::9:::::::::::::::::a::81::::
+                  G  ::::4::::3::a::::a::::a::5:::::::::::::a::::::::::
+                  H  ::::::::::::::::::::::::::::::::::::::::::::::::a:
+                  I  ::5::5::::1::3::1:::7:::1:::::::::::::1:::::::::::
+                  K  ::::::::::::::::::::::::::::::::::::::::::::::::::
+                  L  ::::::a1::95:::7::::::::51:::::a::::::9:::::1:::::
+                  M  :::::4:::::::3:2::::::::::::::::::::5::::::::5::::
+                  N  :::::::::6:::::::::1::::115::::::::::::::::::::9:a
+                  P  :::61:::::::::a:::1:::::::::1::::::::::::::a:1::::
+                  Q  :::::::4::::::::::::::::1::::::::::::a::::::::::::
+                  R  :::::::::::::::::::::::::::::::::5a:::::::::::a:::
+                  S  2a:::::::1::::::::::1:::::::4::::::::::::::::4::::
+                  T  :::41::::::::::::::1:::::::95:::::::5:::::::::::::
+                  V  ::5::1:::::::5::9:::2:::21:1:::::5::::::::::::::::
+                  W  5::::::::::::::::::::::::::::::::::a::::::::::::::
+                  Y  3::::::::::::::::::::::1::::::::::::::::::a:1:::::
+
+         bits    5.7                                                   
+                 5.2                      *          *  *            * 
+                 4.6         *            *       ** * ** *   **   * **
+                 4.0       * *     *      * *     **** ****  ****  ****
+Relative         3.4 ***  **** * * * ********   * **************** ****
+Entropy          2.9 **** *******************  ** *********************
+(183.5 bits)     2.3 ************************  ************************
+                 1.7 **************************************************
+                 1.1 **************************************************
+                 0.6 **************************************************
+                 0.0 --------------------------------------------------
+
+Multilevel           WSIPEILEFNLFGVPLVGADICGFLGNTTEELCRRWMQLGAFYPFMRNHN
+consensus            Y VTGM Q G L I           AD S    V  T        S    
+sequence                          M                                    
+                                                                       
+                                                                       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                                   Site                     
+-------------             ----- ---------            --------------------------------------------------
+sp|P07768|SUIS_RABIT        614  1.37e-59 DNTATWEQME WSITGMLEFGLFGMPLVGADICGFLAETTEELCRRWMQLGAFYPFSRNHN ADGFEHQDPA
+sp|Q6P7A9|LYAG_RAT          626  6.70e-59 DVWSSWEHLA YSVPEILQFNLLGVPLVGADICGFQGNTTEELCVRWTQLGAFYPFMRNHN DLNSLPQEPY
+sp|Q9MYM4|LYAG_BOVIN        613  3.03e-58 DVWSNWEQLS YSVPEILLFNLLGVPLVGADICGFLGNTSEELCVRWTQLGAFYPFMRNHN ALNSQPQEPY
+sp|P14410|SUIS_HUMAN        614  6.30e-58 DNTASWEQME WSITGMLEFSLFGIPLVGADICGFVAETTEELCRRWMQLGAFYPFSRNHN SDGYEHQDPA
+sp|P70699|LYAG_MOUSE        626  1.29e-57 DVRSSWEHLA YSVPDILQFNLLGVPLVGADICGFIGDTSEELCVRWTQLGAFYPFMRNHN DLNSVPQEPY
+sp|Q5R7A9|LYAG_PONAB        626  1.45e-57 DVWSSWEQLA SSVPEILQFNLLGVPLVGADVCGFLGNTSEELCVRWTQLGAFYPFMRNHN GLLNLPQEPY
+sp|P10253|LYAG_HUMAN        626  1.45e-57 DVWSSWEQLA SSVPEILQFNLLGVPLVGADVCGFLGNTSEELCVRWTQLGAFYPFMRNHN SLLSLPQEPY
+sp|O43451|MGA_HUMAN         638  7.75e-55 DNTATWDDLR WSIPGVLEFNLFGIPMVGPDICGFALDTPEELCRRWMQLGAFYPFSRNHN GQGYKDQDPA
+sp|P23739|SUIS_RAT          625  7.26e-54 DNTASWEQME WSITGMLEFGIFGMPLVGATSCGFLADTTEELCRRWMQLGAFYPFSRNHN AEGYMEQDPA
+sp|Q2M2H8|MGAL_HUMAN        587  2.05e-51 DNAATWDDLR WSIPTILEFNLFGIPMVGANICGYNNNVTEELCRRWMQLGAFYPLPRNHN GPGFRDQDPA
+sp|O62653|SUIS_SUNMU        600  5.61e-51 DNTPSWEHME WSITPMLEFGLFGMPFIGADICGFVVDTTEELCRRWMQIGAFYPYFRDHN AGGYMPQDPA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|P07768|SUIS_RABIT              1.4e-59  613_[3]_1164
+sp|Q6P7A9|LYAG_RAT                6.7e-59  625_[3]_278
+sp|Q9MYM4|LYAG_BOVIN                3e-58  612_[3]_275
+sp|P14410|SUIS_HUMAN              6.3e-58  613_[3]_1164
+sp|P70699|LYAG_MOUSE              1.3e-57  625_[3]_278
+sp|Q5R7A9|LYAG_PONAB              1.5e-57  625_[3]_277
+sp|P10253|LYAG_HUMAN              1.5e-57  625_[3]_277
+sp|O43451|MGA_HUMAN               7.8e-55  637_[3]_2066
+sp|P23739|SUIS_RAT                7.3e-54  624_[3]_1167
+sp|Q2M2H8|MGAL_HUMAN              2.1e-51  586_[3]_1879
+sp|O62653|SUIS_SUNMU              5.6e-51  599_[3]_1164
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN width=50 seqs=11
+sp|P07768|SUIS_RABIT     (  614) WSITGMLEFGLFGMPLVGADICGFLAETTEELCRRWMQLGAFYPFSRNHN  1 
+sp|Q6P7A9|LYAG_RAT       (  626) YSVPEILQFNLLGVPLVGADICGFQGNTTEELCVRWTQLGAFYPFMRNHN  1 
+sp|Q9MYM4|LYAG_BOVIN     (  613) YSVPEILLFNLLGVPLVGADICGFLGNTSEELCVRWTQLGAFYPFMRNHN  1 
+sp|P14410|SUIS_HUMAN     (  614) WSITGMLEFSLFGIPLVGADICGFVAETTEELCRRWMQLGAFYPFSRNHN  1 
+sp|P70699|LYAG_MOUSE     (  626) YSVPDILQFNLLGVPLVGADICGFIGDTSEELCVRWTQLGAFYPFMRNHN  1 
+sp|Q5R7A9|LYAG_PONAB     (  626) SSVPEILQFNLLGVPLVGADVCGFLGNTSEELCVRWTQLGAFYPFMRNHN  1 
+sp|P10253|LYAG_HUMAN     (  626) SSVPEILQFNLLGVPLVGADVCGFLGNTSEELCVRWTQLGAFYPFMRNHN  1 
+sp|O43451|MGA_HUMAN      (  638) WSIPGVLEFNLFGIPMVGPDICGFALDTPEELCRRWMQLGAFYPFSRNHN  1 
+sp|P23739|SUIS_RAT       (  625) WSITGMLEFGIFGMPLVGATSCGFLADTTEELCRRWMQLGAFYPFSRNHN  1 
+sp|Q2M2H8|MGAL_HUMAN     (  587) WSIPTILEFNLFGIPMVGANICGYNNNVTEELCRRWMQLGAFYPLPRNHN  1 
+sp|O62653|SUIS_SUNMU     (  600) WSITPMLEFGLFGMPFIGADICGFVVDTTEELCRRWMQIGAFYPYFRDHN  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 50 n= 36734 bayes= 12.0602 E= 3.2e-346 
+  -446   -464   -546   -501    -55   -543   -187   -388   -421   -328   -319   -415   -579   -416   -440     97   -517   -411    440    277 
+  -283   -430   -503   -511   -548   -437   -475   -543   -435   -538   -466   -402   -527   -506   -486    357   -243   -508   -595   -543 
+  -299   -357   -560   -487   -348   -581   -557    349   -439   -143   -148   -509   -599   -532   -545   -506   -369    271   -589   -465 
+  -179   -406   -383   -316   -456   -372   -352   -394   -272   -379   -352   -376    327   -331   -360   -280    169   -358   -552   -492 
+  -188   -509     87    301   -476    186   -207   -389    -90   -374   -293   -134      9   -119   -250   -228     -9   -348   -543   -398 
+  -303   -360   -603   -510   -297   -587   -534    343   -465   -120    399   -534   -600   -521   -548   -518   -378    105   -536   -448 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -201   -632    -65    358   -548   -383   -278   -399    -94     -3   -307   -268   -384    282   -269   -307   -346   -352   -608   -471 
+  -354   -353   -484   -429    430   -505   -387   -259   -406   -182   -210   -466   -487   -480   -479   -399   -496   -309   -299   -126 
+  -219   -411   -111   -189   -487    153   -183   -478   -191   -486   -422    360   -414   -255   -331     20   -300   -443   -554   -407 
+  -315   -375   -520   -384   -179   -524   -369     62   -336    348     11   -456   -468   -336   -365   -439   -383   -152   -392   -349 
+  -422   -457   -684   -584    339   -640   -406   -120   -529    258    -46   -587   -613   -476   -540   -595   -499   -230   -365   -232 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -294   -351   -608   -513   -324   -587   -546    255   -473   -152    362   -538   -603   -539   -559   -520   -371    282   -569   -465 
+  -293   -513   -453   -391   -522   -465   -414   -477   -344   -448   -435   -467    381   -403   -428   -390   -451   -454   -598   -555 
+  -334   -392   -548   -411     49   -547   -387    -80   -364    330    270   -481   -491   -356   -390   -465   -403   -174   -393   -352 
+  -134   -273   -425   -340   -323   -462   -354    106   -321   -180   -164   -416   -440   -404   -364   -394   -261    369   -510   -456 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+   381   -241   -452   -373   -427   -254   -408   -360   -354   -369   -285   -391      1   -399   -405   -171   -296   -233   -502   -477 
+  -287   -432    394    -44   -429   -373   -242   -376   -288   -404   -338    -26   -492   -326   -364   -324   -224   -375   -469   -393 
+  -261   -358   -405   -346   -268   -460   -391    386   -278    -21    -29   -361   -487   -371   -382   -177   -311    131   -431   -328 
+  -347    501   -533   -442   -495   -557   -462   -395   -459   -451   -358   -499   -586   -506   -474   -483   -446   -461   -622   -564 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+  -318   -315   -453   -391    421   -486   -322   -220   -368   -143   -171   -424   -458   -438   -442   -360   -459   -270   -243     24 
+    36   -227   -381   -253   -154   -340   -228     99   -197    254      8     30   -369     55   -259   -246   -206    128   -297   -220 
+   182   -274   -305   -235   -293    258   -264   -171   -191     -4   -146     41   -389   -263   -275   -202   -255     28   -393   -321 
+  -255   -499    256    208   -514   -252   -191   -493   -152   -475   -415    304   -403   -194   -314   -206   -312   -456   -590   -411 
+  -199   -299   -381   -355   -385   -409   -333   -197   -249   -322   -190   -220   -435   -300   -324    -72    326     10   -465   -432 
+  -160   -281   -354   -336   -392   -358   -319   -265   -237   -356   -206   -203    -44   -294   -310    190    272   -245   -459   -422 
+  -462   -622   -221    450   -617   -540   -447   -504   -472   -586   -512   -428   -672   -370   -543   -555   -583   -544   -644   -608 
+  -462   -622   -221    450   -617   -540   -447   -504   -472   -586   -512   -428   -672   -370   -543   -555   -583   -544   -644   -608 
+  -394   -451   -570   -464   -259   -552   -434   -162   -415    365    -76   -525   -530   -417   -441   -512   -465   -246   -460   -416 
+  -347    501   -533   -442   -495   -557   -462   -395   -459   -451   -358   -499   -586   -506   -474   -483   -446   -461   -622   -564 
+  -289   -429   -503   -356   -423   -451   -337   -194    -95   -303   -277   -396   -530   -288    333   -392   -403    276   -524   -423 
+  -345   -374   -464   -415   -500   -445   -218   -403    -78   -396   -360   -353   -430   -259    423   -410   -450   -485   -400   -457 
+  -386   -415   -431   -382   -170   -450   -361   -390   -335   -248   -269   -406   -508   -375   -364   -445   -466   -368    529   -204 
+  -202   -357   -502   -439   -322   -392   -422   -187   -353   -190    465   -402   -501   -415   -421   -269    235   -214   -489   -409 
+  -321   -455   -440   -167   -499   -494   -111   -424   -280   -340   -224   -337   -449    449   -290   -399   -437   -435   -459   -487 
+  -315   -375   -520   -384   -179   -524   -369     62   -336    348     11   -456   -468   -336   -365   -439   -383   -152   -392   -349 
+  -243   -462   -339   -351   -519    359   -377   -486   -308   -515   -408   -307   -494   -427   -371   -337   -469   -455   -505   -488 
+   398   -311   -506   -440   -483   -323   -458   -418   -416   -427   -352   -458   -513   -463   -463   -246   -371   -300   -547   -525 
+  -354   -353   -484   -429    430   -505   -387   -259   -406   -182   -210   -466   -487   -480   -479   -399   -496   -309   -299   -126 
+  -567   -571   -612   -605   -216   -579   -332   -529   -536   -470   -469   -546   -626   -545   -551   -594   -636   -552   -350    458 
+  -293   -513   -453   -391   -522   -465   -414   -477   -344   -448   -435   -467    381   -403   -428   -390   -451   -454   -598   -555 
+  -305   -303   -443   -380    419   -478   -356   -207   -360    -74   -158   -423   -447   -439   -440   -349   -451   -257   -252    -10 
+  -113   -262   -362   -260     82   -306   -249   -116   -209   -140    426   -285     14   -266   -289    190   -236   -127   -334   -210 
+  -345   -374   -464   -415   -500   -445   -218   -403    -78   -396   -360   -353   -430   -259    423   -410   -450   -485   -400   -457 
+  -324   -387    -89   -316   -389   -348    -87   -299   -220   -383   -296    417   -424   -256   -327   -192   -301   -363   -406   -370 
+  -521   -551   -486   -491   -462   -535    538   -598   -489   -514   -460   -357   -574   -318   -413   -504   -558   -576   -521   -334 
+  -374   -430   -263   -387   -433   -403   -139   -348   -277   -428   -345    426   -468   -311   -377   -248   -355   -410   -448   -416 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 50 nsites= 11 E= 3.2e-346 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.181818  0.000000  0.000000  0.545455  0.272727 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.636364  0.000000  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.090909  0.363636  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.000000  0.000000  0.000000  0.000000  0.636364  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.272727  0.000000  0.000000  0.272727  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.727273  0.181818  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.818182  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.727273  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.181818  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909 
+ 0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.454545  0.000000  0.090909  0.000000  0.090909  0.000000  0.000000  0.000000  0.181818  0.000000  0.000000 
+ 0.272727  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.000000  0.090909  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.363636  0.181818  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.090909  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.363636  0.545455  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.454545  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.545455  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.818182  0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090909 
+ 0.000000  0.000000  0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.454545  0.000000  0.090909  0.000000  0.000000  0.363636  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.090909  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.909091  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WSIPEILZFNLFGVPLVGADICGFLGBTTEELCRRWMQLGAFYPFMRNHN MEME-3 regular expression
+--------------------------------------------------------------------------------
+[WY]S[IV][PT][EG][IM]L[EQ]F[NG]L[FL]G[VIM]PLVGADICGFL[GA][ND]T[TS]EELC[RV]RW[MT]QLGAFYPF[MS]RNHN
+--------------------------------------------------------------------------------
+
+
+
+
+Time 147.48 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|O43451|MGA_HUMAN             8.24e-101  101_[1(4.55e-09)]_180_[2(1.83e-30)]_\
+    285_[3(7.75e-55)]_112_[3(5.24e-05)]_118_[1(1.42e-06)]_180_[2(4.00e-53)]_\
+    317_[3(1.89e-36)]_278_[1(2.85e-06)]_180_[2(4.00e-53)]_317_[3(1.89e-36)]_\
+    272
+sp|O54766|ZP1_RAT                4.02e-12  234_[1(1.06e-16)]_362
+sp|O62653|SUIS_SUNMU             7.34e-94  62_[1(8.61e-07)]_180_[2(8.66e-26)]_\
+    286_[3(5.61e-51)]_280_[1(1.77e-05)]_184_[2(1.07e-51)]_311_[3(5.01e-36)]_\
+    268
+sp|P04155|TFF1_HUMAN             1.78e-15  40_[1(1.43e-19)]_23
+sp|P07768|SUIS_RABIT            1.25e-106  77_[1(3.44e-05)]_179_[2(4.24e-25)]_\
+    286_[3(1.37e-59)]_281_[1(5.39e-06)]_183_[2(9.10e-57)]_311_[3(1.30e-33)]_\
+    268
+sp|P10253|LYAG_HUMAN            1.28e-117  92_[1(7.54e-17)]_180_[2(3.91e-58)]_\
+    282_[3(1.45e-57)]_277
+sp|P14410|SUIS_HUMAN            2.30e-107  77_[1(1.82e-06)]_179_[2(2.52e-24)]_\
+    286_[3(6.30e-58)]_485_[2(1.07e-58)]_311_[3(3.31e-34)]_268
+sp|P23739|SUIS_RAT              2.81e-101  87_[1(9.36e-07)]_179_[2(4.98e-26)]_\
+    287_[3(7.26e-54)]_276_[1(6.07e-06)]_182_[2(2.39e-56)]_318_[3(1.33e-09)]_\
+    270
+sp|P60852|ZP1_HUMAN              4.01e-10  244_[1(1.07e-14)]_373
+sp|P70699|LYAG_MOUSE            8.09e-118  92_[1(3.20e-17)]_180_[2(6.51e-58)]_\
+    282_[3(1.29e-57)]_278
+sp|Q00193|ZP4_RABIT              8.36e-12  100_[3(4.63e-05)]_7_[1(2.48e-15)]_\
+    362
+sp|Q03403|TFF2_HUMAN             1.79e-17  41_[1(3.82e-21)]_28_[1(6.14e-14)]_\
+    18
+sp|Q03404|TFF2_MOUSE             2.01e-18  41_[1(5.30e-23)]_28_[1(5.74e-14)]_\
+    18
+sp|Q07287|ZP4_PIG                6.64e-14  154_[1(5.73e-18)]_285_[1(9.28e-05)]_\
+    55
+sp|Q07654|TFF3_HUMAN             9.16e-17  41_[1(1.02e-19)]_18
+sp|Q12836|ZP4_HUMAN              7.01e-11  153_[1(2.67e-15)]_366
+sp|Q62005|ZP1_MOUSE              5.33e-12  236_[1(9.22e-16)]_366
+sp|Q6P7A9|LYAG_RAT              1.63e-119  92_[1(3.80e-17)]_180_[2(2.06e-58)]_\
+    282_[3(6.70e-59)]_278
+sp|Q8CH34|ZP4_RAT                1.61e-12  98_[3(4.09e-05)]_12_[1(1.58e-15)]_\
+    364
+sp|Q9BH11|ZP4_BOVIN              3.30e-12  153_[1(3.80e-17)]_360
+sp|Q9MYM4|LYAG_BOVIN            1.09e-116  80_[1(5.37e-17)]_179_[2(2.39e-56)]_\
+    282_[3(3.03e-58)]_275
+sp|I6M4H4|ZP1_RABIT              8.38e-11  227_[1(1.16e-15)]_379
+sp|P01359|TFF2_PIG               8.25e-16  39_[1(3.10e-19)]_28_[1(1.24e-14)]_\
+    18
+sp|P17437|XP2_XENLA              1.74e-17  360_[1(4.41e-23)]_26_[1(5.59e-15)]_\
+    11
+sp|P48834|ZP4_FELCA              3.94e-12  189_[1(2.40e-16)]_360
+sp|Q03191|TFF3_RAT               1.38e-18  42_[1(2.52e-22)]_18
+sp|Q05049|MUC1_XENLA             1.78e-15  171_[1(9.96e-16)]_124_[1(1.46e-20)]_\
+    26_[1(8.21e-17)]_151_[1(3.82e-21)]_26_[1(4.21e-16)]_27_[1(1.09e-17)]_11
+sp|Q08423|TFF1_MOUSE             3.13e-16  43_[1(7.18e-20)]_23
+sp|Q09030|TFF2_RAT               3.56e-18  41_[1(1.28e-22)]_28_[1(6.57e-14)]_\
+    18
+sp|Q2M2H8|MGAL_HUMAN             2.64e-98  257_[2(8.25e-30)]_279_[3(2.05e-51)]_\
+    281_[1(5.30e-08)]_186_[2(5.75e-55)]_315_[3(1.53e-39)]_976
+sp|Q62395|TFF3_MOUSE             7.05e-19  42_[1(2.13e-22)]_18
+sp|Q63467|TFF1_RAT               4.03e-16  37_[1(1.65e-20)]_23
+sp|A8YXX7|TFF3_BOVIN             1.77e-19  42_[1(2.51e-23)]_18
+sp|B4X8D9|TFF3_FELCA             1.04e-20  41_[1(9.06e-23)]_18
+sp|P10667|MUA1_XENLA             1.17e-14  32_[1(7.89e-16)]_30_[1(8.07e-20)]_\
+    207_[1(2.48e-15)]_30_[1(1.98e-15)]_17
+sp|Q00222|XP1_XENLA              1.07e-14  41_[1(9.85e-19)]_16
+sp|Q00223|XP4_XENLA              2.83e-14  36_[1(9.85e-19)]_28_[1(5.73e-18)]_\
+    29_[1(2.60e-16)]_28_[1(4.52e-17)]_19
+sp|Q5R7A9|LYAG_PONAB            1.79e-116  92_[1(1.08e-15)]_180_[2(3.91e-58)]_\
+    282_[3(1.45e-57)]_277
+sp|Q863B4|TFF3_CANLF             7.21e-21  41_[1(2.51e-23)]_18
+sp|B3EWZ5|MLRP1_ACRMI            4.84e-13  3035_[1(5.49e-05)]_25_[1(3.46e-19)]_\
+    2043
+sp|B3EWZ6|MLRP2_ACRMI            9.41e-13  2784_[1(5.49e-05)]_25_[1(3.46e-19)]_\
+    3748_[1(9.61e-05)]_518_[1(7.54e-05)]_152
+sp|Q29183|TFF3_PIG               2.98e-19  41_[1(1.28e-22)]_18
+sp|Q863J2|TFF2_CANLF             2.30e-14  41_[1(8.90e-19)]_28_[1(1.64e-14)]_\
+    18
+sp|Q863T4|TFF1_CANLF             2.40e-15  37_[1(5.67e-20)]_23
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: noble-meme.grid.gs.washington.edu
+
+********************************************************************************

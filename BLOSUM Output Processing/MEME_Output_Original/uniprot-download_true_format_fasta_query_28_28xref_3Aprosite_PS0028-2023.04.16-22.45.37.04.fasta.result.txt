@@ -1,0 +1,1282 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.2 (Release date: Sun Jan 29 10:33:12 2023 -0800)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS0028-2023.04.16-22.45.37.04.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACDEFGHIKLMNPQRSTVWY
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+sp|O08677|KNG1_MOUSE     1.0000    661  sp|P01034|CYTC_HUMAN     1.0000    146  
+sp|P01036|CYTS_HUMAN     1.0000    141  sp|P01037|CYTN_HUMAN     1.0000    141  
+sp|P01040|CYTA_HUMAN     1.0000     98  sp|P01041|CYTB_RAT       1.0000     98  
+sp|P01042|KNG1_HUMAN     1.0000    644  sp|P01044|KNG1_BOVIN     1.0000    621  
+sp|P01045|KNG2_BOVIN     1.0000    619  sp|P01048|KNT1_RAT       1.0000    430  
+sp|P04080|CYTB_HUMAN     1.0000     98  sp|P08932|KNT2_RAT       1.0000    430  
+sp|P08934|KNG1_RAT       1.0000    639  sp|P09228|CYTT_HUMAN     1.0000    141  
+sp|P14841|CYTC_RAT       1.0000    140  sp|P19313|CYTS_RAT       1.0000    141  
+sp|P21460|CYTC_MOUSE     1.0000    140  sp|P28325|CYTD_HUMAN     1.0000    142  
+sp|Q15828|CYTM_HUMAN     1.0000    149  sp|Q8H0X6|CYT6_ARATH     1.0000    234  
+sp|Q9JM84|CST10_MOUSE    1.0000    148  sp|B7PKZ1|CYTL2_IXOSC    1.0000    132  
+sp|O19092|CYTC_MACMU     1.0000    146  sp|P01035|CYTC_BOVIN     1.0000    148  
+sp|P01038|CYT_CHICK      1.0000    139  sp|P01039|CYTA_RAT       1.0000    103  
+sp|P09229|CYT1_ORYSJ     1.0000    140  sp|P25417|CYTB_BOVIN     1.0000     98  
+sp|P35173|CYT3_MOUSE     1.0000    103  sp|P35174|CYT2_MOUSE     1.0000    103  
+sp|P35175|CYT1_MOUSE     1.0000     97  sp|Q29290|CYTB_PIG       1.0000     98  
+sp|Q41906|CYT3_ARATH     1.0000    125  sp|Q62426|CYTB_MOUSE     1.0000     98  
+sp|Q8MVB6|CYTL_IXOSC     1.0000    133  sp|Q945Q1|CYT1_ARATH     1.0000    101  
+sp|Q98967|CYT_ONCKE      1.0000    130  sp|Q9LEI7|CYT1_HORVU     1.0000    107  
+sp|A0A0K0IP23|CPI2_BRUMA 1.0000    161  sp|B2Z450|CYTC_PAROL     1.0000    126  
+sp|B7PKZ2|CYTLG_IXOSC    1.0000    133  sp|J7FQE8|CYTB_OPLFA     1.0000    100  
+sp|O19093|CYTC_SAISC     1.0000    146  sp|P08935|CYT_BITAR      1.0000    111  
+sp|P20907|CYT2_ORYSJ     1.0000    151  sp|P22085|CYTX_ONCVO     1.0000    162  
+sp|P31727|CYTA_SARPE     1.0000    122  sp|P35478|CYTX_BOVIN     1.0000    101  
+sp|P35479|CPI1_PIG       1.0000    103  sp|P35481|CYT_CYPCA      1.0000    129  
+sp|P56567|CYTA_MOUSE     1.0000     97  sp|P80416|CYTA_BOVIN     1.0000     98  
+sp|P81061|CYT_COTJA      1.0000    116  sp|Q0JNR2|CYT12_ORYSJ    1.0000    250  
+sp|Q10994|CYTB_SHEEP     1.0000     98  sp|Q65YR8|CYTA1_DICDI    1.0000     94  
+sp|Q6T6T4|CYT_BITGA      1.0000    140  sp|Q7M429|CYTL_TACTR     1.0000    133  
+sp|Q8I030|CYTB_PANTR     1.0000     98  sp|Q8L5T9|CYT2_ARATH     1.0000    147  
+sp|Q8LC76|CYT7_ARATH     1.0000    232  sp|Q91195|CYT_ONCMY      1.0000    130  
+sp|A0A6B9L8T7|CYS17_PLAR 1.0000    114  sp|B1P1J3|CYT_CHIGU      1.0000    134  
+sp|E3P6N4|CYT_PSETE      1.0000    141  sp|E3P6N5|CYT_OXYMI      1.0000    141  
+sp|E3P6N6|CYT_OXYSC      1.0000    141  sp|E3P6N7|CYT_PSEPO      1.0000    141  
+sp|E3P6N8|CYT_PSEAU      1.0000    141  sp|E3P6P1|CYT_CRYNI      1.0000    141  
+sp|E3P6P2|CYT_NOTSC      1.0000    141  sp|E3P6P3|CYT_MICIK      1.0000    141  
+sp|E3P6P4|CYT_NAJKA      1.0000    141  sp|J3RYX9|CYT1_CROAD     1.0000    139  
+sp|J3SE80|CYT2_CROAD     1.0000    136  sp|P23779|CYTL_DROME     1.0000    126  
+sp|P31726|CYT1_MAIZE     1.0000    135  sp|P37842|CYTM_SOLTU     1.0000    756  
+sp|P60575|CYTB_PANPA     1.0000     98  sp|P60576|CYTB_PONPY     1.0000     98  
+sp|Q03196|CYT_SOLTU      1.0000     66  sp|Q06445|CYTI_VIGUN     1.0000     97  
+sp|Q10992|CYTA_HELAN     1.0000     82  sp|Q10993|CYTB_HELAN     1.0000    101  
+sp|Q10J94|CYT8_ORYSJ     1.0000    123  sp|Q10Q46|CYT6_ORYSJ     1.0000    113  
+sp|Q10Q47|CYT7_ORYSJ     1.0000    117  sp|Q28986|CYTA5_PIG      1.0000    103  
+sp|Q28987|CYTA8_PIG      1.0000    103  sp|Q28988|CYTA1_PIG      1.0000    103  
+sp|Q6K309|CYT11_ORYSJ    1.0000    120  sp|Q76LA0|CYTB_GORGO     1.0000     98  
+sp|Q862Z5|CYTB_MACFU     1.0000     98  sp|Q8WNR9|CYTA_FELCA     1.0000     98  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme uniprot-download_true_format_fasta_query_28_28xref_3Aprosite_PS0028-2023.04.16-22.45.37.04.fasta -protein -oc . -nostatus -time 14400 -mod zoops -nmotifs 3 -minw 6 -maxw 50 -objfun classic -markov_order 0 
+
+model:  mod=         zoops    nmotifs=         3    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+width:  minw=            6    maxw=           50
+nsites: minsites=        2    maxsites=       94    wnsites=       0.8
+theta:  spmap=         pam    spfuzz=        120
+em:     prior=       megap    b=           78035    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=           15607    N=              94
+sample: seed=            0    hsfrac=          0
+        searchsize=  15607    norand=         no    csites=       1000
+Dirichlet mixture priors file: prior30.plib
+Letter frequencies in dataset:
+A 0.0798 C 0.0225 D 0.0461 E 0.073 F 0.0378 G 0.0586 H 0.0282 I 0.0389 K 0.0809 
+L 0.0855 M 0.0224 N 0.0457 P 0.0472 Q 0.0528 R 0.0346 S 0.0605 T 0.0607 V 0.082 
+W 0.0109 Y 0.0318 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.0798 C 0.0225 D 0.0461 E 0.073 F 0.0378 G 0.0586 H 0.0282 I 0.0389 K 0.0809 
+L 0.0855 M 0.0224 N 0.0457 P 0.0472 Q 0.0528 R 0.0346 S 0.0606 T 0.0607 V 0.082 
+W 0.0109 Y 0.0318 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF KVVEAKSQVVAGTNYYJTVEV MEME-1	width =  21  sites =  94  llr = 3119  E-value = 1.2e-901
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  :3::5:::::7:1:::::::1
+pos.-specific     C  :::::::::::::::::::::
+probability       D  :::::::::::::::::1:1:
+matrix            E  2::3:11::::::::::1:5:
+                  F  ::::1::::::::::31::::
+                  G  ::::::::::1a:::::::::
+                  H  ::::::::::::::1::::1:
+                  I  :21:::::1:::1::14:1:1
+                  K  3:12:31:::::13:::3:1:
+                  L  :11:::::1::::1::4:1:2
+                  M  ::::::::::::11::::2:1
+                  N  :::1:::::::::5:::::::
+                  P  :::::::::::::::::::::
+                  Q  1::::21a:::::::::::1:
+                  R  3::1:21::::::::1:::::
+                  S  :::2::4:::2::::::::1:
+                  T  ::1::11:::::3::::4:::
+                  V  :55:1:::8a::2:::1:5:4
+                  W  :::::::::::::::::::::
+                  Y  ::::1:::::::::83::1::
+
+         bits    6.5                      
+                 5.9                      
+                 5.2                      
+                 4.6        *             
+Relative         3.9        *   *  *      
+Entropy          3.3        * * *  *      
+(47.9 bits)      2.6        ***** ** *    
+                 2.0 *** ** ***** **** *  
+                 1.3 *********************
+                 0.7 *********************
+                 0.0 ---------------------
+
+Multilevel           KVVEAKSQVVAGTNYYITVEV
+consensus            RA S Q    S  K FLK  L
+sequence             E                    
+                                          
+                                          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                    Site       
+-------------             ----- ---------            ---------------------
+sp|Q28988|CYTA1_PIG          44  1.39e-20 EKTNKTYEKF EAVEYKSQVVAGINYYIKVHV GGNSYVHIKV
+sp|Q862Z5|CYTB_MACFU         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEDFVHLRV
+sp|Q76LA0|CYTB_GORGO         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEDFVHLRV
+sp|P60576|CYTB_PONPY         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEDFVHLRV
+sp|P60575|CYTB_PANPA         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEDFVHLRV
+sp|Q8I030|CYTB_PANTR         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEEFVHLRV
+sp|P04080|CYTB_HUMAN         39  2.19e-20 EKENKKFPVF KAVSFKSQVVAGTNYFIKVHV GDEDFVHLRV
+sp|E3P6P2|CYT_NOTSC          66  5.21e-20 SANAYYYKQL RIVEAQSQVVAGAKYYLTMEL MKTKCAKTTG
+sp|E3P6P1|CYT_CRYNI          66  5.21e-20 SANAYYYKQL RIVEAQSQVVAGAKYYLTMEL MKTKCAKTTG
+sp|E3P6N6|CYT_OXYSC          66  5.21e-20 STNAYYYKQL RIVEAQSQVVAGAKYYLTMEL MKTKCAKTTG
+sp|E3P6N5|CYT_OXYMI          66  5.21e-20 STNAYYYKQL RIVEAQSQVVAGAKYYLTMEL MKTKCAKTTG
+sp|E3P6N4|CYT_PSETE          66  5.21e-20 STNAYYYKQL RIVEAQSQVVAGAKYYLTMEL MKTKCAKATG
+sp|P01035|CYTC_BOVIN         77  9.66e-20 SNDAYQSRVV RVVRARKQVVSGMNYFLDVEL GRTTCTKSQA
+sp|Q28987|CYTA8_PIG          44  1.18e-19 EKTKKTYEKF EAIIYRSQVVAGTNYYIKVHV GGNSYVHIIV
+sp|Q28986|CYTA5_PIG          44  1.18e-19 EKTKKTYEKF EAIIYRSQVVAGTNYYIKVHV GGNSYVHIIV
+sp|P35479|CPI1_PIG           44  1.18e-19 EKTNKTYEKF EAIIYRSQVVAGTNYYIKVHV GGNNYVHIRV
+sp|Q6T6T4|CYT_BITGA          66  1.75e-19 STNDNYFKAR RIVEAQSQVVSGVKYYLKMEL AKTTCKKIAG
+sp|E3P6P3|CYT_MICIK          66  2.11e-19 SANAYYYKEL RIVEAQSQVVSGAKYYLTMEL MKTKCAKATS
+sp|E3P6N8|CYT_PSEAU          66  2.11e-19 SANAYYYKQL RIVEAQSQVVSGAKYYLTMEL MKTKCAKTTG
+sp|E3P6N7|CYT_PSEPO          66  2.11e-19 SANAYYYKQL RIVEAQSQVVSGAKYYLTMEL MKTKCAKTTG
+sp|Q8WNR9|CYTA_FELCA         39  6.37e-19 EKTNETYQKF EAIEYKTQVVAGINYYIKVQV DDNRYIHIKV
+sp|P56567|CYTA_MOUSE         39  6.37e-19 EETNEKYEIF KAVEYKTQVVAGVNYFIKMDV GGGCFTHIKV
+sp|P08935|CYT_BITAR          40  9.04e-19 SKNDYYFKER RVVEAQSQVVSGVKYYLMMEL LKTTCKKTVG
+sp|P31726|CYT1_MAIZE         79  2.90e-18 QKANALLGFE KLVKAKTQVVAGTMYYLTIEV KDGEVKKLYE
+sp|E3P6P4|CYT_NAJKA          66  4.65e-18 SANAHYYKEL RVVEAQSQVVAGEKYYLMMEL VKTKCAKTAG
+sp|O19093|CYTC_SAISC         74  5.43e-18 SNDMYHSRAL QVVRARKQIVAGVNYFLDVEM GRTTCTKNQP
+sp|P14841|CYTC_RAT           68  5.43e-18 SNDAYHSRAI QVVRARKQLVAGINYYLDVEM GRTTCTKSQT
+sp|O19092|CYTC_MACMU         74  1.15e-17 SNDMYHSRAL QVVRARKQIVAGVNYFLDVEL GRTTCTKTQP
+sp|P01034|CYTC_HUMAN         74  1.15e-17 SNDMYHSRAL QVVRARKQIVAGVNYFLDVEL GRTTCTKTQP
+sp|P35478|CYTX_BOVIN         42  1.33e-17 EKENKKFPVF KAVKFRSQVVAGMNYLIKVQV DEDDFVHIRV
+sp|P21460|CYTC_MOUSE         68  1.78e-17 SNDAYHSRAI QVVRARKQLVAGVNYFLDVEM GRTTCTKSQT
+sp|Q8L5T9|CYT2_ARATH         91  3.12e-17 TAISNPLQFS RVVSAQKQVVAGLKYYLRIEV TQPNGSTRMF
+sp|P01041|CYTB_RAT           39  3.12e-17 EKANQKFDVF KAISFRRQVVAGTNFFIKVDV GEEKCVHLRV
+sp|P09229|CYT1_ORYSJ         84  9.11e-17 KKANSLLEFE KLVSVKQQVVAGTLYYFTIEV KEGDAKKLYE
+sp|J3SE80|CYT2_CROAD         66  1.04e-16 SNDMYSSRVS EVVEAQKQIVSGIKYYFTVKI GRTVCRKGAT
+sp|P01040|CYTA_HUMAN         39  1.04e-16 EKTNETYGKL EAVQYKTQVVAGTNYYIKVRA GDNKYMHLKV
+sp|Q91195|CYT_ONCMY          60  1.18e-16 TNDMFVRQVA KVVNAQKQVVSGMKYIFTVQM GRTPCRKGGV
+sp|P80416|CYTA_BOVIN         39  1.18e-16 EKTNETYEEF TAIEYKSQVVAGINYYIKIQT GDNRYIHIKV
+sp|Q98967|CYT_ONCKE          60  1.18e-16 TNDMFVRQVA KVVNAQKQVVSGMKYIFTVQM GRTPCRKGGV
+sp|Q41906|CYT3_ARATH         73  1.18e-16 KQQNKILEFK KIVKAREQVVAGTMYHLTLEA KEGDQTKNFE
+sp|J3RYX9|CYT1_CROAD         64  1.34e-16 STNSNYFKAL RLVQAESQVVSGAKYYLTMEL VKTSCRKTNG
+sp|Q15828|CYTM_HUMAN         73  1.34e-16 SNSIYYFRDT HIIKAQSQLVAGIKYFLTMEM GSTDCRKTRV
+sp|Q10994|CYTB_SHEEP         39  1.72e-16 EKENKKFPVF KALEFKSQLVAGKNYFIKVQV DEDDFVHIRV
+sp|P25417|CYTB_BOVIN         39  1.72e-16 EKENKKFPVF KALEFKSQLVAGKNYFIKVQV DEDDFVHIRV
+sp|P09228|CYTT_HUMAN         69  1.72e-16 TEDEYYRRLL RVLRAREQIVGGVNYFFDIEV GRTICTKSQP
+sp|B1P1J3|CYT_CHIGU          58  3.18e-16 SNSLYFEKLV KVIEAKSQVVSGVKYNITFEI APTECKKNGK
+sp|P01037|CYTN_HUMAN         69  3.18e-16 TKDDYYRRPL RVLRARQQTVGGVNYFFDVEV GRTICTKSQP
+sp|Q10993|CYTB_HELAN         46  3.58e-16 KTGAGDLKFS QVIAAETQVVAGTKYYLKIEA ITKGGKMKVF
+sp|Q06445|CYTI_VIGUN         42  3.58e-16 KKQNALLEFG RVVSAQQQVVSGTLYTITLEA KDGGQKKVYE
+sp|Q8MVB6|CYTL_IXOSC         64  5.11e-16 PGKTHFDTVA EVVKVETQVVAGTNYRLTLKV AESTCELTST
+sp|Q29290|CYTB_PIG           39  5.75e-16 EKENKTFPVF KAVEFKSQVVAGRNLFIKVQV DDDDFVHLRV
+sp|Q62426|CYTB_MOUSE         39  6.45e-16 SKENQKFDVF KAISFKRQIVAGTNLFIKVDV GGDKCVHLRV
+sp|Q9JM84|CST10_MOUSE        76  6.45e-16 DNDLYLSKPI RLMSASQQVVAGKNYYLKIEL GRTTCTKTES
+sp|P35173|CYT3_MOUSE         45  8.12e-16 EQTNEKYEKF EAVEYKSQVVAGQNLFIKIDV GNGCFLHMKV
+sp|P37842|CYTM_SOLTU         41  9.10e-16 QKNDSSLEFK KVLNVKQQIVAGIMYYITFEA TEGGNKKEYE
+sp|P20907|CYT2_ORYSJ         95  1.02e-15 SKANAMLELE RVVKVRQQVVGGFMHYLTVEV KEPGGANKLY
+sp|P08932|KNT2_RAT          180  1.78e-15 TKHTHLFALT EVKSAHSQVVAGMNYKIIYSI VQTNCSKEDF
+sp|P01048|KNT1_RAT          180  1.78e-15 TKHTHLFALR EVKSAHSQVVAGMNYKIIYSI VQTNCSKEDF
+sp|B7PKZ2|CYTLG_IXOSC        64  1.98e-15 PGKTHFDTVA EVLKVETQVVAGTNYRLTLKV AESTCELTST
+sp|B2Z450|CYTC_PAROL         57  1.98e-15 TNDMFLRQVA EVVRVQRQVVSGNKYIITVKM AKTPCRKDRV
+sp|P35175|CYT1_MOUSE         39  2.21e-15 AKTNKKYEKF EAVEYKTQVVAGENIFIKMDV GHGCFIHIKV
+sp|Q8H0X6|CYT6_ARATH         75  2.21e-15 KKENALLEFA RVVKAKEQVVAGTLHHLTLEI LEAGQKKLYE
+sp|Q10992|CYTA_HELAN         27  2.46e-15 KKQNALLEFG KVVNTKEQVVAGKMYYITLEA TNGGVKKTYE
+sp|Q0JNR2|CYT12_ORYSJ        86  2.46e-15 KRENALLEFV RVVEAKEQVVAGTLHHLTLEA LEAGRKKVYE
+sp|P01038|CYT_CHICK          69  2.46e-15 SNDKYSSRVV RVISAKRQLVSGIKYILQVEI GRTTCPKSSG
+sp|Q03196|CYT_SOLTU          11  3.76e-15 QTQNAHLEFV EVLNVKEQVVAGMMYYITLVA TDDGYKKIYK
+sp|P81061|CYT_COTJA          46  3.76e-15 SNDKYSSRVV RIISAKQQLVSGIKYIMEVEI GRTTCPKSSA
+sp|Q9LEI7|CYT1_HORVU         56  3.76e-15 AKANALLEFE KLVKVRQQVVAGCMHYFTIEV KEGGAKKLYE
+sp|Q65YR8|CYTA1_DICDI        38  4.64e-15 LKSKLNTTEV EPVSYKTQLVAGTNYFIKVKT PAGFAHARVY
+sp|Q945Q1|CYT1_ARATH         48  5.14e-15 KNENLTLEYK RLLGAKTQVVAGTMHHLTVEV ADGETNKVYE
+sp|P01042|KNG1_HUMAN        181  5.14e-15 TQHSSLFMLN EVKRAQRQVVAGLNFRITYSI VQTNCSKENF
+sp|Q8LC76|CYT7_ARATH         84  7.73e-15 RRENAVLELA RVLKATEQVVAGKLYRLTLEV IEAGEKKIYE
+sp|Q10Q47|CYT7_ORYSJ         64  1.88e-14 GVAAGGLTFE RVTDGEKQVVAGVNYRLTLEA SSSGAKDGRY
+sp|P35481|CYT_CYPCA          60  2.75e-14 SNDAFVRKVS KVIKVQQQVAAGMKYIFTVKM EVASCKKGGV
+sp|P35174|CYT2_MOUSE         45  2.75e-14 EKTNEKYEKF KAIEYKVQVVQGLNYFIKMNV GRGCYLHINV
+sp|B7PKZ1|CYTL2_IXOSC        63  2.75e-14 PGKTHFDTVV EVLKVETQTVAGTNYRLTLKV AESTCELTST
+sp|P08934|KNG1_RAT          181  2.75e-14 TKHTHLFALG EVKSADRQVVAGMNYQIIYSI VQTNCSKEDF
+sp|P01039|CYTA_RAT           45  3.02e-14 EKTNEKYEKF KVVEYKSQVVAGQILFMKVDV GNGRFLHMKV
+sp|J7FQE8|CYTB_OPLFA         41  3.32e-14 EKAGKKYDVF TAKTYTTQIVSGTNYFIKIHV GGDDHVHLRV
+sp|Q10J94|CYT8_ORYSJ         69  4.39e-14 SLSSDGLRFR RVTSGEQQVVSGMNYRLVVSA SDPAGATASY
+sp|Q10Q46|CYT6_ORYSJ         58  4.81e-14 VSPSDELTFH RVTGGEQQVVSGMNYRLEIEA ASGGGDVTGS
+sp|P01044|KNG1_BOVIN        180  5.27e-14 TSHSHLFDLK EVKRAQRQVVSGWNYEVNYSI AQTNCSKEEF
+sp|P01045|KNG2_BOVIN        180  7.56e-14 TSHSHLFDLK EVKRAQKQVVSGWNYEVNYSI AQTNCSKEEF
+sp|P01036|CYTS_HUMAN         69  8.27e-14 TEDEYYRRPL QVLRAREQTFGGVNYFFDVEV GRTICTKSQP
+sp|P22085|CYTX_ONCVO         90  1.08e-13 SNDEYHLMPI KLLKVSSQVVAGVKYKMDVQV ARSQCKKSSN
+sp|P19313|CYTS_RAT           69  2.16e-13 NSDLYLSRVV EVKDVQKQVVAGTKFFFDVIL GKTICLKTQG
+sp|O08677|KNG1_MOUSE        180  3.28e-13 TDHSHLFTLR KVKSAHRQVVAGLNFDITYTI VQTNCSKERF
+sp|Q7M429|CYTL_TACTR         60  3.57e-13 SNSLYHHKLL KIHKARTQVVSGINYEVFIET GTTTCKKSEV
+sp|A0A0K0IP23|CPI2_BRUMA     86  3.57e-13 SNDEYHLMPI KLLNVSSQVVAGVKYKMEVQV ARSECKKSAS
+sp|P28325|CYTD_HUMAN         70  2.39e-12 NKDEYYSRPL QVMAAYQQIVGGVNYYFNVKF GRTTCTKSQP
+sp|Q6K309|CYT11_ORYSJ        66  6.25e-12 LGTNDRLQFV RVVAAEEQVVQGSNYLVVIDA ASSRKKTREL
+sp|A0A6B9L8T7|CYS17_PLAR     62  1.57e-11 SSQNAGVVVV KITKATRQVVAGFKYVVEFVA KVAGTNKQKV
+sp|P31727|CYTA_SARPE         60  1.08e-10 AGDGPTYKLV KINSATTQVVSGSKDVINADL KDENDKTKTC
+sp|P23779|CYTL_DROME         65  9.69e-10 TGDGPSYKAI NVTSVTGQVVAGSLNTYEVEL DNGSDKKQCT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|Q28988|CYTA1_PIG               1.4e-20  43_[1]_39
+sp|Q862Z5|CYTB_MACFU              2.2e-20  38_[1]_39
+sp|Q76LA0|CYTB_GORGO              2.2e-20  38_[1]_39
+sp|P60576|CYTB_PONPY              2.2e-20  38_[1]_39
+sp|P60575|CYTB_PANPA              2.2e-20  38_[1]_39
+sp|Q8I030|CYTB_PANTR              2.2e-20  38_[1]_39
+sp|P04080|CYTB_HUMAN              2.2e-20  38_[1]_39
+sp|E3P6P2|CYT_NOTSC               5.2e-20  65_[1]_55
+sp|E3P6P1|CYT_CRYNI               5.2e-20  65_[1]_55
+sp|E3P6N6|CYT_OXYSC               5.2e-20  65_[1]_55
+sp|E3P6N5|CYT_OXYMI               5.2e-20  65_[1]_55
+sp|E3P6N4|CYT_PSETE               5.2e-20  65_[1]_55
+sp|P01035|CYTC_BOVIN              9.7e-20  76_[1]_51
+sp|Q28987|CYTA8_PIG               1.2e-19  43_[1]_39
+sp|Q28986|CYTA5_PIG               1.2e-19  43_[1]_39
+sp|P35479|CPI1_PIG                1.2e-19  43_[1]_39
+sp|Q6T6T4|CYT_BITGA               1.7e-19  65_[1]_54
+sp|E3P6P3|CYT_MICIK               2.1e-19  65_[1]_55
+sp|E3P6N8|CYT_PSEAU               2.1e-19  65_[1]_55
+sp|E3P6N7|CYT_PSEPO               2.1e-19  65_[1]_55
+sp|Q8WNR9|CYTA_FELCA              6.4e-19  38_[1]_39
+sp|P56567|CYTA_MOUSE              6.4e-19  38_[1]_38
+sp|P08935|CYT_BITAR                 9e-19  39_[1]_51
+sp|P31726|CYT1_MAIZE              2.9e-18  78_[1]_36
+sp|E3P6P4|CYT_NAJKA               4.7e-18  65_[1]_55
+sp|O19093|CYTC_SAISC              5.4e-18  73_[1]_52
+sp|P14841|CYTC_RAT                5.4e-18  67_[1]_52
+sp|O19092|CYTC_MACMU              1.2e-17  73_[1]_52
+sp|P01034|CYTC_HUMAN              1.2e-17  73_[1]_52
+sp|P35478|CYTX_BOVIN              1.3e-17  41_[1]_39
+sp|P21460|CYTC_MOUSE              1.8e-17  67_[1]_52
+sp|Q8L5T9|CYT2_ARATH              3.1e-17  90_[1]_36
+sp|P01041|CYTB_RAT                3.1e-17  38_[1]_39
+sp|P09229|CYT1_ORYSJ              9.1e-17  83_[1]_36
+sp|J3SE80|CYT2_CROAD                1e-16  65_[1]_50
+sp|P01040|CYTA_HUMAN                1e-16  38_[1]_39
+sp|Q91195|CYT_ONCMY               1.2e-16  59_[1]_50
+sp|P80416|CYTA_BOVIN              1.2e-16  38_[1]_39
+sp|Q98967|CYT_ONCKE               1.2e-16  59_[1]_50
+sp|Q41906|CYT3_ARATH              1.2e-16  72_[1]_32
+sp|J3RYX9|CYT1_CROAD              1.3e-16  63_[1]_55
+sp|Q15828|CYTM_HUMAN              1.3e-16  72_[1]_56
+sp|Q10994|CYTB_SHEEP              1.7e-16  38_[1]_39
+sp|P25417|CYTB_BOVIN              1.7e-16  38_[1]_39
+sp|P09228|CYTT_HUMAN              1.7e-16  68_[1]_52
+sp|B1P1J3|CYT_CHIGU               3.2e-16  57_[1]_56
+sp|P01037|CYTN_HUMAN              3.2e-16  68_[1]_52
+sp|Q10993|CYTB_HELAN              3.6e-16  45_[1]_35
+sp|Q06445|CYTI_VIGUN              3.6e-16  41_[1]_35
+sp|Q8MVB6|CYTL_IXOSC              5.1e-16  63_[1]_49
+sp|Q29290|CYTB_PIG                5.7e-16  38_[1]_39
+sp|Q62426|CYTB_MOUSE              6.5e-16  38_[1]_39
+sp|Q9JM84|CST10_MOUSE             6.5e-16  75_[1]_52
+sp|P35173|CYT3_MOUSE              8.1e-16  44_[1]_38
+sp|P37842|CYTM_SOLTU              9.1e-16  40_[1]_695
+sp|P20907|CYT2_ORYSJ                1e-15  94_[1]_36
+sp|P08932|KNT2_RAT                1.8e-15  179_[1]_230
+sp|P01048|KNT1_RAT                1.8e-15  179_[1]_230
+sp|B7PKZ2|CYTLG_IXOSC               2e-15  63_[1]_49
+sp|B2Z450|CYTC_PAROL                2e-15  56_[1]_49
+sp|P35175|CYT1_MOUSE              2.2e-15  38_[1]_38
+sp|Q8H0X6|CYT6_ARATH              2.2e-15  74_[1]_139
+sp|Q10992|CYTA_HELAN              2.5e-15  26_[1]_35
+sp|Q0JNR2|CYT12_ORYSJ             2.5e-15  85_[1]_144
+sp|P01038|CYT_CHICK               2.5e-15  68_[1]_50
+sp|Q03196|CYT_SOLTU               3.8e-15  10_[1]_35
+sp|P81061|CYT_COTJA               3.8e-15  45_[1]_50
+sp|Q9LEI7|CYT1_HORVU              3.8e-15  55_[1]_31
+sp|Q65YR8|CYTA1_DICDI             4.6e-15  37_[1]_36
+sp|Q945Q1|CYT1_ARATH              5.1e-15  47_[1]_33
+sp|P01042|KNG1_HUMAN              5.1e-15  180_[1]_443
+sp|Q8LC76|CYT7_ARATH              7.7e-15  83_[1]_128
+sp|Q10Q47|CYT7_ORYSJ              1.9e-14  63_[1]_33
+sp|P35481|CYT_CYPCA               2.8e-14  59_[1]_49
+sp|P35174|CYT2_MOUSE              2.8e-14  44_[1]_38
+sp|B7PKZ1|CYTL2_IXOSC             2.8e-14  62_[1]_49
+sp|P08934|KNG1_RAT                2.8e-14  180_[1]_438
+sp|P01039|CYTA_RAT                  3e-14  44_[1]_38
+sp|J7FQE8|CYTB_OPLFA              3.3e-14  40_[1]_39
+sp|Q10J94|CYT8_ORYSJ              4.4e-14  68_[1]_34
+sp|Q10Q46|CYT6_ORYSJ              4.8e-14  57_[1]_35
+sp|P01044|KNG1_BOVIN              5.3e-14  179_[1]_421
+sp|P01045|KNG2_BOVIN              7.6e-14  179_[1]_419
+sp|P01036|CYTS_HUMAN              8.3e-14  68_[1]_52
+sp|P22085|CYTX_ONCVO              1.1e-13  89_[1]_52
+sp|P19313|CYTS_RAT                2.2e-13  68_[1]_52
+sp|O08677|KNG1_MOUSE              3.3e-13  179_[1]_461
+sp|Q7M429|CYTL_TACTR              3.6e-13  59_[1]_53
+sp|A0A0K0IP23|CPI2_BRUMA          3.6e-13  85_[1]_55
+sp|P28325|CYTD_HUMAN              2.4e-12  69_[1]_52
+sp|Q6K309|CYT11_ORYSJ             6.3e-12  65_[1]_34
+sp|A0A6B9L8T7|CYS17_PLAR          1.6e-11  61_[1]_32
+sp|P31727|CYTA_SARPE              1.1e-10  59_[1]_42
+sp|P23779|CYTL_DROME              9.7e-10  64_[1]_41
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF KVVEAKSQVVAGTNYYJTVEV width=21 seqs=94
+sp|Q28988|CYTA1_PIG      (   44) EAVEYKSQVVAGINYYIKVHV  1 
+sp|Q862Z5|CYTB_MACFU     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|Q76LA0|CYTB_GORGO     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|P60576|CYTB_PONPY     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|P60575|CYTB_PANPA     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|Q8I030|CYTB_PANTR     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|P04080|CYTB_HUMAN     (   39) KAVSFKSQVVAGTNYFIKVHV  1 
+sp|E3P6P2|CYT_NOTSC      (   66) RIVEAQSQVVAGAKYYLTMEL  1 
+sp|E3P6P1|CYT_CRYNI      (   66) RIVEAQSQVVAGAKYYLTMEL  1 
+sp|E3P6N6|CYT_OXYSC      (   66) RIVEAQSQVVAGAKYYLTMEL  1 
+sp|E3P6N5|CYT_OXYMI      (   66) RIVEAQSQVVAGAKYYLTMEL  1 
+sp|E3P6N4|CYT_PSETE      (   66) RIVEAQSQVVAGAKYYLTMEL  1 
+sp|P01035|CYTC_BOVIN     (   77) RVVRARKQVVSGMNYFLDVEL  1 
+sp|Q28987|CYTA8_PIG      (   44) EAIIYRSQVVAGTNYYIKVHV  1 
+sp|Q28986|CYTA5_PIG      (   44) EAIIYRSQVVAGTNYYIKVHV  1 
+sp|P35479|CPI1_PIG       (   44) EAIIYRSQVVAGTNYYIKVHV  1 
+sp|Q6T6T4|CYT_BITGA      (   66) RIVEAQSQVVSGVKYYLKMEL  1 
+sp|E3P6P3|CYT_MICIK      (   66) RIVEAQSQVVSGAKYYLTMEL  1 
+sp|E3P6N8|CYT_PSEAU      (   66) RIVEAQSQVVSGAKYYLTMEL  1 
+sp|E3P6N7|CYT_PSEPO      (   66) RIVEAQSQVVSGAKYYLTMEL  1 
+sp|Q8WNR9|CYTA_FELCA     (   39) EAIEYKTQVVAGINYYIKVQV  1 
+sp|P56567|CYTA_MOUSE     (   39) KAVEYKTQVVAGVNYFIKMDV  1 
+sp|P08935|CYT_BITAR      (   40) RVVEAQSQVVSGVKYYLMMEL  1 
+sp|P31726|CYT1_MAIZE     (   79) KLVKAKTQVVAGTMYYLTIEV  1 
+sp|E3P6P4|CYT_NAJKA      (   66) RVVEAQSQVVAGEKYYLMMEL  1 
+sp|O19093|CYTC_SAISC     (   74) QVVRARKQIVAGVNYFLDVEM  1 
+sp|P14841|CYTC_RAT       (   68) QVVRARKQLVAGINYYLDVEM  1 
+sp|O19092|CYTC_MACMU     (   74) QVVRARKQIVAGVNYFLDVEL  1 
+sp|P01034|CYTC_HUMAN     (   74) QVVRARKQIVAGVNYFLDVEL  1 
+sp|P35478|CYTX_BOVIN     (   42) KAVKFRSQVVAGMNYLIKVQV  1 
+sp|P21460|CYTC_MOUSE     (   68) QVVRARKQLVAGVNYFLDVEM  1 
+sp|Q8L5T9|CYT2_ARATH     (   91) RVVSAQKQVVAGLKYYLRIEV  1 
+sp|P01041|CYTB_RAT       (   39) KAISFRRQVVAGTNFFIKVDV  1 
+sp|P09229|CYT1_ORYSJ     (   84) KLVSVKQQVVAGTLYYFTIEV  1 
+sp|J3SE80|CYT2_CROAD     (   66) EVVEAQKQIVSGIKYYFTVKI  1 
+sp|P01040|CYTA_HUMAN     (   39) EAVQYKTQVVAGTNYYIKVRA  1 
+sp|Q91195|CYT_ONCMY      (   60) KVVNAQKQVVSGMKYIFTVQM  1 
+sp|P80416|CYTA_BOVIN     (   39) TAIEYKSQVVAGINYYIKIQT  1 
+sp|Q98967|CYT_ONCKE      (   60) KVVNAQKQVVSGMKYIFTVQM  1 
+sp|Q41906|CYT3_ARATH     (   73) KIVKAREQVVAGTMYHLTLEA  1 
+sp|J3RYX9|CYT1_CROAD     (   64) RLVQAESQVVSGAKYYLTMEL  1 
+sp|Q15828|CYTM_HUMAN     (   73) HIIKAQSQLVAGIKYFLTMEM  1 
+sp|Q10994|CYTB_SHEEP     (   39) KALEFKSQLVAGKNYFIKVQV  1 
+sp|P25417|CYTB_BOVIN     (   39) KALEFKSQLVAGKNYFIKVQV  1 
+sp|P09228|CYTT_HUMAN     (   69) RVLRAREQIVGGVNYFFDIEV  1 
+sp|B1P1J3|CYT_CHIGU      (   58) KVIEAKSQVVSGVKYNITFEI  1 
+sp|P01037|CYTN_HUMAN     (   69) RVLRARQQTVGGVNYFFDVEV  1 
+sp|Q10993|CYTB_HELAN     (   46) QVIAAETQVVAGTKYYLKIEA  1 
+sp|Q06445|CYTI_VIGUN     (   42) RVVSAQQQVVSGTLYTITLEA  1 
+sp|Q8MVB6|CYTL_IXOSC     (   64) EVVKVETQVVAGTNYRLTLKV  1 
+sp|Q29290|CYTB_PIG       (   39) KAVEFKSQVVAGRNLFIKVQV  1 
+sp|Q62426|CYTB_MOUSE     (   39) KAISFKRQIVAGTNLFIKVDV  1 
+sp|Q9JM84|CST10_MOUSE    (   76) RLMSASQQVVAGKNYYLKIEL  1 
+sp|P35173|CYT3_MOUSE     (   45) EAVEYKSQVVAGQNLFIKIDV  1 
+sp|P37842|CYTM_SOLTU     (   41) KVLNVKQQIVAGIMYYITFEA  1 
+sp|P20907|CYT2_ORYSJ     (   95) RVVKVRQQVVGGFMHYLTVEV  1 
+sp|P08932|KNT2_RAT       (  180) EVKSAHSQVVAGMNYKIIYSI  1 
+sp|P01048|KNT1_RAT       (  180) EVKSAHSQVVAGMNYKIIYSI  1 
+sp|B7PKZ2|CYTLG_IXOSC    (   64) EVLKVETQVVAGTNYRLTLKV  1 
+sp|B2Z450|CYTC_PAROL     (   57) EVVRVQRQVVSGNKYIITVKM  1 
+sp|P35175|CYT1_MOUSE     (   39) EAVEYKTQVVAGENIFIKMDV  1 
+sp|Q8H0X6|CYT6_ARATH     (   75) RVVKAKEQVVAGTLHHLTLEI  1 
+sp|Q10992|CYTA_HELAN     (   27) KVVNTKEQVVAGKMYYITLEA  1 
+sp|Q0JNR2|CYT12_ORYSJ    (   86) RVVEAKEQVVAGTLHHLTLEA  1 
+sp|P01038|CYT_CHICK      (   69) RVISAKRQLVSGIKYILQVEI  1 
+sp|Q03196|CYT_SOLTU      (   11) EVLNVKEQVVAGMMYYITLVA  1 
+sp|P81061|CYT_COTJA      (   46) RIISAKQQLVSGIKYIMEVEI  1 
+sp|Q9LEI7|CYT1_HORVU     (   56) KLVKVRQQVVAGCMHYFTIEV  1 
+sp|Q65YR8|CYTA1_DICDI    (   38) EPVSYKTQLVAGTNYFIKVKT  1 
+sp|Q945Q1|CYT1_ARATH     (   48) RLLGAKTQVVAGTMHHLTVEV  1 
+sp|P01042|KNG1_HUMAN     (  181) EVKRAQRQVVAGLNFRITYSI  1 
+sp|Q8LC76|CYT7_ARATH     (   84) RVLKATEQVVAGKLYRLTLEV  1 
+sp|Q10Q47|CYT7_ORYSJ     (   64) RVTDGEKQVVAGVNYRLTLEA  1 
+sp|P35481|CYT_CYPCA      (   60) KVIKVQQQVAAGMKYIFTVKM  1 
+sp|P35174|CYT2_MOUSE     (   45) KAIEYKVQVVQGLNYFIKMNV  1 
+sp|B7PKZ1|CYTL2_IXOSC    (   63) EVLKVETQTVAGTNYRLTLKV  1 
+sp|P08934|KNG1_RAT       (  181) EVKSADRQVVAGMNYQIIYSI  1 
+sp|P01039|CYTA_RAT       (   45) KVVEYKSQVVAGQILFMKVDV  1 
+sp|J7FQE8|CYTB_OPLFA     (   41) TAKTYTTQIVSGTNYFIKIHV  1 
+sp|Q10J94|CYT8_ORYSJ     (   69) RVTSGEQQVVSGMNYRLVVSA  1 
+sp|Q10Q46|CYT6_ORYSJ     (   58) RVTGGEQQVVSGMNYRLEIEA  1 
+sp|P01044|KNG1_BOVIN     (  180) EVKRAQRQVVSGWNYEVNYSI  1 
+sp|P01045|KNG2_BOVIN     (  180) EVKRAQKQVVSGWNYEVNYSI  1 
+sp|P01036|CYTS_HUMAN     (   69) QVLRAREQTFGGVNYFFDVEV  1 
+sp|P22085|CYTX_ONCVO     (   90) KLLKVSSQVVAGVKYKMDVQV  1 
+sp|P19313|CYTS_RAT       (   69) EVKDVQKQVVAGTKFFFDVIL  1 
+sp|O08677|KNG1_MOUSE     (  180) KVKSAHRQVVAGLNFDITYTI  1 
+sp|Q7M429|CYTL_TACTR     (   60) KIHKARTQVVSGINYEVFIET  1 
+sp|A0A0K0IP23|CPI2_BRUMA (   86) KLLNVSSQVVAGVKYKMEVQV  1 
+sp|P28325|CYTD_HUMAN     (   70) QVMAAYQQIVGGVNYYFNVKF  1 
+sp|Q6K309|CYT11_ORYSJ    (   66) RVVAAEEQVVQGSNYLVVIDA  1 
+sp|A0A6B9L8T7|CYS17_PLAR (   62) KITKATRQVVAGFKYVVEFVA  1 
+sp|P31727|CYTA_SARPE     (   60) KINSATTQVVSGSKDVINADL  1 
+sp|P23779|CYTL_DROME     (   65) NVTSVTGQVVAGSLNTYEVEL  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 21 n= 13727 bayes= 7.60807 E= 1.2e-901 
+  -607   -715   -657    164   -770   -643   -132   -620    202   -630   -564   -199   -682     69    314   -565   -148   -679   -629   -632 
+   165   -598   -884   -896   -618   -848   -914    206   -911      1   -495   -838   -217   -904   -835   -786   -619    257   -806   -752 
+  -407   -419   -622   -597   -376   -538   -137    193     18     70      5   -203   -568   -543   -467   -446    -17    261   -427   -422 
+  -114   -539    -92    180   -495   -138   -344    -32     95   -469   -384     48   -450   -103    194    188   -201   -483   -482   -435 
+   272   -540   -791   -826    174    -84   -654   -588   -844   -664   -607   -689   -680   -743   -686   -469   -237     85   -550    221 
+  -448   -616   -189     39   -594   -514     18   -517    199   -541   -462   -403   -540    216    244    -84    -19   -565   -550   -154 
+  -468   -631   -454     38   -616   -234   -422   -532     80   -555   -477   -421   -559    125    150    256    125   -282   -563   -534 
+ -1035   -935   -933  -1083   -981   -862   -930  -1068  -1078  -1027  -1082   -993   -909    424   -909   -991  -1013  -1126   -878   -967 
+  -631   -601   -886   -904   -629   -870   -946    137   -925      1   -503   -853   -866   -928   -853   -814    -93    325   -841   -776 
+  -277   -606   -885   -915   -180   -756   -901   -287   -937   -527   -533   -835   -832   -908   -842   -693   -629    356   -798   -726 
+   310   -522   -787   -838   -774    -12   -786   -729   -879   -785   -692   -693   -663   -132   -711    195   -535   -655   -761   -810 
+  -965   -920   -905  -1048   -972    409   -917  -1042  -1046  -1016  -1048   -949   -900  -1013   -887   -942   -988  -1094   -869   -957 
+    25   -100   -589   -176    -73   -530   -491    147    -64    -82    234   -201   -559   -130   -158    -87    212     96     92   -419 
+  -667   -699   -751   -678   -508   -735   -596   -162    186    -33    191    353   -760   -542   -357   -666   -641   -561   -612   -635 
+  -617   -605   -211   -696     37   -694     91   -181   -705   -101   -530   -208   -689   -656   -570   -585   -646   -630   -329    468 
+  -325   -350   -205   -136    280   -433     60     45   -116   -178   -281   -202   -422   -228     98   -310   -158   -188   -175    357 
+  -740   -697   -992   -963    162   -913   -825    332   -964    217     97   -920   -857   -805   -795   -876   -727    -60   -601   -157 
+  -355   -539    129    -35   -178   -430   -346    -31    186   -469     -8     -5   -452   -172   -116   -312    252   -187   -483   -436 
+  -272   -546   -772   -748    -21   -691   -653    184   -742     50    290   -685   -707   -680   -617   -606   -537    245   -538    119 
+  -361   -550     86    260   -506   -437    197   -175     11   -478   -394   -166   -457     98   -120     32   -204   -187   -493   -445 
+    77   -486   -702   -680   -164   -622   -591    173   -673    123    190   -614   -648   -626   -554   -533    -88    227   -505   -502 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 21 nsites= 94 E= 1.2e-901 
+ 0.000000  0.000000  0.000000  0.234043  0.000000  0.000000  0.010638  0.000000  0.329787  0.000000  0.000000  0.010638  0.000000  0.085106  0.308511  0.000000  0.021277  0.000000  0.000000  0.000000 
+ 0.255319  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.159574  0.000000  0.085106  0.000000  0.000000  0.010638  0.000000  0.000000  0.000000  0.000000  0.489362  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.010638  0.148936  0.095745  0.138298  0.021277  0.010638  0.000000  0.000000  0.000000  0.000000  0.053191  0.521277  0.000000  0.000000 
+ 0.031915  0.000000  0.021277  0.265957  0.000000  0.021277  0.000000  0.031915  0.159574  0.000000  0.000000  0.063830  0.000000  0.021277  0.138298  0.234043  0.010638  0.000000  0.000000  0.000000 
+ 0.531915  0.000000  0.000000  0.000000  0.127660  0.031915  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.010638  0.148936  0.000000  0.148936 
+ 0.000000  0.000000  0.010638  0.095745  0.000000  0.000000  0.031915  0.000000  0.329787  0.000000  0.000000  0.000000  0.000000  0.244681  0.191489  0.031915  0.053191  0.000000  0.000000  0.010638 
+ 0.000000  0.000000  0.000000  0.095745  0.000000  0.010638  0.000000  0.000000  0.138298  0.000000  0.000000  0.000000  0.000000  0.127660  0.095745  0.372340  0.148936  0.010638  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.095745  0.000000  0.085106  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.031915  0.787234  0.000000  0.000000 
+ 0.010638  0.000000  0.000000  0.000000  0.010638  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.978723  0.000000  0.000000 
+ 0.691489  0.000000  0.000000  0.000000  0.000000  0.053191  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.021277  0.000000  0.234043  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.095745  0.010638  0.000000  0.021277  0.021277  0.000000  0.000000  0.106383  0.053191  0.042553  0.117021  0.010638  0.000000  0.021277  0.010638  0.031915  0.276596  0.159574  0.021277  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.010638  0.297872  0.063830  0.085106  0.542553  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.010638  0.000000  0.042553  0.000000  0.053191  0.010638  0.000000  0.042553  0.000000  0.010638  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.829787 
+ 0.000000  0.000000  0.010638  0.031915  0.297872  0.000000  0.042553  0.063830  0.042553  0.021277  0.000000  0.010638  0.000000  0.010638  0.085106  0.000000  0.021277  0.021277  0.000000  0.340426 
+ 0.000000  0.000000  0.000000  0.000000  0.117021  0.000000  0.000000  0.393617  0.000000  0.382979  0.042553  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.053191  0.000000  0.010638 
+ 0.000000  0.000000  0.117021  0.053191  0.010638  0.000000  0.000000  0.031915  0.308511  0.000000  0.021277  0.042553  0.000000  0.010638  0.010638  0.000000  0.372340  0.021277  0.000000  0.000000 
+ 0.010638  0.000000  0.000000  0.000000  0.031915  0.000000  0.000000  0.138298  0.000000  0.117021  0.170213  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.457447  0.000000  0.074468 
+ 0.000000  0.000000  0.085106  0.468085  0.000000  0.000000  0.117021  0.010638  0.085106  0.000000  0.000000  0.010638  0.000000  0.106383  0.010638  0.074468  0.010638  0.021277  0.000000  0.000000 
+ 0.138298  0.000000  0.000000  0.000000  0.010638  0.000000  0.000000  0.127660  0.000000  0.202128  0.085106  0.000000  0.000000  0.000000  0.000000  0.000000  0.031915  0.404255  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif KVVEAKSQVVAGTNYYJTVEV MEME-1 regular expression
+--------------------------------------------------------------------------------
+[KRE][VA]V[ES]A[KQ]SQVV[AS]GT[NK]Y[YF][IL][TK]VE[VL]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 12.69 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2	width =  29  sites =  36  llr = 1977  E-value = 4.5e-511
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::1:3::33::7:3:::1391:3:::::3
+pos.-specific     C  ::3::::::::::::::::::::::::::
+probability       D  ::::::::::1:3:3:::::5::::::::
+matrix            E  :::::::4::::::7::5::2::::3:76
+                  F  :::::::::::::::::::::3:::::::
+                  G  :::a7::::::::::::::::::::::::
+                  H  :::::::::::::::::1:::::::::::
+                  I  :4:::1:::::::::4::6::::::::::
+                  K  1:1::::::1:::::::1:::4:4:::::
+                  L  :11::5:::::::::::::::::::17::
+                  M  84:::::::1:::::::1:::::::::::
+                  N  ::::::::::::::::::::2::::::3:
+                  P  ::4::3:31:6::5::::::::::3::::
+                  Q  :::::::::3::::::9::::2::36:::
+                  R  ::::::::32::::::1::::::3:::::
+                  S  ::::::8::3::::::::::::::4:::1
+                  T  ::::::2:3::37::3:::::::::::::
+                  V  :::::1::1:3::::3::11::73:::::
+                  W  :::::::::::::::::::::::::::::
+                  Y  ::::::::::::::::::::::::::3::
+
+         bits    6.5                              
+                 5.9                              
+                 5.2                              
+                 4.6                              
+Relative         3.9 *  *            *            
+Entropy          3.3 ** *  *     * * * **       * 
+(79.2 bits)      2.6 ***** *   ******* **  *  ****
+                 2.0 *****************************
+                 1.3 *****************************
+                 0.7 *****************************
+                 0.0 -----------------------------
+
+Multilevel           MIPGGLSETQPATPEIQEIADKVKSQLEE
+consensus             MC AP ARSVTDADV  A  FAVPEYNA
+sequence                    PA      T     Q RQ    
+                                                  
+                                                  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                        Site           
+-------------             ----- ---------            -----------------------------
+sp|Q76LA0|CYTB_GORGO          1  1.02e-29          . MMCGAPSATQPATAETQHIADQVRSQLEE KENKKFPVFK
+sp|P60576|CYTB_PONPY          1  1.02e-29          . MMCGAPSATQPATAETQHIADQVRSQLEE KENKKFPVFK
+sp|P60575|CYTB_PANPA          1  1.02e-29          . MMCGAPSATQPATAETQHIADQVRSQLEE KENKKFPVFK
+sp|Q8I030|CYTB_PANTR          1  1.02e-29          . MMCGAPSATQPATAETQHIADQVRSQLEE KENKKFPVFK
+sp|P04080|CYTB_HUMAN          1  1.02e-29          . MMCGAPSATQPATAETQHIADQVRSQLEE KENKKFPVFK
+sp|Q29290|CYTB_PIG            1  2.60e-29          . MMCGAPSATQPATAEIQAIADKVKSQLEE KENKTFPVFK
+sp|P01040|CYTA_HUMAN          1  4.74e-29          . MIPGGLSEAKPATPEIQEIVDKVKPQLEE KTNETYGKLE
+sp|Q8WNR9|CYTA_FELCA          1  9.76e-29          . MIPGGLSEAKPATPEIQEIANEVKPQLEE KTNETYQKFE
+sp|Q10994|CYTB_SHEEP          1  9.76e-29          . MMCGAPSATQPATAETQAIADKVKSQLEE KENKKFPVFK
+sp|P25417|CYTB_BOVIN          1  4.41e-28          . MMCGGTSATQPATAETQAIADKVKSQLEE KENKKFPVFK
+sp|P01041|CYTB_RAT            1  5.03e-28          . MMCGAPSATMPATTETQEIADKVKSQLEE KANQKFDVFK
+sp|Q28988|CYTA1_PIG           6  1.24e-27      MESDK MMPGGLTEARPATPEIQEIATTVKSQLEE KTNKTYEKFE
+sp|Q862Z5|CYTB_MACFU          1  2.32e-27          . MMCGAPSAVQPATAETQDIADQVRSQLEE KENKKFPVFK
+sp|Q28987|CYTA8_PIG           6  3.78e-27      MESEE MLAGGLTEPRPATPEIQEIANKVKPQLEE KTKKTYEKFE
+sp|Q28986|CYTA5_PIG           6  3.78e-27      MESEE MLAGGLTEPRPATPEIQEIANKVKPQLEE KTKKTYEKFE
+sp|P35479|CPI1_PIG            6  3.78e-27      MESEE MLAGGLTEPRPATPEIQEIANKVKPQLEE KTNKTYEKFE
+sp|P56567|CYTA_MOUSE          1  7.76e-27          . MIPGGLTEARPATAEVQEIADRVKAQLEE ETNEKYEIFK
+sp|Q62426|CYTB_MOUSE          1  1.24e-26          . MMCGAPSATMPATAETQEVADQVKSQLES KENQKFDVFK
+sp|P80416|CYTA_BOVIN          1  1.56e-26          . MIPGGLTEAKPATIEIQEIANMVKPQLEE KTNETYEEFT
+sp|E3P6P2|CYT_NOTSC          26  1.29e-25 CALLLLPSAT MIPGGLSPRSVTDPDVQEAAEFAVQEYNA LSANAYYYKQ
+sp|E3P6N8|CYT_PSEAU          26  1.29e-25 CALLLLPSAT MIPGGLSPRSVTDPDVQEAAEFAVQEYNA LSANAYYYKQ
+sp|E3P6N7|CYT_PSEPO          26  1.29e-25 CALLLLPSAT MIPGGLSPRSVTDPDVQEAAEFAVQEYNA LSANAYYYKQ
+sp|E3P6N6|CYT_OXYSC          26  6.23e-25 CALLLLPSAT MIPGGLSPRSVTDPDVQKAAEFAVQEYNA LSTNAYYYKQ
+sp|P35173|CYT3_MOUSE          7  6.90e-25     MSQENL KIKGGLSEARPATPEIQMIADKVRPLLEE QTNEKYEKFE
+sp|E3P6N4|CYT_PSETE          26  1.55e-24 CALLLLPSAT MIPGGLSPRSVTDPDVQKAAEFAVQEYNS LSTNAYYYKQ
+sp|E3P6P1|CYT_CRYNI          26  1.89e-24 CALLLLPSAT MIPGGLSPRSVTDPDVREAAEFAVQEYNA LSANAYYYKQ
+sp|E3P6P3|CYT_MICIK          26  2.54e-24 CALLLLPSAT MIPGGLSPRSVTDPDVQEAAAFSVQEYNA LSANAYYYKE
+sp|E3P6N5|CYT_OXYMI          26  2.54e-24 CALLLLPSAT MIPGGISPRSVTDPDVQKAAEFAVQEYNA LSTNAYYYKQ
+sp|P35174|CYT2_MOUSE          7  7.40e-24     MTEYTR KIKGGLSEARPATSEIQEIADKVRPLLEE KTNEKYEKFK
+sp|P35175|CYT1_MOUSE          1  8.96e-24          . MSLGGVSEASRATPEIQMIANKVRPQLEA KTNKKYEKFE
+sp|E3P6P4|CYT_NAJKA          26  1.44e-23 CALLLLPSAT MIPGGLSPRSVSDPDVQKAAAFAVQEYNA RSANAHYYKE
+sp|P01039|CYTA_RAT            7  9.89e-23     MDPGTT GIVGGVSEAKPATPEIQEVADKVKRQLEE KTNEKYEKFK
+sp|P35478|CYTX_BOVIN          4  3.64e-21        MWG PNLGGFSDTQDATAEIQAIADQVKSQLEE KENKKFPVFK
+sp|J3RYX9|CYT1_CROAD         24  3.96e-21 LLLLPSVLPA SMPGGLSPRDVTDPEVQEAAVFAVEEYNA RSTNSNYFKA
+sp|J7FQE8|CYTB_OPLFA          3  1.39e-19         MS MMCGGISAPLDADEDIQKMCDNVKPHAEE KAGKKYDVFT
+sp|Q65YR8|CYTA1_DICDI         2  7.26e-11          M TLGGLKPEVHAANDEIRQVVAKVADELKS KLNTTEVEPV
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|Q76LA0|CYTB_GORGO                1e-29  [2]_69
+sp|P60576|CYTB_PONPY                1e-29  [2]_69
+sp|P60575|CYTB_PANPA                1e-29  [2]_69
+sp|Q8I030|CYTB_PANTR                1e-29  [2]_69
+sp|P04080|CYTB_HUMAN                1e-29  [2]_69
+sp|Q29290|CYTB_PIG                2.6e-29  [2]_69
+sp|P01040|CYTA_HUMAN              4.7e-29  [2]_69
+sp|Q8WNR9|CYTA_FELCA              9.8e-29  [2]_69
+sp|Q10994|CYTB_SHEEP              9.8e-29  [2]_69
+sp|P25417|CYTB_BOVIN              4.4e-28  [2]_69
+sp|P01041|CYTB_RAT                  5e-28  [2]_69
+sp|Q28988|CYTA1_PIG               1.2e-27  5_[2]_69
+sp|Q862Z5|CYTB_MACFU              2.3e-27  [2]_69
+sp|Q28987|CYTA8_PIG               3.8e-27  5_[2]_69
+sp|Q28986|CYTA5_PIG               3.8e-27  5_[2]_69
+sp|P35479|CPI1_PIG                3.8e-27  5_[2]_69
+sp|P56567|CYTA_MOUSE              7.8e-27  [2]_68
+sp|Q62426|CYTB_MOUSE              1.2e-26  [2]_69
+sp|P80416|CYTA_BOVIN              1.6e-26  [2]_69
+sp|E3P6P2|CYT_NOTSC               1.3e-25  25_[2]_87
+sp|E3P6N8|CYT_PSEAU               1.3e-25  25_[2]_87
+sp|E3P6N7|CYT_PSEPO               1.3e-25  25_[2]_87
+sp|E3P6N6|CYT_OXYSC               6.2e-25  25_[2]_87
+sp|P35173|CYT3_MOUSE              6.9e-25  6_[2]_68
+sp|E3P6N4|CYT_PSETE               1.5e-24  25_[2]_87
+sp|E3P6P1|CYT_CRYNI               1.9e-24  25_[2]_87
+sp|E3P6P3|CYT_MICIK               2.5e-24  25_[2]_87
+sp|E3P6N5|CYT_OXYMI               2.5e-24  25_[2]_87
+sp|P35174|CYT2_MOUSE              7.4e-24  6_[2]_68
+sp|P35175|CYT1_MOUSE                9e-24  [2]_68
+sp|E3P6P4|CYT_NAJKA               1.4e-23  25_[2]_87
+sp|P01039|CYTA_RAT                9.9e-23  6_[2]_68
+sp|P35478|CYTX_BOVIN              3.6e-21  3_[2]_69
+sp|J3RYX9|CYT1_CROAD                4e-21  23_[2]_87
+sp|J7FQE8|CYTB_OPLFA              1.4e-19  2_[2]_69
+sp|Q65YR8|CYTA1_DICDI             7.3e-11  1_[2]_64
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MIPGGLSETQPATPEIQEIADKVKSZLEE width=29 seqs=36
+sp|Q76LA0|CYTB_GORGO     (    1) MMCGAPSATQPATAETQHIADQVRSQLEE  1 
+sp|P60576|CYTB_PONPY     (    1) MMCGAPSATQPATAETQHIADQVRSQLEE  1 
+sp|P60575|CYTB_PANPA     (    1) MMCGAPSATQPATAETQHIADQVRSQLEE  1 
+sp|Q8I030|CYTB_PANTR     (    1) MMCGAPSATQPATAETQHIADQVRSQLEE  1 
+sp|P04080|CYTB_HUMAN     (    1) MMCGAPSATQPATAETQHIADQVRSQLEE  1 
+sp|Q29290|CYTB_PIG       (    1) MMCGAPSATQPATAEIQAIADKVKSQLEE  1 
+sp|P01040|CYTA_HUMAN     (    1) MIPGGLSEAKPATPEIQEIVDKVKPQLEE  1 
+sp|Q8WNR9|CYTA_FELCA     (    1) MIPGGLSEAKPATPEIQEIANEVKPQLEE  1 
+sp|Q10994|CYTB_SHEEP     (    1) MMCGAPSATQPATAETQAIADKVKSQLEE  1 
+sp|P25417|CYTB_BOVIN     (    1) MMCGGTSATQPATAETQAIADKVKSQLEE  1 
+sp|P01041|CYTB_RAT       (    1) MMCGAPSATMPATTETQEIADKVKSQLEE  1 
+sp|Q28988|CYTA1_PIG      (    6) MMPGGLTEARPATPEIQEIATTVKSQLEE  1 
+sp|Q862Z5|CYTB_MACFU     (    1) MMCGAPSAVQPATAETQDIADQVRSQLEE  1 
+sp|Q28987|CYTA8_PIG      (    6) MLAGGLTEPRPATPEIQEIANKVKPQLEE  1 
+sp|Q28986|CYTA5_PIG      (    6) MLAGGLTEPRPATPEIQEIANKVKPQLEE  1 
+sp|P35479|CPI1_PIG       (    6) MLAGGLTEPRPATPEIQEIANKVKPQLEE  1 
+sp|P56567|CYTA_MOUSE     (    1) MIPGGLTEARPATAEVQEIADRVKAQLEE  1 
+sp|Q62426|CYTB_MOUSE     (    1) MMCGAPSATMPATAETQEVADQVKSQLES  1 
+sp|P80416|CYTA_BOVIN     (    1) MIPGGLTEAKPATIEIQEIANMVKPQLEE  1 
+sp|E3P6P2|CYT_NOTSC      (   26) MIPGGLSPRSVTDPDVQEAAEFAVQEYNA  1 
+sp|E3P6N8|CYT_PSEAU      (   26) MIPGGLSPRSVTDPDVQEAAEFAVQEYNA  1 
+sp|E3P6N7|CYT_PSEPO      (   26) MIPGGLSPRSVTDPDVQEAAEFAVQEYNA  1 
+sp|E3P6N6|CYT_OXYSC      (   26) MIPGGLSPRSVTDPDVQKAAEFAVQEYNA  1 
+sp|P35173|CYT3_MOUSE     (    7) KIKGGLSEARPATPEIQMIADKVRPLLEE  1 
+sp|E3P6N4|CYT_PSETE      (   26) MIPGGLSPRSVTDPDVQKAAEFAVQEYNS  1 
+sp|E3P6P1|CYT_CRYNI      (   26) MIPGGLSPRSVTDPDVREAAEFAVQEYNA  1 
+sp|E3P6P3|CYT_MICIK      (   26) MIPGGLSPRSVTDPDVQEAAAFSVQEYNA  1 
+sp|E3P6N5|CYT_OXYMI      (   26) MIPGGISPRSVTDPDVQKAAEFAVQEYNA  1 
+sp|P35174|CYT2_MOUSE     (    7) KIKGGLSEARPATSEIQEIADKVRPLLEE  1 
+sp|P35175|CYT1_MOUSE     (    1) MSLGGVSEASRATPEIQMIANKVRPQLEA  1 
+sp|E3P6P4|CYT_NAJKA      (   26) MIPGGLSPRSVSDPDVQKAAAFAVQEYNA  1 
+sp|P01039|CYTA_RAT       (    7) GIVGGVSEAKPATPEIQEVADKVKRQLEE  1 
+sp|P35478|CYTX_BOVIN     (    4) PNLGGFSDTQDATAEIQAIADQVKSQLEE  1 
+sp|J3RYX9|CYT1_CROAD     (   24) SMPGGLSPRDVTDPEVQEAAVFAVEEYNA  1 
+sp|J7FQE8|CYTB_OPLFA     (    3) MMCGGISAPLDADEDIQKMCDNVKPHAEE  1 
+sp|Q65YR8|CYTA1_DICDI    (    2) TLGGLKPEVHAANDEIRQVVAKVADELKS  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 29 n= 12975 bayes= 8.62417 E= 4.5e-511 
+  -439   -401   -510   -569   -412   -277   -502   -239   -239   -237    533   -488   -256   -525   -465   -265   -268   -384   -318   -360 
+  -398   -401   -620   -598   -297   -537   -502    343   -588     51    401    -78   -558   -531   -465   -111   -389   -267   -394   -402 
+    -1    358   -432   -453   -442   -117   -436   -347    -75    -78   -368   -437    330   -421   -361   -294   -349   -158   -476   -483 
+  -600   -686   -611   -733   -749    408   -677   -753   -737   -794   -736   -611   -690   -749   -611   -605   -713   -794   -650   -722 
+   174   -405   -562   -645   -623    354   -607   -576   -669   -169   -547   -508   -530   -612   -527   -316   -416   -530   -587   -637 
+  -318   -324   -515   -487    -38   -447   -403     67   -169    261   -133   -434    225   -425   -354   -355   -104    -39   -320   -323 
+  -236   -264   -361   -458   -386   -349   -388   -359   -395   -422   -324   -223   -142   -409   -282    364    133   -455   -381   -379 
+   195   -747    -26    234   -719   -484   -474   -544   -394   -579   -504   -411    242   -293   -418   -416   -456   -552   -694   -621 
+   165   -390   -624   -642   -599   -381   -595   -517   -575   -589   -508   -534    119   -567    295   -305    229    -56   -593   -625 
+  -308   -478    -61   -263   -453   -376      1   -379     56   -155    117   -266   -401    225    241    205   -301   -427   -413   -379 
+  -131   -439    -10   -403   -453   -399   -400   -387   -408   -414   -397   -408    379   -379    -56   -286   -345    130   -487   -495 
+   315   -387   -658   -706   -639   -377   -653   -594   -746   -651   -557   -562   -529   -630   -577    -83    200   -521   -626   -676 
+  -461   -554    267   -408   -618   -361   -377   -600   -467   -668   -592    -28   -522   -443   -433   -291    338   -642   -612   -527 
+   164   -440   -100   -158   -451   -399   -397    -80   -405   -413   -396   -405    365   -376   -322   -111   -126   -431   -485   -493 
+  -415   -808    253    326   -737   -509   -494   -565   -413   -598   -526   -434   -499   -312   -438   -445   -481   -575   -704   -639 
+  -505   -470   -763   -781   -506   -739   -837    340   -801   -370   -378   -725   -743   -809   -738   -683    212    192   -726   -648 
+  -486   -537   -537   -367   -595   -573   -263   -519   -479   -484   -372   -450   -519    412     51   -478   -511   -596   -471   -573 
+    41   -669    -27    274   -610   -456    216   -488     70   -520    118   -370   -450    -68   -331   -368   -405   -511   -588   -530 
+   173   -466   -754   -769   -489   -717   -794    393   -785   -359     32   -710   -728   -779   -711   -656   -488     28   -683   -626 
+   344     17   -490   -501   -443   -280   -498   -354   -528   -426   -348   -458   -503   -499   -409   -190   -324    -64   -442   -495 
+     1   -665    336    150   -655   -418   -412   -552   -397   -586   -516    178   -481   -316   -400   -360   -111   -162   -640   -558 
+  -350   -509   -344   -113    271   -413   -299   -409    209   -432     24    -59   -441    197     24   -308   -100   -460   -439   -413 
+   166   -391   -662   -707   -623   -386   -655   -456   -746   -605   -535   -568   -534   -635   -580    -85   -403    309   -628   -671 
+  -148   -579   -542   -432   -638   -511   -356   -485    242   -499   -434   -400   -553   -294    284   -434   -442    165   -498   -502 
+  -127   -509    -38    -69   -482   -356   -307   -421   -285   -451   -373   -230    242    210    -17    242   -320   -461   -469   -415 
+  -385   -631   -197    203   -614   -484    -10   -497   -358    -78   -411   -386   -463    345   -320   -404   -439   -531   -543   -543 
+  -152   -568   -763   -790   -254   -683   -486   -298   -772    298   -278   -661   -697   -649   -607   -623   -603   -465   -339    309 
+  -416   -697   -188    319   -686   -431   -426   -570   -140   -602   -533    251   -491   -321   -396   -376   -446   -586   -664   -579 
+   176   -459   -300    308   -669   -413   -550   -576   -506   -621   -537   -471   -508   -406   -490     47   -423   -538   -652   -650 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 29 nsites= 36 E= 4.5e-511 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.055556  0.000000  0.833333  0.000000  0.027778  0.000000  0.000000  0.027778  0.027778  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.444444  0.000000  0.111111  0.388889  0.027778  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000 
+ 0.083333  0.333333  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.055556  0.055556  0.000000  0.000000  0.416667  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.277778  0.000000  0.000000  0.000000  0.000000  0.694444  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.055556  0.027778  0.527778  0.000000  0.000000  0.277778  0.000000  0.000000  0.000000  0.027778  0.055556  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.805556  0.166667  0.000000  0.000000  0.000000 
+ 0.333333  0.000000  0.027778  0.361111  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.277778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.111111  0.000000  0.277778  0.000000  0.305556  0.055556  0.000000  0.000000 
+ 0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.027778  0.000000  0.111111  0.027778  0.055556  0.000000  0.000000  0.277778  0.194444  0.277778  0.000000  0.000000  0.000000  0.000000 
+ 0.027778  0.000000  0.055556  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.611111  0.000000  0.027778  0.000000  0.000000  0.277778  0.000000  0.000000 
+ 0.722222  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.027778  0.250000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.305556  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000  0.666667  0.000000  0.000000  0.000000 
+ 0.333333  0.000000  0.027778  0.027778  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000  0.527778  0.000000  0.000000  0.027778  0.027778  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.277778  0.722222  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.416667  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.277778  0.305556  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.944444  0.055556  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.111111  0.000000  0.027778  0.500000  0.000000  0.000000  0.138889  0.000000  0.138889  0.000000  0.055556  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.277778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.611111  0.000000  0.000000  0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.083333  0.000000  0.000000 
+ 0.916667  0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.055556  0.000000  0.000000 
+ 0.083333  0.000000  0.500000  0.194444  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.166667  0.000000  0.000000  0.000000  0.000000  0.027778  0.027778  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.027778  0.277778  0.000000  0.000000  0.000000  0.361111  0.000000  0.027778  0.027778  0.000000  0.222222  0.027778  0.000000  0.027778  0.000000  0.000000  0.000000 
+ 0.250000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.722222  0.000000  0.000000 
+ 0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.444444  0.000000  0.000000  0.000000  0.000000  0.000000  0.250000  0.000000  0.000000  0.277778  0.000000  0.000000 
+ 0.027778  0.000000  0.027778  0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.277778  0.250000  0.027778  0.361111  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.305556  0.000000  0.000000  0.027778  0.000000  0.000000  0.055556  0.000000  0.000000  0.000000  0.611111  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.027778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.694444  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.277778 
+ 0.000000  0.000000  0.000000  0.694444  0.000000  0.000000  0.000000  0.000000  0.027778  0.000000  0.000000  0.277778  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000 
+ 0.277778  0.000000  0.000000  0.638889  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.083333  0.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MIPGGLSETQPATPEIQEIADKVKSZLEE MEME-2 regular expression
+--------------------------------------------------------------------------------
+M[IM][PC]G[GA][LP]S[EAP][TRA][QS][PV][AT][TD][PA][ED][IVT]QE[IA]AD[KFQ][VA][KVR][SPQ][QE][LY][EN][EA]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 22.12 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TCEFQVWSRPWLNKK MEME-3	width =  15  sites =  65  llr = 1594  E-value = 8.9e-374
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::4:::::1:::::
+pos.-specific     C  :7:::::::::::::
+probability       D  ::1:::::::::11:
+matrix            E  ::2:2::2:::31::
+                  F  1::5:::::::::2:
+                  G  ::::::::::::1::
+                  H  ::1::::::::::::
+                  I  1::::2::1:::::2
+                  K  ::::2:::2:::142
+                  L  2::::::::::4:::
+                  M  :::::::1:::1::2
+                  N  1:1:1:::::::4::
+                  P  :::::::::8::1::
+                  Q  ::::3:::1::1:::
+                  R  ::1:::::3::::1:
+                  S  ::2::::3:::::1:
+                  T  3:21:::::::::11
+                  V  1:::17:22:::::1
+                  W  ::::::5:::a::::
+                  Y  :2::::3::::::::
+
+         bits    6.5           *    
+                 5.9           *    
+                 5.2           *    
+                 4.6           *    
+Relative         3.9  *    *   *    
+Entropy          3.3  *    *  **    
+(35.4 bits)      2.6  * * **  **    
+                 2.0  * * ** *** *  
+                 1.3  **************
+                 0.7 ***************
+                 0.0 ---------------
+
+Multilevel           TCXFQVWSRPWLNKK
+consensus             Y AKIYEK  E F 
+sequence                 E  VV      
+                                    
+                                    
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value                 Site    
+-------------             ----- ---------            ---------------
+sp|E3P6P3|CYT_MICIK         119  1.97e-18 LPPKAQQEKL TCHFQVWSRPWLEKM ELTKMSCN  
+sp|E3P6N5|CYT_OXYMI         119  1.97e-18 LPPKAQQEKL TCHFQVWSRPWLEKM ELTKMSCN  
+sp|E3P6N4|CYT_PSETE         119  1.97e-18 LPPKAQQEKL TCHFQVWSRPWLEKM ELTKMSCN  
+sp|J3RYX9|CYT1_CROAD        117  2.63e-18 LPPRNQQEKL TCHFEVWSRPWLNKT LLTKVTCN  
+sp|E3P6N8|CYT_PSEAU         119  7.98e-18 LPPKAQQEKL TCHFQVWSRPWLGKI ELTKMSCN  
+sp|E3P6P4|CYT_NAJKA         119  1.03e-17 LPPKAQQEKL TCHFQVWSRPWLDKT ELTKMSCN  
+sp|E3P6N7|CYT_PSEPO         119  1.12e-16 LPPKAQQEKL NCRFQVWSRPWLEKM ELTKMSCN  
+sp|E3P6N6|CYT_OXYSC         119  1.12e-16 LPPKAQQEKL TCHFQVWSRPWLEKV ELTKMSCN  
+sp|E3P6P2|CYT_NOTSC         119  2.63e-16 LPPKAQQEKL TCRFQVWSRPWLQKI ELTKMSCN  
+sp|E3P6P1|CYT_CRYNI         119  7.11e-16 LPPKAQQEKL TCRFQVWSRPWLKKT ELTKMSCN  
+sp|Q6T6T4|CYT_BITGA         119  1.04e-15 LPPENQQEEI TCHFEVWSRPWLQKT VLTKDEL   
+sp|P08935|CYT_BITAR          93  6.07e-15 LPPENQQEEI TCRFEVWSRPWLPST SLTK      
+sp|Q10992|CYTA_HELAN         55  1.60e-14 LEATNGGVKK TYEAKVWVKPWENFK ELQEFKPVDA
+sp|P01035|CYTC_BOVIN        125  2.17e-14 HNQPHLKREK LCSFQVYVVPWMNTI NLVKFSCQD 
+sp|P31726|CYT1_MAIZE        107  3.96e-14 IEVKDGEVKK LYEAKVWEKPWENFK QLQEFKPVEE
+sp|P09228|CYTT_HUMAN        117  3.96e-14 HEQPELQKKQ LCSFQIYEVPWEDRM SLVNSRCQEA
+sp|Q8H0X6|CYT6_ARATH        103  5.31e-14 LEILEAGQKK LYEAKVWVKPWLNFK ELQEFKPASD
+sp|Q06445|CYTI_VIGUN         70  6.13e-14 LEAKDGGQKK VYEAKVWEKPWLNFK ELQEFKHVGD
+sp|P01038|CYT_CHICK         117  7.07e-14 HDEPEMAKYT TCTFVVYSIPWLNQI KLLESKCQ  
+sp|Q8LC76|CYT7_ARATH        112  8.14e-14 LEVIEAGEKK IYEAKVWVKPWMNFK QLQEFKNIIP
+sp|P08934|KNG1_RAT          350  8.14e-14 CETKRLGQSL NCNANVYMRPWENKV VPTVKCKVLD
+sp|P08932|KNT2_RAT          349  8.14e-14 CETKHLGQSL NCNANVYMRPWENKV VPTVRCQALD
+sp|P01048|KNT1_RAT          349  8.14e-14 CETKHLGQSL NCNANVYMRPWENKV VPTVRCQALD
+sp|P81061|CYT_COTJA          94  9.36e-14 HDEPEMAKYT TCNFVVYSIPWLNQI KLLKSSCQ  
+sp|P01036|CYTS_HUMAN        117  9.36e-14 HEQPELQKKQ LCSFEIYEVPWEDRM SLVNSRCQEA
+sp|Q91195|CYT_ONCMY         107  1.62e-13 HKDPQMAVPY KCTFEVWSRPWMSDI QMVKNQCES 
+sp|Q98967|CYT_ONCKE         107  1.62e-13 HKDPQMAVPY KCTFEVWSRPWMSDI QMVKNQCES 
+sp|P09229|CYT1_ORYSJ        112  2.12e-13 IEVKEGDAKK LYEAKVWEKPWMDFK ELQEFKPVDA
+sp|O08677|KNG1_MOUSE        349  2.42e-13 CEIKHLGQSL DCNANVYMRPWENKV VPTVKCQALD
+sp|P01037|CYTN_HUMAN        117  2.76e-13 HEQPELQKKQ LCSFEIYEVPWENRR SLVKSRCQES
+sp|Q0JNR2|CYT12_ORYSJ       114  3.58e-13 LEALEAGRKK VYEAKVWVKPWLDFK ELQEFRNTGD
+sp|P20907|CYT2_ORYSJ        124  3.58e-13 EVKEPGGANK LYEAKVWERAWENFK QLQDFKPLDD
+sp|J3SE80|CYT2_CROAD        114  5.94e-13 HNAPKLAQTM TCTFEVYNIPWRNFI SLEKSSCT  
+sp|Q41906|CYT3_ARATH        101  5.94e-13 LEAKEGDQTK NFEAKVWVKPWMNFK QLQEFKESSS
+sp|O19093|CYTC_SAISC        122  7.62e-13 HEQPHLKRKA FCSFQIYSVPWQGIM TLSKSTCQDA
+sp|P28325|CYTD_HUMAN        118  7.62e-13 NDQPKLKEEE FCSFQINEVPWEDKI SILNYKCRKV
+sp|Q9LEI7|CYT1_HORVU         84  1.57e-12 IEVKEGGAKK LYEAKVWEKAWENFK QLQEFKPAA 
+sp|P22085|CYTX_ONCVO        138  1.77e-12 CKKLEGHPEK VMTLEVWEKPWENFM RVEILGTKEV
+sp|O19092|CYTC_MACMU        122  3.16e-12 HEQPHLKRKA FCSFQIYTVPWQGTM TLSKSTCQDA
+sp|Q9JM84|CST10_MOUSE       124  3.54e-12 NEQPDQQKRV ICNFQINVAPWLNKM SMTNFNCYNF
+sp|P01042|KNG1_HUMAN        350  3.96e-12 CETKKLGQSL DCNAEVYVVPWEKKI YPTVNCQPLG
+sp|B1P1J3|CYT_CHIGU         106  5.53e-12 CPLLESAPHQ TCTAIIWTRSWLNDT QILKLKCKEG
+sp|P21460|CYTC_MOUSE        116  5.53e-12 HDQPHLMRKA LCSFQIYSVPWKGTH SLTKFSCKNA
+sp|P14841|CYTC_RAT          116  5.53e-12 HDQPHLMRKA LCSFQIYSVPWKGTH TLTKSSCKNA
+sp|P01045|KNG2_BOVIN        347  6.18e-12 CEINIHGQIL HCDANVYVVPWEEKV YPTVNCQPLG
+sp|P01044|KNG1_BOVIN        349  6.18e-12 CEINIHGQIL HCDANVYVVPWEEKV YPTVNCQPLG
+sp|P37842|CYTM_SOLTU        541  8.57e-12 LVAIDAGKKK IYEAKIWVKEWENFK KVIEFKLIGD
+sp|P01034|CYTC_HUMAN        122  9.54e-12 HDQPHLKRKA FCSFQIYAVPWQGTM TLSKSTCQDA
+sp|B2Z450|CYTC_PAROL        105  3.67e-11 HKDPALAQPY ECTFSVWSRPWIPDL QLVGEKC   
+sp|A0A0K0IP23|CPI2_BRUMA    134  6.64e-11 CKKLEGHPDQ VMTLEVWEKPWEDFL QVNILETKVL
+sp|P35481|CYT_CYPCA         107  8.05e-11 PKNPSIEQVI QCKITVWSQPWLNSL KVTENTCM  
+sp|P19313|CYTS_RAT          117  8.86e-11 NEEADQQEHE FCSFVVHDIPWENYI VLLSSSCHSI
+sp|P31727|CYTA_SARPE         89  1.42e-10 DLKDENDKTK TCDITIWSQPWLENG IEVTFNCPGE
+sp|Q15828|CYTM_HUMAN        125  1.42e-10 LAAGAQQEKL RCDFEVLVVPWQNSS QLLKHNCVQM
+sp|Q03196|CYT_SOLTU          39  1.56e-10 LVATDDGYKK IYKTKIWVKEWENFK EVQEFKQIVY
+sp|Q7M429|CYTL_TACTR        108  1.01e-09 CAVPENGVKH LCQAIVWVQAWIPRT KVTKLECQNK
+sp|Q945Q1|CYT1_ARATH         76  2.51e-09 VEVADGETNK VYEAKVLEKAWENLK QLESFNHLHD
+sp|P23779|CYTL_DROME         93  3.46e-09 VELDNGSDKK QCTVKIWTQPWLKEN GTNIKIKCSG
+sp|Q10J94|CYT8_ORYSJ         98  3.37e-08 SASDPAGATA SYVAVVYEQSWTNTR QLTSFKPAAA
+sp|A0A6B9L8T7|CYS17_PLAR     92  4.18e-08 AKVAGTNKQK VCRTVYIEQAWLKKT SVKNFSCK  
+sp|Q10993|CYTB_HELAN         75  7.87e-08 EAITKGGKMK VFDAEVVVQSWKHSK KLLGFKPAPV
+sp|Q8L5T9|CYT2_ARATH        120  1.27e-07 EVTQPNGSTR MFDSVVVIQPWLHSK QLLGFTPVVS
+sp|Q8MVB6|CYTL_IXOSC        110  6.17e-07 CLPKADAAHR TCTTVVFENLQGDKS VSPFECEAA 
+sp|B7PKZ2|CYTLG_IXOSC       110  7.47e-07 CLPKADAAHR TCTTVVFESLQGDKS VSSFECEAA 
+sp|Q10Q46|CYT6_ORYSJ         13  4.88e-06 MTTRTLLLAA VCAAAALPRGWSPIK NIDDPHIQEL
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|E3P6P3|CYT_MICIK                 2e-18  118_[3]_8
+sp|E3P6N5|CYT_OXYMI                 2e-18  118_[3]_8
+sp|E3P6N4|CYT_PSETE                 2e-18  118_[3]_8
+sp|J3RYX9|CYT1_CROAD              2.6e-18  116_[3]_8
+sp|E3P6N8|CYT_PSEAU                 8e-18  118_[3]_8
+sp|E3P6P4|CYT_NAJKA                 1e-17  118_[3]_8
+sp|E3P6N7|CYT_PSEPO               1.1e-16  118_[3]_8
+sp|E3P6N6|CYT_OXYSC               1.1e-16  118_[3]_8
+sp|E3P6P2|CYT_NOTSC               2.6e-16  118_[3]_8
+sp|E3P6P1|CYT_CRYNI               7.1e-16  118_[3]_8
+sp|Q6T6T4|CYT_BITGA                 1e-15  118_[3]_7
+sp|P08935|CYT_BITAR               6.1e-15  92_[3]_4
+sp|Q10992|CYTA_HELAN              1.6e-14  54_[3]_13
+sp|P01035|CYTC_BOVIN              2.2e-14  124_[3]_9
+sp|P31726|CYT1_MAIZE                4e-14  106_[3]_14
+sp|P09228|CYTT_HUMAN                4e-14  116_[3]_10
+sp|Q8H0X6|CYT6_ARATH              5.3e-14  102_[3]_117
+sp|Q06445|CYTI_VIGUN              6.1e-14  69_[3]_13
+sp|P01038|CYT_CHICK               7.1e-14  116_[3]_8
+sp|Q8LC76|CYT7_ARATH              8.1e-14  111_[3]_106
+sp|P08934|KNG1_RAT                8.1e-14  349_[3]_275
+sp|P08932|KNT2_RAT                8.1e-14  348_[3]_67
+sp|P01048|KNT1_RAT                8.1e-14  348_[3]_67
+sp|P81061|CYT_COTJA               9.4e-14  93_[3]_8
+sp|P01036|CYTS_HUMAN              9.4e-14  116_[3]_10
+sp|Q91195|CYT_ONCMY               1.6e-13  106_[3]_9
+sp|Q98967|CYT_ONCKE               1.6e-13  106_[3]_9
+sp|P09229|CYT1_ORYSJ              2.1e-13  111_[3]_14
+sp|O08677|KNG1_MOUSE              2.4e-13  348_[3]_298
+sp|P01037|CYTN_HUMAN              2.8e-13  116_[3]_10
+sp|Q0JNR2|CYT12_ORYSJ             3.6e-13  113_[3]_122
+sp|P20907|CYT2_ORYSJ              3.6e-13  123_[3]_13
+sp|J3SE80|CYT2_CROAD              5.9e-13  113_[3]_8
+sp|Q41906|CYT3_ARATH              5.9e-13  100_[3]_10
+sp|O19093|CYTC_SAISC              7.6e-13  121_[3]_10
+sp|P28325|CYTD_HUMAN              7.6e-13  117_[3]_10
+sp|Q9LEI7|CYT1_HORVU              1.6e-12  83_[3]_9
+sp|P22085|CYTX_ONCVO              1.8e-12  137_[3]_10
+sp|O19092|CYTC_MACMU              3.2e-12  121_[3]_10
+sp|Q9JM84|CST10_MOUSE             3.5e-12  123_[3]_10
+sp|P01042|KNG1_HUMAN                4e-12  349_[3]_280
+sp|B1P1J3|CYT_CHIGU               5.5e-12  105_[3]_14
+sp|P21460|CYTC_MOUSE              5.5e-12  115_[3]_10
+sp|P14841|CYTC_RAT                5.5e-12  115_[3]_10
+sp|P01045|KNG2_BOVIN              6.2e-12  346_[3]_258
+sp|P01044|KNG1_BOVIN              6.2e-12  348_[3]_258
+sp|P37842|CYTM_SOLTU              8.6e-12  540_[3]_201
+sp|P01034|CYTC_HUMAN              9.5e-12  121_[3]_10
+sp|B2Z450|CYTC_PAROL              3.7e-11  104_[3]_7
+sp|A0A0K0IP23|CPI2_BRUMA          6.6e-11  133_[3]_13
+sp|P35481|CYT_CYPCA               8.1e-11  106_[3]_8
+sp|P19313|CYTS_RAT                8.9e-11  116_[3]_10
+sp|P31727|CYTA_SARPE              1.4e-10  88_[3]_19
+sp|Q15828|CYTM_HUMAN              1.4e-10  124_[3]_10
+sp|Q03196|CYT_SOLTU               1.6e-10  38_[3]_13
+sp|Q7M429|CYTL_TACTR                1e-09  107_[3]_11
+sp|Q945Q1|CYT1_ARATH              2.5e-09  75_[3]_11
+sp|P23779|CYTL_DROME              3.5e-09  92_[3]_19
+sp|Q10J94|CYT8_ORYSJ              3.4e-08  97_[3]_11
+sp|A0A6B9L8T7|CYS17_PLAR          4.2e-08  91_[3]_8
+sp|Q10993|CYTB_HELAN              7.9e-08  74_[3]_12
+sp|Q8L5T9|CYT2_ARATH              1.3e-07  119_[3]_13
+sp|Q8MVB6|CYTL_IXOSC              6.2e-07  109_[3]_9
+sp|B7PKZ2|CYTLG_IXOSC             7.5e-07  109_[3]_9
+sp|Q10Q46|CYT6_ORYSJ              4.9e-06  12_[3]_86
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TCEFQVWSRPWLNKK width=15 seqs=65
+sp|E3P6P3|CYT_MICIK      (  119) TCHFQVWSRPWLEKM  1 
+sp|E3P6N5|CYT_OXYMI      (  119) TCHFQVWSRPWLEKM  1 
+sp|E3P6N4|CYT_PSETE      (  119) TCHFQVWSRPWLEKM  1 
+sp|J3RYX9|CYT1_CROAD     (  117) TCHFEVWSRPWLNKT  1 
+sp|E3P6N8|CYT_PSEAU      (  119) TCHFQVWSRPWLGKI  1 
+sp|E3P6P4|CYT_NAJKA      (  119) TCHFQVWSRPWLDKT  1 
+sp|E3P6N7|CYT_PSEPO      (  119) NCRFQVWSRPWLEKM  1 
+sp|E3P6N6|CYT_OXYSC      (  119) TCHFQVWSRPWLEKV  1 
+sp|E3P6P2|CYT_NOTSC      (  119) TCRFQVWSRPWLQKI  1 
+sp|E3P6P1|CYT_CRYNI      (  119) TCRFQVWSRPWLKKT  1 
+sp|Q6T6T4|CYT_BITGA      (  119) TCHFEVWSRPWLQKT  1 
+sp|P08935|CYT_BITAR      (   93) TCRFEVWSRPWLPST  1 
+sp|Q10992|CYTA_HELAN     (   55) TYEAKVWVKPWENFK  1 
+sp|P01035|CYTC_BOVIN     (  125) LCSFQVYVVPWMNTI  1 
+sp|P31726|CYT1_MAIZE     (  107) LYEAKVWEKPWENFK  1 
+sp|P09228|CYTT_HUMAN     (  117) LCSFQIYEVPWEDRM  1 
+sp|Q8H0X6|CYT6_ARATH     (  103) LYEAKVWVKPWLNFK  1 
+sp|Q06445|CYTI_VIGUN     (   70) VYEAKVWEKPWLNFK  1 
+sp|P01038|CYT_CHICK      (  117) TCTFVVYSIPWLNQI  1 
+sp|Q8LC76|CYT7_ARATH     (  112) IYEAKVWVKPWMNFK  1 
+sp|P08934|KNG1_RAT       (  350) NCNANVYMRPWENKV  1 
+sp|P08932|KNT2_RAT       (  349) NCNANVYMRPWENKV  1 
+sp|P01048|KNT1_RAT       (  349) NCNANVYMRPWENKV  1 
+sp|P81061|CYT_COTJA      (   94) TCNFVVYSIPWLNQI  1 
+sp|P01036|CYTS_HUMAN     (  117) LCSFEIYEVPWEDRM  1 
+sp|Q91195|CYT_ONCMY      (  107) KCTFEVWSRPWMSDI  1 
+sp|Q98967|CYT_ONCKE      (  107) KCTFEVWSRPWMSDI  1 
+sp|P09229|CYT1_ORYSJ     (  112) LYEAKVWEKPWMDFK  1 
+sp|O08677|KNG1_MOUSE     (  349) DCNANVYMRPWENKV  1 
+sp|P01037|CYTN_HUMAN     (  117) LCSFEIYEVPWENRR  1 
+sp|Q0JNR2|CYT12_ORYSJ    (  114) VYEAKVWVKPWLDFK  1 
+sp|P20907|CYT2_ORYSJ     (  124) LYEAKVWERAWENFK  1 
+sp|J3SE80|CYT2_CROAD     (  114) TCTFEVYNIPWRNFI  1 
+sp|Q41906|CYT3_ARATH     (  101) NFEAKVWVKPWMNFK  1 
+sp|O19093|CYTC_SAISC     (  122) FCSFQIYSVPWQGIM  1 
+sp|P28325|CYTD_HUMAN     (  118) FCSFQINEVPWEDKI  1 
+sp|Q9LEI7|CYT1_HORVU     (   84) LYEAKVWEKAWENFK  1 
+sp|P22085|CYTX_ONCVO     (  138) VMTLEVWEKPWENFM  1 
+sp|O19092|CYTC_MACMU     (  122) FCSFQIYTVPWQGTM  1 
+sp|Q9JM84|CST10_MOUSE    (  124) ICNFQINVAPWLNKM  1 
+sp|P01042|KNG1_HUMAN     (  350) DCNAEVYVVPWEKKI  1 
+sp|B1P1J3|CYT_CHIGU      (  106) TCTAIIWTRSWLNDT  1 
+sp|P21460|CYTC_MOUSE     (  116) LCSFQIYSVPWKGTH  1 
+sp|P14841|CYTC_RAT       (  116) LCSFQIYSVPWKGTH  1 
+sp|P01045|KNG2_BOVIN     (  347) HCDANVYVVPWEEKV  1 
+sp|P01044|KNG1_BOVIN     (  349) HCDANVYVVPWEEKV  1 
+sp|P37842|CYTM_SOLTU     (  541) IYEAKIWVKEWENFK  1 
+sp|P01034|CYTC_HUMAN     (  122) FCSFQIYAVPWQGTM  1 
+sp|B2Z450|CYTC_PAROL     (  105) ECTFSVWSRPWIPDL  1 
+sp|A0A0K0IP23|CPI2_BRUMA (  134) VMTLEVWEKPWEDFL  1 
+sp|P35481|CYT_CYPCA      (  107) QCKITVWSQPWLNSL  1 
+sp|P19313|CYTS_RAT       (  117) FCSFVVHDIPWENYI  1 
+sp|P31727|CYTA_SARPE     (   89) TCDITIWSQPWLENG  1 
+sp|Q15828|CYTM_HUMAN     (  125) RCDFEVLVVPWQNSS  1 
+sp|Q03196|CYT_SOLTU      (   39) IYKTKIWVKEWENFK  1 
+sp|Q7M429|CYTL_TACTR     (  108) LCQAIVWVQAWIPRT  1 
+sp|Q945Q1|CYT1_ARATH     (   76) VYEAKVLEKAWENLK  1 
+sp|P23779|CYTL_DROME     (   93) QCTVKIWTQPWLKEN  1 
+sp|Q10J94|CYT8_ORYSJ     (   98) SYVAVVYEQSWTNTR  1 
+sp|A0A6B9L8T7|CYS17_PLAR (   92) VCRTVYIEQAWLKKT  1 
+sp|Q10993|CYTB_HELAN     (   75) VFDAEVVVQSWKHSK  1 
+sp|Q8L5T9|CYT2_ARATH     (  120) MFDSVVVIQPWLHSK  1 
+sp|Q8MVB6|CYTL_IXOSC     (  110) TCTTVVFENLQGDKS  1 
+sp|B7PKZ2|CYTLG_IXOSC    (  110) TCTTVVFESLQGDKS  1 
+sp|Q10Q46|CYT6_ORYSJ     (   13) VCAAAALPRGWSPIK  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 20 w= 15 n= 14291 bayes= 7.79182 E= 8.9e-374 
+  -314   -448    -49   -165     91   -399     12     62   -110    101    -44     71   -422    -61    -77   -144    215     51   -416   -381 
+  -775    497   -790   -842     44   -774   -451   -593   -810   -578     44   -661   -780   -700   -642   -696   -733   -696   -315    268 
+  -177   -491     94    127   -447   -379    200   -390   -101   -421   -335    117   -401   -123    114    140    138   -221   -434   -386 
+   214   -400   -611   -589    357   -509   -498     -4   -582   -116   -268   -519   -552   -535   -461   -178      3   -171   -420   -415 
+  -180   -498   -281    139   -455   -388   -304    -38    134   -427   -343     96   -409    228   -218   -140    -82     47   -441   -395 
+  -229   -544   -823   -842   -581   -807   -877    258   -863   -449   -456   -792   -805   -869   -787   -749   -566    315   -788   -108 
+  -757   -665   -784   -832     -6   -766    -79   -131   -801    -88   -573    -58   -773   -695   -636   -686   -716   -141    555    328 
+  -185   -449   -128    167   -405   -416   -342   -105   -324   -371    138   -128   -155   -309   -266    237    -34    139   -423   -392 
+  -227   -650   -587   -494   -690   -580   -429     61    144   -566   -500   -147   -618    120    326   -187   -507    133   -569   -568 
+   -18   -504   -443   -139   -515   -198   -463   -450   -470   -160   -460   -473    407   -442   -387    -50   -409   -496   -549   -558 
+  -693   -634   -661   -726   -415   -651   -644   -635   -728   -544   -569   -663   -697    -92   -578   -667   -685   -682    646   -440 
+  -325   -481   -309    204   -439    -91   -322    -33    -61    198    193   -302   -427     25    -71   -146   -158   -413   -437   -398 
+  -509   -645    159     74   -662     64     14   -656    -39   -686   -622    320     34    -74   -446    -82   -465   -699   -657   -564 
+  -304   -490     41   -151    245   -379   -295    -38    202   -222   -335   -115   -401    -55     86     37     56   -434   -433   -101 
+  -349   -378   -492   -469   -334   -184      8    208    150    -68    283   -148   -498   -436    -16    -37     97     43   -381   -372 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 20 w= 15 nsites= 65 E= 8.9e-374 
+ 0.000000  0.000000  0.030769  0.015385  0.076923  0.000000  0.030769  0.061538  0.030769  0.184615  0.015385  0.076923  0.000000  0.030769  0.015385  0.015385  0.292308  0.123077  0.000000  0.000000 
+ 0.000000  0.723077  0.000000  0.000000  0.046154  0.000000  0.000000  0.000000  0.000000  0.000000  0.030769  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.200000 
+ 0.015385  0.000000  0.092308  0.184615  0.000000  0.000000  0.123077  0.000000  0.030769  0.000000  0.000000  0.107692  0.000000  0.015385  0.076923  0.169231  0.169231  0.015385  0.000000  0.000000 
+ 0.369231  0.000000  0.000000  0.000000  0.476923  0.000000  0.000000  0.030769  0.000000  0.030769  0.000000  0.000000  0.000000  0.000000  0.000000  0.015385  0.061538  0.015385  0.000000  0.000000 
+ 0.015385  0.000000  0.000000  0.200000  0.000000  0.000000  0.000000  0.030769  0.215385  0.000000  0.000000  0.092308  0.000000  0.276923  0.000000  0.015385  0.030769  0.123077  0.000000  0.000000 
+ 0.015385  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.230769  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.738462  0.000000  0.015385 
+ 0.000000  0.000000  0.000000  0.000000  0.030769  0.000000  0.015385  0.015385  0.000000  0.046154  0.000000  0.030769  0.000000  0.000000  0.000000  0.000000  0.000000  0.030769  0.523077  0.307692 
+ 0.015385  0.000000  0.015385  0.246154  0.000000  0.000000  0.000000  0.015385  0.000000  0.000000  0.061538  0.015385  0.015385  0.000000  0.000000  0.338462  0.046154  0.230769  0.000000  0.000000 
+ 0.015385  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.061538  0.215385  0.000000  0.000000  0.015385  0.000000  0.123077  0.338462  0.015385  0.000000  0.215385  0.000000  0.000000 
+ 0.076923  0.000000  0.000000  0.030769  0.000000  0.015385  0.000000  0.000000  0.000000  0.030769  0.000000  0.000000  0.800000  0.000000  0.000000  0.046154  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.030769  0.000000  0.000000  0.000000  0.000000  0.969231  0.000000 
+ 0.000000  0.000000  0.000000  0.323077  0.000000  0.030769  0.000000  0.030769  0.046154  0.369231  0.092308  0.000000  0.000000  0.061538  0.015385  0.015385  0.015385  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.138462  0.123077  0.000000  0.092308  0.030769  0.000000  0.061538  0.000000  0.000000  0.430769  0.061538  0.030769  0.000000  0.030769  0.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.061538  0.015385  0.230769  0.000000  0.000000  0.030769  0.353846  0.015385  0.000000  0.015385  0.000000  0.030769  0.061538  0.076923  0.092308  0.000000  0.000000  0.015385 
+ 0.000000  0.000000  0.000000  0.000000  0.000000  0.015385  0.030769  0.169231  0.246154  0.046154  0.169231  0.015385  0.000000  0.000000  0.030769  0.046154  0.123077  0.107692  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TCEFQVWSRPWLNKK MEME-3 regular expression
+--------------------------------------------------------------------------------
+T[CY]X[FA][QKE][VI][WY][SEV][RKV]PW[LE]N[KF]K
+--------------------------------------------------------------------------------
+
+
+
+
+Time 31.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+sp|O08677|KNG1_MOUSE             2.69e-19  179_[1(3.28e-13)]_61_[2(9.98e-06)]_\
+    11_[1(1.40e-12)]_26_[3(2.42e-13)]_298
+sp|P01034|CYTC_HUMAN             1.86e-26  33_[2(3.74e-08)]_11_[1(1.15e-17)]_\
+    27_[3(9.54e-12)]_10
+sp|P01036|CYTS_HUMAN             6.33e-25  28_[2(2.27e-08)]_11_[1(8.27e-14)]_\
+    27_[3(9.36e-14)]_10
+sp|P01037|CYTN_HUMAN             2.50e-26  28_[2(7.17e-08)]_11_[1(3.18e-16)]_\
+    27_[3(2.76e-13)]_10
+sp|P01040|CYTA_HUMAN             2.14e-38  [2(4.74e-29)]_9_[1(1.04e-16)]_39
+sp|P01041|CYTB_RAT               1.90e-37  [2(5.03e-28)]_9_[1(3.12e-17)]_39
+sp|P01042|KNG1_HUMAN             4.39e-18  57_[1(9.71e-07)]_102_[1(5.14e-15)]_\
+    101_[1(1.19e-12)]_26_[3(3.96e-12)]_280
+sp|P01044|KNG1_BOVIN             2.05e-17  179_[1(5.27e-14)]_101_[1(1.79e-10)]_\
+    26_[3(6.18e-12)]_258
+sp|P01045|KNG2_BOVIN             2.83e-18  179_[1(7.56e-14)]_59_[2(2.42e-05)]_\
+    11_[1(6.06e-10)]_26_[3(6.18e-12)]_258
+sp|P01048|KNT1_RAT               5.40e-22  57_[1(2.61e-05)]_101_[1(1.78e-15)]_\
+    61_[2(3.33e-05)]_11_[1(1.19e-11)]_26_[3(8.14e-14)]_67
+sp|P04080|CYTB_HUMAN             1.72e-42  [2(1.02e-29)]_9_[1(2.19e-20)]_39
+sp|P08932|KNT2_RAT               1.89e-21  57_[1(2.61e-05)]_101_[1(1.78e-15)]_\
+    101_[1(1.40e-12)]_26_[3(8.14e-14)]_67
+sp|P08934|KNG1_RAT               2.34e-20  180_[1(2.75e-14)]_61_[2(3.13e-05)]_\
+    11_[1(1.40e-12)]_26_[3(8.14e-14)]_275
+sp|P09228|CYTT_HUMAN             2.01e-27  28_[2(6.88e-08)]_11_[1(1.72e-16)]_\
+    27_[3(3.96e-14)]_10
+sp|P14841|CYTC_RAT               1.45e-28  27_[2(1.07e-09)]_11_[1(5.43e-18)]_\
+    27_[3(5.53e-12)]_10
+sp|P19313|CYTS_RAT               1.22e-18  28_[2(3.03e-05)]_11_[1(2.16e-13)]_\
+    27_[3(8.86e-11)]_10
+sp|P21460|CYTC_MOUSE             2.49e-27  27_[2(6.08e-09)]_11_[1(1.78e-17)]_\
+    27_[3(5.53e-12)]_10
+sp|P28325|CYTD_HUMAN             1.04e-22  28_[2(1.84e-08)]_12_[1(2.39e-12)]_\
+    27_[3(7.62e-13)]_10
+sp|Q15828|CYTM_HUMAN             1.62e-24  32_[2(2.01e-08)]_11_[1(1.34e-16)]_\
+    31_[3(1.42e-10)]_10
+sp|Q8H0X6|CYT6_ARATH             1.08e-22  74_[1(2.21e-15)]_7_[3(5.31e-14)]_24_\
+    [2(5.49e-05)]_64
+sp|Q9JM84|CST10_MOUSE            1.47e-26  35_[2(1.35e-09)]_11_[1(6.45e-16)]_\
+    27_[3(3.54e-12)]_10
+sp|B7PKZ1|CYTL2_IXOSC            1.33e-13  62_[1(2.75e-14)]_25_[3(1.67e-06)]_9
+sp|O19092|CYTC_MACMU             1.05e-27  33_[2(5.82e-09)]_11_[1(1.15e-17)]_\
+    27_[3(3.16e-12)]_10
+sp|P01035|CYTC_BOVIN             1.01e-31  36_[2(7.23e-09)]_11_[1(9.66e-20)]_\
+    27_[3(2.17e-14)]_9
+sp|P01038|CYT_CHICK              1.03e-24  28_[2(1.76e-06)]_11_[1(2.46e-15)]_\
+    27_[3(7.07e-14)]_8
+sp|P01039|CYTA_RAT               4.55e-29  6_[2(9.89e-23)]_9_[1(3.02e-14)]_38
+sp|P09229|CYT1_ORYSJ             5.45e-24  8_[2(8.68e-05)]_46_[1(9.11e-17)]_7_\
+    [3(2.12e-13)]_14
+sp|P25417|CYTB_BOVIN             5.12e-37  [2(4.41e-28)]_9_[1(1.72e-16)]_39
+sp|P35173|CYT3_MOUSE             8.80e-33  6_[2(6.90e-25)]_9_[1(8.12e-16)]_38
+sp|P35174|CYT2_MOUSE             1.90e-30  6_[2(7.40e-24)]_9_[1(2.75e-14)]_38
+sp|P35175|CYT1_MOUSE             4.40e-32  [2(8.96e-24)]_9_[1(2.21e-15)]_38
+sp|Q29290|CYTB_PIG               1.29e-37  [2(2.60e-29)]_9_[1(5.75e-16)]_39
+sp|Q41906|CYT3_ARATH             1.13e-21  72_[1(1.18e-16)]_7_[3(5.94e-13)]_10
+sp|Q62426|CYTB_MOUSE             6.90e-35  [2(1.24e-26)]_9_[1(6.45e-16)]_39
+sp|Q8MVB6|CYTL_IXOSC             4.65e-16  63_[1(5.11e-16)]_25_[3(6.17e-07)]_9
+sp|Q945Q1|CYT1_ARATH             1.80e-17  47_[1(5.14e-15)]_7_[3(2.51e-09)]_11
+sp|Q98967|CYT_ONCKE              1.14e-25  19_[2(2.10e-06)]_11_[1(1.18e-16)]_\
+    26_[3(1.62e-13)]_9
+sp|Q9LEI7|CYT1_HORVU             2.28e-22  17_[2(3.55e-05)]_9_[1(3.76e-15)]_7_\
+    [3(1.57e-12)]_9
+sp|A0A0K0IP23|CPI2_BRUMA         6.87e-19  45_[2(8.44e-06)]_11_[1(3.57e-13)]_\
+    27_[3(6.64e-11)]_13
+sp|B2Z450|CYTC_PAROL             2.95e-20  56_[1(1.98e-15)]_27_[3(3.67e-11)]_7
+sp|B7PKZ2|CYTLG_IXOSC            2.48e-15  63_[1(1.98e-15)]_25_[3(7.47e-07)]_9
+sp|J7FQE8|CYTB_OPLFA             1.63e-26  2_[2(1.39e-19)]_9_[1(3.32e-14)]_39
+sp|O19093|CYTC_SAISC             1.02e-28  33_[2(4.68e-09)]_11_[1(5.43e-18)]_\
+    27_[3(7.62e-13)]_10
+sp|P08935|CYT_BITAR              3.63e-26  39_[1(9.04e-19)]_32_[3(6.07e-15)]_4
+sp|P20907|CYT2_ORYSJ             5.06e-22  94_[1(1.02e-15)]_8_[3(3.58e-13)]_13
+sp|P22085|CYTX_ONCVO             1.93e-20  49_[2(2.50e-05)]_11_[1(1.08e-13)]_\
+    27_[3(1.77e-12)]_10
+sp|P31727|CYTA_SARPE             8.87e-14  59_[1(1.08e-10)]_8_[3(1.42e-10)]_19
+sp|P35478|CYTX_BOVIN             2.68e-31  3_[2(3.64e-21)]_9_[1(1.33e-17)]_39
+sp|P35479|CPI1_PIG               3.76e-39  5_[2(3.78e-27)]_9_[1(1.18e-19)]_39
+sp|P35481|CYT_CYPCA              1.09e-24  19_[2(1.91e-10)]_11_[1(2.75e-14)]_\
+    26_[3(8.05e-11)]_8
+sp|P56567|CYTA_MOUSE             9.60e-38  [2(7.76e-27)]_9_[1(6.37e-19)]_38
+sp|P80416|CYTA_BOVIN             6.56e-36  [2(1.56e-26)]_9_[1(1.18e-16)]_39
+sp|P81061|CYT_COTJA              5.17e-25  5_[2(8.17e-07)]_11_[1(3.76e-15)]_27_\
+    [3(9.36e-14)]_8
+sp|Q0JNR2|CYT12_ORYSJ            4.61e-21  85_[1(2.46e-15)]_7_[3(3.58e-13)]_\
+    122
+sp|Q10994|CYTB_SHEEP             1.17e-37  [2(9.76e-29)]_9_[1(1.72e-16)]_39
+sp|Q65YR8|CYTA1_DICDI            2.09e-19  1_[2(7.26e-11)]_7_[1(4.64e-15)]_36
+sp|Q6T6T4|CYT_BITGA              1.13e-37  25_[2(8.26e-14)]_11_[1(1.75e-19)]_\
+    32_[3(1.04e-15)]_7
+sp|Q7M429|CYTL_TACTR             7.13e-20  19_[2(1.03e-07)]_11_[1(3.57e-13)]_\
+    27_[3(1.01e-09)]_11
+sp|Q8I030|CYTB_PANTR             1.72e-42  [2(1.02e-29)]_9_[1(2.19e-20)]_39
+sp|Q8L5T9|CYT2_ARATH             4.46e-18  90_[1(3.12e-17)]_8_[3(1.27e-07)]_13
+sp|Q8LC76|CYT7_ARATH             6.76e-22  83_[1(7.73e-15)]_7_[3(8.14e-14)]_22_\
+    [2(7.02e-05)]_55
+sp|Q91195|CYT_ONCMY              1.85e-25  19_[2(3.45e-06)]_11_[1(1.18e-16)]_\
+    26_[3(1.62e-13)]_9
+sp|A0A6B9L8T7|CYS17_PLAR         3.73e-13  61_[1(1.57e-11)]_9_[3(4.18e-08)]_8
+sp|B1P1J3|CYT_CHIGU              1.11e-22  17_[2(2.50e-05)]_11_[1(3.18e-16)]_\
+    27_[3(5.53e-12)]_14
+sp|E3P6N4|CYT_PSETE              2.22e-51  25_[2(1.55e-24)]_11_[1(5.21e-20)]_\
+    32_[3(1.97e-18)]_8
+sp|E3P6N5|CYT_OXYMI              3.61e-51  25_[2(2.54e-24)]_11_[1(5.21e-20)]_\
+    32_[3(1.97e-18)]_8
+sp|E3P6N6|CYT_OXYSC              4.83e-50  25_[2(6.23e-25)]_11_[1(5.21e-20)]_\
+    32_[3(1.12e-16)]_8
+sp|E3P6N7|CYT_PSEPO              4.07e-50  25_[2(1.29e-25)]_11_[1(2.11e-19)]_\
+    32_[3(1.12e-16)]_8
+sp|E3P6N8|CYT_PSEAU              3.02e-51  25_[2(1.29e-25)]_11_[1(2.11e-19)]_\
+    32_[3(7.98e-18)]_8
+sp|E3P6P1|CYT_CRYNI              8.83e-49  25_[2(1.89e-24)]_11_[1(5.21e-20)]_\
+    32_[3(7.11e-16)]_8
+sp|E3P6P2|CYT_NOTSC              2.37e-50  25_[2(1.29e-25)]_11_[1(5.21e-20)]_\
+    32_[3(2.63e-16)]_8
+sp|E3P6P3|CYT_MICIK              1.43e-50  25_[2(2.54e-24)]_11_[1(2.11e-19)]_\
+    32_[3(1.97e-18)]_8
+sp|E3P6P4|CYT_NAJKA              8.40e-48  25_[2(1.44e-23)]_11_[1(4.65e-18)]_\
+    32_[3(1.03e-17)]_8
+sp|J3RYX9|CYT1_CROAD             1.41e-44  23_[2(3.96e-21)]_11_[1(1.34e-16)]_\
+    32_[3(2.63e-18)]_8
+sp|J3SE80|CYT2_CROAD             2.93e-25  25_[2(1.47e-06)]_11_[1(1.04e-16)]_\
+    27_[3(5.94e-13)]_8
+sp|P23779|CYTL_DROME             1.60e-13  7_[2(6.02e-05)]_28_[1(9.69e-10)]_7_\
+    [3(3.46e-09)]_19
+sp|P31726|CYT1_MAIZE             3.75e-25  78_[1(2.90e-18)]_7_[3(3.96e-14)]_14
+sp|P37842|CYTM_SOLTU             3.43e-22  40_[1(9.10e-16)]_7_[3(7.95e-07)]_13_\
+    [2(2.70e-06)]_9_[1(5.82e-12)]_8_[3(1.18e-10)]_13_[2(2.34e-06)]_9_\
+    [1(2.78e-12)]_7_[3(1.07e-10)]_13_[2(2.53e-07)]_9_[1(2.72e-11)]_7_\
+    [3(1.18e-10)]_14_[2(2.70e-06)]_9_[1(1.28e-11)]_7_[3(3.24e-10)]_13_\
+    [2(6.61e-08)]_9_[1(2.07e-11)]_7_[3(8.57e-12)]_13_[2(7.77e-08)]_9_\
+    [1(3.81e-11)]_7_[3(2.71e-11)]_13_[2(4.89e-06)]_9_[1(4.03e-12)]_7_\
+    [3(1.66e-09)]_13
+sp|P60575|CYTB_PANPA             1.72e-42  [2(1.02e-29)]_9_[1(2.19e-20)]_39
+sp|P60576|CYTB_PONPY             1.72e-42  [2(1.02e-29)]_9_[1(2.19e-20)]_39
+sp|Q03196|CYT_SOLTU              7.86e-19  10_[1(3.76e-15)]_7_[3(1.56e-10)]_13
+sp|Q06445|CYTI_VIGUN             6.92e-23  41_[1(3.58e-16)]_7_[3(6.13e-14)]_13
+sp|Q10992|CYTA_HELAN             6.88e-23  26_[1(2.46e-15)]_7_[3(1.60e-14)]_13
+sp|Q10993|CYTB_HELAN             3.33e-18  45_[1(3.58e-16)]_8_[3(7.87e-08)]_12
+sp|Q10J94|CYT8_ORYSJ             3.86e-17  30_[2(2.34e-05)]_9_[1(4.39e-14)]_8_\
+    [3(3.37e-08)]_11
+sp|Q10Q46|CYT6_ORYSJ             5.45e-14  12_[3(4.88e-06)]_30_[1(4.81e-14)]_9_\
+    [3(4.20e-07)]_11
+sp|Q10Q47|CYT7_ORYSJ             1.01e-13  16_[2(6.21e-05)]_18_[1(1.88e-14)]_\
+    33
+sp|Q28986|CYTA5_PIG              3.76e-39  5_[2(3.78e-27)]_9_[1(1.18e-19)]_39
+sp|Q28987|CYTA8_PIG              3.76e-39  5_[2(3.78e-27)]_9_[1(1.18e-19)]_39
+sp|Q28988|CYTA1_PIG              2.10e-40  5_[2(1.24e-27)]_9_[1(1.39e-20)]_39
+sp|Q6K309|CYT11_ORYSJ            1.48e-08  65_[1(6.25e-12)]_34
+sp|Q76LA0|CYTB_GORGO             1.72e-42  [2(1.02e-29)]_9_[1(2.19e-20)]_39
+sp|Q862Z5|CYTB_MACFU             4.38e-40  [2(2.32e-27)]_9_[1(2.19e-20)]_39
+sp|Q8WNR9|CYTA_FELCA             4.87e-40  [2(9.76e-29)]_9_[1(6.37e-19)]_39
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (3) found.
+********************************************************************************
+
+CPU: noble-meme.grid.gs.washington.edu
+
+********************************************************************************
